@@ -13,6 +13,7 @@ import {
 } from '@mui/material';
 import Quiz from './components/Quiz';
 import MicrobiologyQuiz from './components/MicrobiologyQuiz';
+import InteriorDesignExecutionQuiz from './components/InteriorDesignExecutionQuiz';
 
 const theme = createTheme({
   palette: {
@@ -66,6 +67,9 @@ function App() {
               <Button color="inherit" component={Link} to="/microbiology">
                 Microbiology Quiz
               </Button>
+              <Button color="inherit" component={Link} to="/execution">
+                Design Execution Quiz
+              </Button>
             </Toolbar>
           </AppBar>
           <Container>
@@ -73,6 +77,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Quiz />} />
                 <Route path="/microbiology" element={<MicrobiologyQuiz />} />
+                <Route path="/execution" element={<InteriorDesignExecutionQuiz />} />
               </Routes>
             </Box>
           </Container>
