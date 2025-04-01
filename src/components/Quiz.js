@@ -14,7 +14,10 @@ import {
   Fade,
   Card,
   CardContent,
-  Grid
+  Grid,
+  Grow,
+  Zoom,
+  Slide
 } from '@mui/material';
 import { quizData, calculateGrade } from '../data/quizData';
 
@@ -56,7 +59,7 @@ const Quiz = () => {
     const grade = calculateGrade(score, quizData.length);
     return (
       <Container maxWidth="sm">
-        <Fade in timeout={500}>
+        <Zoom in timeout={800}>
           <Paper 
             elevation={3} 
             sx={{ 
@@ -69,42 +72,48 @@ const Quiz = () => {
             <Typography variant="h4" gutterBottom color="primary" sx={{ fontWeight: 'bold' }}>
               Quiz Completed! 🎉
             </Typography>
-            <Typography variant="h5" gutterBottom sx={{ color: 'text.secondary' }}>
-              Your Score: {score} out of {quizData.length}
-            </Typography>
-            <Typography 
-              variant="h4" 
-              color="secondary" 
-              gutterBottom 
-              sx={{ 
-                fontWeight: 'bold',
-                textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
-              }}
-            >
-              Grade: {grade}
-            </Typography>
-            <Button 
-              variant="contained" 
-              color="primary" 
-              onClick={handleRestart}
-              sx={{ 
-                mt: 3,
-                px: 4,
-                py: 1.5,
-                fontSize: '1.1rem'
-              }}
-            >
-              Try Again
-            </Button>
+            <Grow in timeout={1000}>
+              <Typography variant="h5" gutterBottom sx={{ color: 'text.secondary' }}>
+                Your Score: {score} out of {quizData.length}
+              </Typography>
+            </Grow>
+            <Grow in timeout={1200}>
+              <Typography 
+                variant="h4" 
+                color="secondary" 
+                gutterBottom 
+                sx={{ 
+                  fontWeight: 'bold',
+                  textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
+                }}
+              >
+                Grade: {grade}
+              </Typography>
+            </Grow>
+            <Grow in timeout={1400}>
+              <Button 
+                variant="contained" 
+                color="primary" 
+                onClick={handleRestart}
+                sx={{ 
+                  mt: 3,
+                  px: 4,
+                  py: 1.5,
+                  fontSize: '1.1rem'
+                }}
+              >
+                Try Again
+              </Button>
+            </Grow>
           </Paper>
-        </Fade>
+        </Zoom>
       </Container>
     );
   }
 
   return (
     <Container maxWidth="md">
-      <Fade in timeout={500}>
+      <Slide direction="up" in timeout={500}>
         <Paper 
           elevation={3} 
           sx={{ 
@@ -113,50 +122,58 @@ const Quiz = () => {
             background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)'
           }}
         >
-          <Typography 
-            variant="h4" 
-            gutterBottom 
-            align="center" 
-            color="primary"
-            sx={{ 
-              fontWeight: 'bold',
-              mb: 3
-            }}
-          >
-            JK Quiz
-          </Typography>
-          
-          <LinearProgress 
-            variant="determinate" 
-            value={progress} 
-            sx={{ 
-              height: 8, 
-              borderRadius: 4,
-              mb: 3,
-              backgroundColor: 'rgba(33, 150, 243, 0.1)',
-              '& .MuiLinearProgress-bar': {
-                borderRadius: 4,
-              }
-            }}
-          />
-
-          <Box sx={{ mb: 3 }}>
-            <Typography variant="subtitle1" color="text.secondary">
-              Question {currentQuestion + 1} of {quizData.length}
+          <Zoom in timeout={800}>
+            <Typography 
+              variant="h4" 
+              gutterBottom 
+              align="center" 
+              color="primary"
+              sx={{ 
+                fontWeight: 'bold',
+                mb: 3
+              }}
+            >
+              JK Quiz
             </Typography>
-          </Box>
+          </Zoom>
+          
+          <Grow in timeout={1000}>
+            <LinearProgress 
+              variant="determinate" 
+              value={progress} 
+              sx={{ 
+                height: 8, 
+                borderRadius: 4,
+                mb: 3,
+                backgroundColor: 'rgba(33, 150, 243, 0.1)',
+                '& .MuiLinearProgress-bar': {
+                  borderRadius: 4,
+                }
+              }}
+            />
+          </Grow>
 
-          <Typography 
-            variant="h6" 
-            gutterBottom 
-            sx={{ 
-              mb: 3,
-              fontWeight: 500,
-              color: 'text.primary'
-            }}
-          >
-            {quizData[currentQuestion].question}
-          </Typography>
+          <Fade in timeout={1200}>
+            <Box sx={{ mb: 3 }}>
+              <Typography variant="subtitle1" color="text.secondary">
+                Question {currentQuestion + 1} of {quizData.length}
+              </Typography>
+            </Box>
+          </Fade>
+
+          <Grow in timeout={1400}>
+            <Typography 
+              variant="h6" 
+              gutterBottom 
+              sx={{ 
+                mb: 3,
+                fontWeight: 500,
+                color: 'text.primary'
+              }}
+            >
+              {quizData[currentQuestion].question}
+            </Typography>
+          </Grow>
 
           <RadioGroup
             value={selectedAnswer}
@@ -166,61 +183,70 @@ const Quiz = () => {
             <Grid container spacing={2}>
               {quizData[currentQuestion].options.map((option, index) => (
                 <Grid item xs={12} key={index}>
-                  <Card 
-                    sx={{ 
-                      cursor: 'pointer',
-                      transition: 'all 0.2s',
-                      border: selectedAnswer === index ? `2px solid ${theme.palette.primary.main}` : '2px solid transparent',
-                      '&:hover': {
-                        transform: 'translateY(-2px)',
-                        boxShadow: 3,
-                      }
-                    }}
-                    onClick={() => setSelectedAnswer(index)}
-                  >
-                    <CardContent>
-                      <FormControlLabel
-                        value={index}
-                        control={<Radio />}
-                        label={option}
-                        sx={{ 
-                          width: '100%',
-                          m: 0,
-                          '& .MuiFormControlLabel-label': {
-                            fontSize: '1rem',
-                            color: 'text.primary'
-                          }
-                        }}
-                      />
-                    </CardContent>
-                  </Card>
+                  <Grow in timeout={1600 + index * 200}>
+                    <Card 
+                      sx={{ 
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease-in-out',
+                        border: selectedAnswer === index ? `2px solid ${theme.palette.primary.main}` : '2px solid transparent',
+                        transform: selectedAnswer === index ? 'scale(1.02)' : 'scale(1)',
+                        '&:hover': {
+                          transform: 'translateY(-2px) scale(1.01)',
+                          boxShadow: 3,
+                        }
+                      }}
+                      onClick={() => setSelectedAnswer(index)}
+                    >
+                      <CardContent>
+                        <FormControlLabel
+                          value={index}
+                          control={<Radio />}
+                          label={option}
+                          sx={{ 
+                            width: '100%',
+                            m: 0,
+                            '& .MuiFormControlLabel-label': {
+                              fontSize: '1rem',
+                              color: 'text.primary'
+                            }
+                          }}
+                        />
+                      </CardContent>
+                    </Card>
+                  </Grow>
                 </Grid>
               ))}
             </Grid>
           </RadioGroup>
 
-          <Box sx={{ 
-            mt: 4, 
-            display: 'flex', 
-            justifyContent: 'flex-end',
-            gap: 2
-          }}>
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={handleNext}
-              disabled={selectedAnswer === null}
-              sx={{ 
-                px: 4,
-                py: 1.5,
-                fontSize: '1.1rem'
-              }}
-            >
-              {currentQuestion === quizData.length - 1 ? 'Finish' : 'Next'}
-            </Button>
-          </Box>
+          <Fade in timeout={1800}>
+            <Box sx={{ 
+              mt: 4, 
+              display: 'flex', 
+              justifyContent: 'flex-end',
+              gap: 2
+            }}>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={handleNext}
+                disabled={selectedAnswer === null}
+                sx={{ 
+                  px: 4,
+                  py: 1.5,
+                  fontSize: '1.1rem',
+                  transition: 'all 0.3s ease-in-out',
+                  '&:hover': {
+                    transform: 'scale(1.05)',
+                  }
+                }}
+              >
+                {currentQuestion === quizData.length - 1 ? 'Finish' : 'Next'}
+              </Button>
+            </Box>
+          </Fade>
         </Paper>
-      </Fade>
+      </Slide>
     </Container>
   );
 };
