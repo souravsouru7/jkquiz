@@ -1,153 +1,103 @@
 export const quizData = [
   {
-    question: "What is the main purpose of DevOps?",
+    question: "Which software is commonly used for 2D interior design drafting?",
     options: [
-      "To separate development and operations teams",
-      "To automate and improve the collaboration between development and operations",
-      "To replace traditional software development methods",
-      "To eliminate the need for testing"
+      "AutoCAD",
+      "Maya",
+      "Blender",
+      "SketchUp"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "What is SketchUp primarily used for in interior design?",
+    options: [
+      "Creating detailed construction documents",
+      "Quick 3D modeling and visualization",
+      "Rendering photorealistic images",
+      "Managing project timelines"
     ],
     correctAnswer: 1
   },
   {
-    question: "Which of the following is NOT a core principle of DevOps?",
+    question: "Which software is best for creating photorealistic interior renderings?",
     options: [
-      "Continuous Integration",
-      "Continuous Deployment",
-      "Manual Testing",
-      "Infrastructure as Code"
-    ],
-    correctAnswer: 2
-  },
-  {
-    question: "What is the purpose of Docker?",
-    options: [
-      "To write code faster",
-      "To containerize applications and their dependencies",
-      "To replace virtual machines completely",
-      "To manage database operations"
+      "AutoCAD",
+      "3ds Max with V-Ray",
+      "Microsoft Paint",
+      "Adobe Photoshop"
     ],
     correctAnswer: 1
   },
   {
-    question: "Which tool is commonly used for Continuous Integration?",
+    question: "What is the main purpose of Revit in interior design?",
     options: [
-      "GitHub",
-      "Jenkins",
-      "Docker",
-      "Kubernetes"
+      "Creating 2D floor plans only",
+      "Building Information Modeling (BIM)",
+      "Digital painting",
+      "Video editing"
     ],
     correctAnswer: 1
   },
   {
-    question: "What is Kubernetes?",
+    question: "Which tool is commonly used for creating mood boards in interior design?",
     options: [
-      "A programming language",
-      "A container orchestration platform",
-      "A database management system",
-      "A web server"
+      "AutoCAD",
+      "Pinterest",
+      "3ds Max",
+      "SketchUp"
     ],
     correctAnswer: 1
   },
   {
-    question: "What is the purpose of Git?",
+    question: "What is the primary use of Lumion in interior design?",
     options: [
-      "To deploy applications",
-      "To manage source code and version control",
-      "To run applications",
-      "To test applications"
+      "Creating floor plans",
+      "Real-time 3D visualization and rendering",
+      "Cost estimation",
+      "Project scheduling"
     ],
     correctAnswer: 1
   },
   {
-    question: "Which of these is a popular Infrastructure as Code tool?",
+    question: "Which software is best for creating detailed furniture models?",
     options: [
-      "Docker",
-      "Terraform",
-      "Jenkins",
-      "GitHub"
+      "Microsoft Word",
+      "3ds Max",
+      "Adobe Illustrator",
+      "Excel"
     ],
     correctAnswer: 1
   },
   {
-    question: "What is the main benefit of Microservices architecture?",
+    question: "What is the main advantage of using Rhino in interior design?",
     options: [
-      "Reduced development time",
-      "Better scalability and maintainability",
-      "Lower costs",
-      "Simpler deployment"
+      "Project management",
+      "Precise 3D modeling with NURBS",
+      "Video editing",
+      "Audio recording"
     ],
     correctAnswer: 1
   },
   {
-    question: "What is the purpose of a Docker Compose file?",
+    question: "Which tool is commonly used for creating interior design presentations?",
     options: [
-      "To write Docker applications",
-      "To define and run multi-container Docker applications",
-      "To test Docker containers",
-      "To deploy Docker containers"
+      "AutoCAD",
+      "Adobe InDesign",
+      "3ds Max",
+      "SketchUp"
     ],
     correctAnswer: 1
   },
   {
-    question: "Which of these is NOT a monitoring tool?",
+    question: "What is the primary use of Enscape in interior design?",
     options: [
-      "Prometheus",
-      "Grafana",
-      "Docker",
-      "ELK Stack"
-    ],
-    correctAnswer: 2
-  },
-  {
-    question: "What is the purpose of Ansible?",
-    options: [
-      "To write code",
-      "To automate software deployment and configuration management",
-      "To test applications",
-      "To deploy containers"
+      "Creating 2D drawings",
+      "Real-time rendering and virtual reality",
+      "Cost calculation",
+      "Project timeline management"
     ],
     correctAnswer: 1
-  },
-  {
-    question: "What is the main purpose of a CI/CD pipeline?",
-    options: [
-      "To write code faster",
-      "To automate the process of building, testing, and deploying software",
-      "To manage databases",
-      "To monitor applications"
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "Which of these is a popular container registry?",
-    options: [
-      "GitHub",
-      "Docker Hub",
-      "Jenkins",
-      "Kubernetes"
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "What is the purpose of a Dockerfile?",
-    options: [
-      "To write Docker applications",
-      "To define the steps to create a Docker image",
-      "To run Docker containers",
-      "To test Docker applications"
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "Which of these is NOT a benefit of containerization?",
-    options: [
-      "Consistency across environments",
-      "Isolation of applications",
-      "Increased development time",
-      "Easy scaling"
-    ],
-    correctAnswer: 2
   }
 ];
 
