@@ -18,16 +18,44 @@ import {
   Grow,
   Zoom,
   Slide,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
   List,
   ListItem,
   ListItemText,
   Divider
 } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { quizData, calculateGrade } from '../data/quizData';
+
+const getQuote = (grade) => {
+  const quotes = {
+    'A': [
+      "Outstanding work! You're a true expert in interior design tools!",
+      "Perfect score! Your knowledge of design software is exceptional!",
+      "Excellent performance! You're ready to tackle any design challenge!"
+    ],
+    'B': [
+      "Great job! You have a solid understanding of design tools!",
+      "Well done! Your knowledge of interior design software is impressive!",
+      "Strong performance! You're on the right track to mastering these tools!"
+    ],
+    'C': [
+      "Good effort! Keep learning and practicing with these tools!",
+      "Not bad! With more practice, you'll improve your skills further!",
+      "You're getting there! Keep exploring different design software!"
+    ],
+    'D': [
+      "Keep practicing! Every attempt brings you closer to mastery!",
+      "Don't give up! Learning design tools takes time and dedication!",
+      "You can do better! Review the answers and try again!"
+    ],
+    'F': [
+      "Don't worry! Every expert was once a beginner!",
+      "Keep learning! Practice makes perfect with design tools!",
+      "Try again! Each attempt helps you learn and improve!"
+    ]
+  };
+  const gradeQuotes = quotes[grade];
+  return gradeQuotes[Math.floor(Math.random() * gradeQuotes.length)];
+};
 
 const Quiz = () => {
   const theme = useTheme();
@@ -70,6 +98,7 @@ const Quiz = () => {
 
   if (showScore) {
     const grade = calculateGrade(score, quizData.length);
+    const quote = getQuote(grade);
     return (
       <Container maxWidth="md">
         <Zoom in timeout={800}>
@@ -101,6 +130,22 @@ const Quiz = () => {
                 }}
               >
                 Grade: {grade}
+              </Typography>
+            </Grow>
+            <Grow in timeout={1300}>
+              <Typography 
+                variant="h6" 
+                sx={{ 
+                  mt: 2,
+                  mb: 3,
+                  color: 'text.primary',
+                  fontStyle: 'italic',
+                  borderLeft: `4px solid ${theme.palette.primary.main}`,
+                  pl: 2,
+                  textAlign: 'left'
+                }}
+              >
+                "{quote}"
               </Typography>
             </Grow>
             <Grow in timeout={1400}>
