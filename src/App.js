@@ -1,55 +1,50 @@
 import React from 'react';
-import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { 
+  Container, 
+  Typography, 
+  Box, 
+  Button, 
+  AppBar, 
+  Toolbar,
+  ThemeProvider,
+  createTheme,
+  CssBaseline
+} from '@mui/material';
 import Quiz from './components/Quiz';
+import MicrobiologyQuiz from './components/MicrobiologyQuiz';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#2196f3',
-      light: '#64b5f6',
-      dark: '#1976d2',
+      main: '#1976d2',
     },
     secondary: {
-      main: '#f50057',
-      light: '#ff4081',
-      dark: '#c51162',
+      main: '#dc004e',
     },
     background: {
-      default: '#f8f9fa',
-      paper: '#ffffff',
-    },
-    text: {
-      primary: '#2c3e50',
-      secondary: '#7f8c8d',
+      default: '#f5f5f5',
     },
   },
   typography: {
     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    h1: {
+      fontWeight: 700,
+    },
+    h2: {
+      fontWeight: 600,
+    },
+    h3: {
+      fontWeight: 600,
+    },
     h4: {
       fontWeight: 600,
     },
+    h5: {
+      fontWeight: 600,
+    },
     h6: {
-      fontWeight: 500,
-    },
-  },
-  components: {
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          borderRadius: 12,
-          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-        },
-      },
-    },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: 8,
-          textTransform: 'none',
-          fontWeight: 500,
-          padding: '8px 24px',
-        },
-      },
+      fontWeight: 600,
     },
   },
 });
@@ -58,7 +53,31 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Quiz />
+      <Router>
+        <Box sx={{ flexGrow: 1 }}>
+          <AppBar position="static">
+            <Toolbar>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                Quiz App
+              </Typography>
+              <Button color="inherit" component={Link} to="/">
+                Interior Design Quiz
+              </Button>
+              <Button color="inherit" component={Link} to="/microbiology">
+                Microbiology Quiz
+              </Button>
+            </Toolbar>
+          </AppBar>
+          <Container>
+            <Box sx={{ mt: 4 }}>
+              <Routes>
+                <Route path="/" element={<Quiz />} />
+                <Route path="/microbiology" element={<MicrobiologyQuiz />} />
+              </Routes>
+            </Box>
+          </Container>
+        </Box>
+      </Router>
     </ThemeProvider>
   );
 }
