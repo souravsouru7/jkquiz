@@ -17,8 +17,16 @@ import {
   Grid,
   Grow,
   Zoom,
-  Slide
+  Slide,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  List,
+  ListItem,
+  ListItemText,
+  Divider
 } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { quizData, calculateGrade } from '../data/quizData';
 
 const Quiz = () => {
@@ -28,6 +36,8 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [showAnswers, setShowAnswers] = useState(false);
+  const [userAnswers, setUserAnswers] = useState([]);
 
   const handleAnswerSelect = (event) => {
     setSelectedAnswer(parseInt(event.target.value));
@@ -37,6 +47,7 @@ const Quiz = () => {
     if (selectedAnswer === quizData[currentQuestion].correctAnswer) {
       setScore(score + 1);
     }
+    setUserAnswers([...userAnswers, selectedAnswer]);
 
     if (currentQuestion < quizData.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
@@ -51,6 +62,8 @@ const Quiz = () => {
     setScore(0);
     setShowScore(false);
     setSelectedAnswer(null);
+    setShowAnswers(false);
+    setUserAnswers([]);
   };
 
   const progress = ((currentQuestion + 1) / quizData.length) * 100;
@@ -58,7 +71,7 @@ const Quiz = () => {
   if (showScore) {
     const grade = calculateGrade(score, quizData.length);
     return (
-      <Container maxWidth="sm">
+      <Container maxWidth="md">
         <Zoom in timeout={800}>
           <Paper 
             elevation={3} 
@@ -91,20 +104,76 @@ const Quiz = () => {
               </Typography>
             </Grow>
             <Grow in timeout={1400}>
-              <Button 
-                variant="contained" 
-                color="primary" 
-                onClick={handleRestart}
-                sx={{ 
-                  mt: 3,
-                  px: 4,
-                  py: 1.5,
-                  fontSize: '1.1rem'
-                }}
-              >
-                Try Again
-              </Button>
+              <Box sx={{ mt: 3, display: 'flex', gap: 2, justifyContent: 'center' }}>
+                <Button 
+                  variant="contained" 
+                  color="primary" 
+                  onClick={handleRestart}
+                  sx={{ 
+                    px: 4,
+                    py: 1.5,
+                    fontSize: '1.1rem'
+                  }}
+                >
+                  Try Again
+                </Button>
+                <Button 
+                  variant="outlined" 
+                  color="secondary" 
+                  onClick={() => setShowAnswers(true)}
+                  sx={{ 
+                    px: 4,
+                    py: 1.5,
+                    fontSize: '1.1rem'
+                  }}
+                >
+                  View Answers
+                </Button>
+              </Box>
             </Grow>
+
+            {showAnswers && (
+              <Grow in timeout={1600}>
+                <Box sx={{ mt: 4, textAlign: 'left' }}>
+                  <Typography variant="h5" gutterBottom color="primary">
+                    Detailed Answers
+                  </Typography>
+                  <List>
+                    {quizData.map((question, index) => (
+                      <React.Fragment key={index}>
+                        <ListItem>
+                          <ListItemText
+                            primary={
+                              <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
+                                Question {index + 1}: {question.question}
+                              </Typography>
+                            }
+                            secondary={
+                              <Box sx={{ mt: 1 }}>
+                                <Typography variant="body2" color="text.secondary">
+                                  Your Answer: {question.options[userAnswers[index]]}
+                                </Typography>
+                                <Typography 
+                                  variant="body2" 
+                                  color={userAnswers[index] === question.correctAnswer ? 'success.main' : 'error.main'}
+                                  sx={{ mt: 0.5 }}
+                                >
+                                  Correct Answer: {question.options[question.correctAnswer]}
+                                </Typography>
+                                <Typography variant="body2" sx={{ mt: 1, color: 'text.secondary' }}>
+                                  {question.explanation}
+                                </Typography>
+                              </Box>
+                            }
+                          />
+                        </ListItem>
+                        {index < quizData.length - 1 && <Divider />}
+                      </React.Fragment>
+                    ))}
+                  </List>
+                </Box>
+              </Grow>
+            )}
           </Paper>
         </Zoom>
       </Container>
