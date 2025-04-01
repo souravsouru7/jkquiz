@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Container, 
   Paper, 
@@ -60,24 +60,44 @@ const getQuote = (grade) => {
 const Quiz = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const [currentLevel, setCurrentLevel] = useState('beginner');
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showAnswers, setShowAnswers] = useState(false);
   const [userAnswers, setUserAnswers] = useState([]);
+  const [failed, setFailed] = useState(false);
+
+  const levels = {
+    beginner: { title: 'Beginner Level', next: 'intermediate', minScore: 9 },
+    intermediate: { title: 'Intermediate Level', next: 'advanced', minScore: 9 },
+    advanced: { title: 'Advanced Level', next: null, minScore: 9 }
+  };
+
+  const currentQuestions = quizData[currentLevel];
+  const progress = ((currentQuestion + 1) / currentQuestions.length) * 100;
+
+  useEffect(() => {
+    if (showScore) {
+      const passed = score >= levels[currentLevel].minScore;
+      if (!passed) {
+        setFailed(true);
+      }
+    }
+  }, [showScore, score, currentLevel, levels]);
 
   const handleAnswerSelect = (event) => {
     setSelectedAnswer(parseInt(event.target.value));
   };
 
   const handleNext = () => {
-    if (selectedAnswer === quizData[currentQuestion].correctAnswer) {
+    if (selectedAnswer === currentQuestions[currentQuestion].correctAnswer) {
       setScore(score + 1);
     }
     setUserAnswers([...userAnswers, selectedAnswer]);
 
-    if (currentQuestion < quizData.length - 1) {
+    if (currentQuestion < currentQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
       setSelectedAnswer(null);
     } else {
@@ -86,6 +106,18 @@ const Quiz = () => {
   };
 
   const handleRestart = () => {
+    setCurrentLevel('beginner');
+    setCurrentQuestion(0);
+    setScore(0);
+    setShowScore(false);
+    setSelectedAnswer(null);
+    setShowAnswers(false);
+    setUserAnswers([]);
+    setFailed(false);
+  };
+
+  const handleNextLevel = () => {
+    setCurrentLevel(levels[currentLevel].next);
     setCurrentQuestion(0);
     setScore(0);
     setShowScore(false);
@@ -94,11 +126,11 @@ const Quiz = () => {
     setUserAnswers([]);
   };
 
-  const progress = ((currentQuestion + 1) / quizData.length) * 100;
-
   if (showScore) {
-    const grade = calculateGrade(score, quizData.length);
+    const grade = calculateGrade(score, currentQuestions.length);
     const quote = getQuote(grade);
+    const passed = score >= levels[currentLevel].minScore;
+
     return (
       <Container maxWidth="md">
         <Zoom in timeout={800}>
@@ -112,24 +144,24 @@ const Quiz = () => {
             }}
           >
             <Typography variant="h4" gutterBottom color="primary" sx={{ fontWeight: 'bold' }}>
-              Quiz Completed! 🎉
+              {levels[currentLevel].title} Completed! 🎉
             </Typography>
             <Grow in timeout={1000}>
               <Typography variant="h5" gutterBottom sx={{ color: 'text.secondary' }}>
-                Your Score: {score} out of {quizData.length}
+                Your Score: {score} out of {currentQuestions.length}
               </Typography>
             </Grow>
             <Grow in timeout={1200}>
               <Typography 
                 variant="h4" 
-                color="secondary" 
+                color={passed ? "success.main" : "error.main"}
                 gutterBottom 
                 sx={{ 
                   fontWeight: 'bold',
                   textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
                 }}
               >
-                Grade: {grade}
+                {passed ? "Level Passed! 🎉" : "Level Failed 😢"}
               </Typography>
             </Grow>
             <Grow in timeout={1300}>
@@ -150,18 +182,48 @@ const Quiz = () => {
             </Grow>
             <Grow in timeout={1400}>
               <Box sx={{ mt: 3, display: 'flex', gap: 2, justifyContent: 'center' }}>
-                <Button 
-                  variant="contained" 
-                  color="primary" 
-                  onClick={handleRestart}
-                  sx={{ 
-                    px: 4,
-                    py: 1.5,
-                    fontSize: '1.1rem'
-                  }}
-                >
-                  Try Again
-                </Button>
+                {passed ? (
+                  levels[currentLevel].next ? (
+                    <Button 
+                      variant="contained" 
+                      color="success" 
+                      onClick={handleNextLevel}
+                      sx={{ 
+                        px: 4,
+                        py: 1.5,
+                        fontSize: '1.1rem'
+                      }}
+                    >
+                      Next Level
+                    </Button>
+                  ) : (
+                    <Button 
+                      variant="contained" 
+                      color="success" 
+                      onClick={handleRestart}
+                      sx={{ 
+                        px: 4,
+                        py: 1.5,
+                        fontSize: '1.1rem'
+                      }}
+                    >
+                      Start Over
+                    </Button>
+                  )
+                ) : (
+                  <Button 
+                    variant="contained" 
+                    color="error" 
+                    onClick={handleRestart}
+                    sx={{ 
+                      px: 4,
+                      py: 1.5,
+                      fontSize: '1.1rem'
+                    }}
+                  >
+                    Try Again
+                  </Button>
+                )}
                 <Button 
                   variant="outlined" 
                   color="secondary" 
@@ -184,7 +246,7 @@ const Quiz = () => {
                     Detailed Answers
                   </Typography>
                   <List>
-                    {quizData.map((question, index) => (
+                    {currentQuestions.map((question, index) => (
                       <React.Fragment key={index}>
                         <ListItem>
                           <ListItemText
@@ -212,7 +274,7 @@ const Quiz = () => {
                             }
                           />
                         </ListItem>
-                        {index < quizData.length - 1 && <Divider />}
+                        {index < currentQuestions.length - 1 && <Divider />}
                       </React.Fragment>
                     ))}
                   </List>
@@ -247,7 +309,7 @@ const Quiz = () => {
                 mb: 3
               }}
             >
-              JK Quiz
+              {levels[currentLevel].title}
             </Typography>
           </Zoom>
           
@@ -270,7 +332,7 @@ const Quiz = () => {
           <Fade in timeout={1200}>
             <Box sx={{ mb: 3 }}>
               <Typography variant="subtitle1" color="text.secondary">
-                Question {currentQuestion + 1} of {quizData.length}
+                Question {currentQuestion + 1} of {currentQuestions.length}
               </Typography>
             </Box>
           </Fade>
@@ -285,7 +347,7 @@ const Quiz = () => {
                 color: 'text.primary'
               }}
             >
-              {quizData[currentQuestion].question}
+              {currentQuestions[currentQuestion].question}
             </Typography>
           </Grow>
 
@@ -295,7 +357,7 @@ const Quiz = () => {
             sx={{ mt: 2 }}
           >
             <Grid container spacing={2}>
-              {quizData[currentQuestion].options.map((option, index) => (
+              {currentQuestions[currentQuestion].options.map((option, index) => (
                 <Grid item xs={12} key={index}>
                   <Grow in timeout={1600 + index * 200}>
                     <Card 
@@ -355,7 +417,7 @@ const Quiz = () => {
                   }
                 }}
               >
-                {currentQuestion === quizData.length - 1 ? 'Finish' : 'Next'}
+                {currentQuestion === currentQuestions.length - 1 ? 'Finish' : 'Next'}
               </Button>
             </Box>
           </Fade>
