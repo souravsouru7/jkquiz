@@ -2,439 +2,439 @@ export const teluguMovieLevelsQuizData = {
   easy: [
     {
       id: 1,
-      question: "Complete the dialogue: 'Donga _______ ki artham telusa? Dongatanam chesi dorikipoyina vadini donga antaru'",
+      question: "Which movie features the song 'Aa Ante Amalapuram'?",
       options: [
-        "Babu",
-        "Raja",
-        "Bidda",
-        "Nayala"
+        "Arya",
+        "Aarya 2",
+        "Race Gurram",
+        "Julayi"
       ],
-      correctAnswer: 2,
-      explanation: "From Vikramarkudu - 'Donga Bidda ki artham telusa?'"
+      correctAnswer: 1,
+      explanation: "This popular dance number is from Aarya 2 (2009)"
     },
     {
       id: 2,
-      question: "Complete: 'Ee samajam lo _______ undali ante mundhu _______ undali'",
+      question: "Which movie has the song 'Bangaru Kodipetta'?",
       options: [
-        "Prema/Sneham",
-        "Nyayam/Dharmam",
-        "Dabbu/Adhikaram",
-        "Garvam/Pourusham"
+        "Magadheera",
+        "Simha",
+        "Arundhati",
+        "Attarintiki Daredi"
       ],
-      correctAnswer: 1,
-      explanation: "From Tagore - about justice and righteousness"
+      correctAnswer: 3,
+      explanation: "This peppy folk song is from Attarintiki Daredi (2013)"
     },
     {
       id: 3,
-      question: "Which movie has the dialogue: 'Commitment ichanu, daanni nilabettukovali ante praanam pothundemo... kaani parledhu'?",
+      question: "Who sang the hit song 'Ringa Ringa' from Arya 2?",
       options: [
-        "Jalsa",
-        "Gabbar Singh",
-        "Businessman",
-        "Dookudu"
+        "Udit Narayan",
+        "Karthik",
+        "Baba Sehgal",
+        "S.P. Balasubrahmanyam"
       ],
       correctAnswer: 1,
-      explanation: "Famous dialogue from Gabbar Singh about keeping commitments"
+      explanation: "Karthik sang this energetic dance number"
     },
     {
       id: 4,
-      question: "Complete: 'Meeru _______ lo unnaru, nenu reality lo unna'",
+      question: "Which song from Okkadu became an instant classic?",
       options: [
-        "Cinema",
-        "Drama",
-        "Imagination",
-        "Story"
+        "Satyam",
+        "Nuvvem Maya Chesavo",
+        "Nee Dookudu",
+        "Prema Desam"
       ],
-      correctAnswer: 0,
-      explanation: "From Race Gurram - about being realistic vs dramatic"
+      correctAnswer: 1,
+      explanation: "Nuvvem Maya Chesavo was a chartbuster from Okkadu (2003)"
     },
     {
       id: 5,
-      question: "Complete: 'Naa _______ naadi, naa istam'",
+      question: "Which 2000s movie features the song 'Maha Maha'?",
       options: [
-        "Bathuku",
-        "Dabbu",
-        "Prema",
-        "Jeevitham"
+        "Jalsa",
+        "Varsham",
+        "Jai Chiranjeeva",
+        "Pournami"
       ],
-      correctAnswer: 0,
-      explanation: "From Arya - about life choices"
+      correctAnswer: 1,
+      explanation: "This romantic number is from Varsham (2004)"
     },
     {
       id: 6,
-      question: "Which dialogue is from Adhurs: '______ ante na mata, na mata ante _____'?",
+      question: "Which famous Mahesh Babu movie had the song 'Dethadi Dethadi'?",
       options: [
-        "Nenu/Nenu",
-        "Nedu/Repu",
-        "Nijam/Nijam",
-        "Maata/Maata"
+        "Pokiri",
+        "Athadu",
+        "Khaleja",
+        "Dookudu"
       ],
       correctAnswer: 0,
-      explanation: "Famous dialogue about self-confidence from Adhurs"
+      explanation: "This energetic song is from Pokiri (2006)"
     },
     {
       id: 7,
-      question: "Complete: 'Evadi _______ vaadi daggara untundi'",
+      question: "Which actor danced to 'Top Lesi Poddi' from Iddarammayilatho?",
       options: [
-        "Karma",
-        "Dharmam",
-        "Vidhi",
-        "Adhrushtam"
+        "Ram Charan",
+        "Allu Arjun",
+        "Jr NTR",
+        "Prabhas"
       ],
       correctAnswer: 1,
-      explanation: "From Khaidi No. 150 - about personal righteousness"
+      explanation: "Allu Arjun performed this hit dance number (2013)"
     },
     {
       id: 8,
-      question: "Which movie's dialogue: 'Thaggedhe Le!'?",
+      question: "Which movie features 'Who Am I' song?",
       options: [
-        "Rangasthalam",
-        "Pushpa",
-        "KGF",
-        "Sarrainodu"
+        "Baahubali",
+        "1: Nenokkadine",
+        "Spyder",
+        "Saaho"
       ],
       correctAnswer: 1,
-      explanation: "Iconic dialogue from Pushpa"
+      explanation: "This philosophical song is from 1: Nenokkadine (2014)"
     },
     {
       id: 9,
-      question: "Complete: 'Naa _______ naa istam, evadiki emi _______ ?'",
+      question: "Which movie has the popular song 'My Love is Gone'?",
       options: [
-        "Pani/Kaavali",
-        "Ishtam/Nachindi",
-        "Dharmam/Thelusu",
-        "Jeevitham/Poyindi"
+        "Arya",
+        "Happy Days",
+        "Aarya 2",
+        "Julayi"
       ],
-      correctAnswer: 1,
-      explanation: "From Pokiri - about personal choices"
+      correctAnswer: 2,
+      explanation: "This heartbreak song is from Aarya 2 (2009)"
     },
     {
       id: 10,
-      question: "Which dialogue: 'Sahasam ane cheyali... lekapothe history lo migulapomu'?",
+      question: "Which movie features the song 'Kajal Chellivaa'?",
       options: [
-        "Magadheera",
-        "Baahubali",
-        "RRR",
-        "Chatrapathi"
+        "Gharshana",
+        "Darling",
+        "Orange",
+        "Gangotri"
       ],
       correctAnswer: 0,
-      explanation: "From Magadheera - about bravery"
+      explanation: "This romantic song is from Gharshana (2004)"
     },
     {
       id: 11,
-      question: "Complete: 'Manchi pani cheste _______ vastundi'",
+      question: "Which film has the foot-tapping number 'Ranu Ranu'?",
       options: [
-        "Dhairyam",
-        "Manchithanam",
-        "Peru",
-        "Goppathanam"
+        "Orange",
+        "Mr. Perfect",
+        "Adhurs",
+        "Businessman"
       ],
-      correctAnswer: 2,
-      explanation: "From Srimanthudu - about good deeds"
+      correctAnswer: 0,
+      explanation: "This upbeat song is from Orange (2010)"
     },
     {
       id: 12,
-      question: "Which movie: 'Mass ka das, mass ka boss'?",
+      question: "Which movie features the song 'O Madhu'?",
       options: [
-        "Businessman",
-        "Dookudu",
-        "Gabbar Singh",
-        "Baadshah"
+        "Julayi",
+        "Race Gurram",
+        "Arya",
+        "S/O Satyamurthy"
       ],
-      correctAnswer: 0,
-      explanation: "Popular dialogue from Businessman"
+      correctAnswer: 2,
+      explanation: "This romantic song is from Arya (2004)"
     }
   ],
   intermediate: [
     {
       id: 13,
-      question: "In which movie: 'Manishi ki rendu rakala badha... okatante inkoti teeruthundi... rendu kalisi osthe adi premayipothundi'?",
+      question: "Who composed the soundtrack for Baahubali?",
       options: [
-        "Arya",
-        "Orange",
-        "Darling",
-        "Mr. Perfect"
+        "A.R. Rahman",
+        "Devi Sri Prasad",
+        "M.M. Keeravani",
+        "S.S. Thaman"
       ],
-      correctAnswer: 1,
-      explanation: "From Orange - philosophical dialogue about pain and love"
+      correctAnswer: 2,
+      explanation: "M.M. Keeravani composed the epic soundtrack"
     },
     {
       id: 14,
-      question: "Complete: 'Naa _______ ki value ledu ani telusukunnaka, naa _______ ki value penchukunnanu'",
+      question: "Which song from Rangasthalam became famous for its folk elements?",
       options: [
-        "Prema/Praanam",
-        "Jeevitham/Garvam",
-        "Dabbu/Paruvu",
-        "Manasu/Pogaru"
+        "Rangamma Mangamma",
+        "Yentha Sakkagunave",
+        "Ranga Ranga Rangasthalam",
+        "Jigelu Rani"
       ],
       correctAnswer: 0,
-      explanation: "From Okkadu - about self-worth"
+      explanation: "Rangamma Mangamma was praised for authentic folk style"
     },
     {
       id: 15,
-      question: "Which movie: 'Nuvvu nacchav ante... adhi expression kaadhu... confession'?",
+      question: "Which RRR song won an Oscar?",
       options: [
-        "100% Love",
-        "Happy Days",
-        "Nuvvu Naku Nachav",
-        "Manmadhudu"
+        "Dosti",
+        "Naatu Naatu",
+        "Komuram Bheemudo",
+        "Etthara Jenda"
       ],
-      correctAnswer: 0,
-      explanation: "From 100% Love - wordplay"
+      correctAnswer: 1,
+      explanation: "Naatu Naatu won the Academy Award for Best Original Song"
     },
     {
       id: 16,
-      question: "Complete: 'Prema ante _______ kaadhu... _______ tho chupinchaali'",
+      question: "Which instrument is prominently featured in the song 'Sanchari' from Jersey?",
       options: [
-        "Maatalu/Panulu",
-        "Chupinchedi/Anipinchedi",
-        "Cheppedi/Cheyalsindi",
-        "Matalu/Manasu"
+        "Flute",
+        "Violin",
+        "Guitar",
+        "Mandolin"
       ],
-      correctAnswer: 1,
-      explanation: "From Arya - about showing love"
+      correctAnswer: 0,
+      explanation: "Flute gives this song its haunting melody"
     },
     {
       id: 17,
-      question: "Which dialogue discusses karma: 'Chetha kaani vaadu chese pani... chettha pani avuthundi'?",
+      question: "Which traditional dance form inspired 'Swing Zara' from Jai Lava Kusa?",
       options: [
-        "Leader",
-        "Tagore",
-        "Athadu",
-        "Khaleja"
+        "Kuchipudi",
+        "Perini",
+        "Belly dance",
+        "Folk"
       ],
-      correctAnswer: 3,
-      explanation: "From Khaleja - about capability and results"
+      correctAnswer: 2,
+      explanation: "This song incorporates belly dance elements"
     },
     {
       id: 18,
-      question: "Complete: 'Manishi _______ ki badhulunga _______ ni penchukovali'",
+      question: "What makes the song 'Sada Siva' from Khaleja unique?",
       options: [
-        "Kopam/Opika",
-        "Dhanam/Gnanam",
-        "Aasha/Niraasha",
-        "Bhayam/Dhairyam"
+        "Six-minute length",
+        "Classical fusion",
+        "Multiple vocalists",
+        "Spiritual lyrics"
       ],
-      correctAnswer: 1,
-      explanation: "From Maharshi - about wisdom over wealth"
+      correctAnswer: 3,
+      explanation: "The song is known for its spiritual, devotional lyrics"
     },
     {
       id: 19,
-      question: "Which movie: 'Manchi anukunte manchide jaruguthundi... chedu anukunte chedey jaruguthundi'?",
+      question: "Which music director is known for songs like 'Bujji Pilla' and 'Poovai Poovai'?",
       options: [
-        "Jersey",
-        "Athadu",
-        "Leader",
-        "Gamyam"
+        "Harris Jayaraj",
+        "Yuvan Shankar Raja",
+        "G.V. Prakash Kumar",
+        "Thaman S"
       ],
-      correctAnswer: 3,
-      explanation: "From Gamyam - about positive thinking"
+      correctAnswer: 0,
+      explanation: "Harris Jayaraj composed these melodious hits"
     },
     {
       id: 20,
-      question: "Complete: 'Prathi _______ venakaala oka _______ untundi'",
+      question: "Which song from Fidaa celebrates village lifestyle?",
       options: [
-        "Vijayam/Thyagam",
-        "Manishi/Karanam",
-        "Jeevitham/Charitra",
-        "Gnapakam/Gaayam"
+        "Vachinde",
+        "Hey Pillagaada",
+        "Oosupodu",
+        "Edo Edo Aina"
       ],
       correctAnswer: 0,
-      explanation: "From Maharshi - about sacrifice behind success"
+      explanation: "Vachinde celebrates rural Telangana culture"
     },
     {
       id: 21,
-      question: "Which dialogue about time: 'Samayam evariki eduru choodadu... andaru samayanni eduru choodali'?",
+      question: "Which language's folk style influenced 'Saranga Dariya' from Love Story?",
       options: [
-        "24",
-        "Leader",
-        "Jalsa",
-        "Athadu"
+        "Tamil",
+        "Telangana",
+        "Malayalam",
+        "Kannada"
       ],
-      correctAnswer: 0,
-      explanation: "From 24 - about time's nature"
+      correctAnswer: 1,
+      explanation: "It's based on Telangana folk traditions"
     },
     {
       id: 22,
-      question: "Complete: 'Manishi _______ tho bathakali kaani, _______ tho kaadhu'",
+      question: "Which fusion elements are in 'Blockbuster' from Sarrainodu?",
       options: [
-        "Prema/Kopam",
-        "Nijayiti/Mosam",
-        "Dhairyam/Bhayam",
-        "Manasu/Buddhi"
+        "Rock and folk",
+        "EDM and classical",
+        "Hip-hop and carnatic",
+        "Jazz and folk"
       ],
-      correctAnswer: 1,
-      explanation: "From Leader - about living with honesty"
+      correctAnswer: 0,
+      explanation: "The song blends rock and folk elements"
     },
     {
       id: 23,
-      question: "Which movie: 'Preminchina vaallaki praanam undadhu... praanam unna vallaki prema undadhu'?",
+      question: "Who wrote the lyrics for most songs in Pushpa: The Rise?",
       options: [
-        "Arya 2",
-        "Orange",
-        "Darling",
-        "Mr. Perfect"
+        "Chandrabose",
+        "Sirivennela",
+        "Anantha Sriram",
+        "Ramajogayya Sastry"
       ],
-      correctAnswer: 1,
-      explanation: "From Orange - about love and life"
+      correctAnswer: 0,
+      explanation: "Chandrabose wrote the lyrics including 'Srivalli'"
     },
     {
       id: 24,
-      question: "Complete: 'Manishi _______ ki kaadhu... _______ ki bathakali'",
+      question: "What's special about 'Poovai Poovai' from Kushi?",
       options: [
-        "Dabbu/Dharma",
-        "Peru/Paruvu",
-        "Asha/Nammakam",
-        "Prema/Sneham"
+        "Shot in single take",
+        "Recorded live",
+        "Sung by the lead actor",
+        "No instruments used"
       ],
       correctAnswer: 1,
-      explanation: "From Mirchi - about living for honor"
+      explanation: "The song was recorded live with orchestra"
     }
   ],
   advanced: [
     {
       id: 25,
-      question: "Decode: 'Prathi Okkadu Devude... Kaani Andaru Devullu Kaadu'",
+      question: "Which raaga forms the base of 'Sirivennela' from Sirivennela?",
       options: [
-        "Religious commentary",
-        "Social hierarchy critique",
-        "Philosophical paradox",
-        "Political statement"
+        "Kalyani",
+        "Shankarabharanam",
+        "Mohanam",
+        "Charukesi"
       ],
-      correctAnswer: 2,
-      explanation: "From Tagore - about divinity in humanity"
+      correctAnswer: 3,
+      explanation: "It's based on Charukesi raaga"
     },
     {
       id: 26,
-      question: "Analyze multilingual dialogue: 'Nenu vachanu, I have arrived, आ गया मैं'",
+      question: "Who wrote the poetic lyrics for 'Samayama' from Oopiri?",
       options: [
-        "Cultural unity",
-        "Character's evolution",
-        "Power assertion",
-        "Identity crisis"
+        "Sirivennela Seetharama Sastry",
+        "Chandrabose",
+        "Anantha Sriram",
+        "Ramajogayya Sastry"
       ],
-      correctAnswer: 2,
-      explanation: "From Businessman - dominance across cultures"
+      correctAnswer: 0,
+      explanation: "The legendary Sirivennela wrote these philosophical lyrics"
     },
     {
       id: 27,
-      question: "Interpret: 'Manishi bathukuthunnantha kaalam edho okati koduthune untadi... adhi gunde ayina kaavacchu... gadiyaaram ayina kaavacchu'",
+      question: "Which traditional instrument creates the distinctive sound in 'Dhivara' from Baahubali?",
       options: [
-        "Time vs Heart metaphor",
-        "Life's constant motion",
-        "Existential rhythm",
-        "Mechanical vs Emotional"
+        "Nadaswaram",
+        "Sitar",
+        "Veena",
+        "Sarod"
       ],
-      correctAnswer: 2,
-      explanation: "From Jersey - about life's rhythm"
+      correctAnswer: 1,
+      explanation: "Sitar gives the song its distinctive sound"
     },
     {
       id: 28,
-      question: "Analyze: 'Nuvvu chusedi kalalu kaadu... kalalaki artham'",
+      question: "What musical technique is used in 'Life of Ram' from '96?",
       options: [
-        "Dreams vs Reality",
-        "Metaphysical interpretation",
-        "Symbolic representation",
-        "Psychological analysis"
+        "Counterpoint",
+        "Leitmotif",
+        "Crescendo-decrescendo pattern",
+        "Call and response"
       ],
       correctAnswer: 1,
-      explanation: "From 1 Nenokkadine - about dream interpretation"
+      explanation: "The song uses leitmotif technique throughout"
     },
     {
       id: 29,
-      question: "Decode: 'Manishi manchodu kaadu... manchi manishiga maaraali'",
+      question: "Which song from KGF features complex percussion arrangements?",
       options: [
-        "Character evolution",
-        "Moral transformation",
-        "Social commentary",
-        "Personal growth"
+        "Dheera Dheera",
+        "Salaam Rocky Bhai",
+        "Garbadhi",
+        "Toofan"
       ],
-      correctAnswer: 1,
-      explanation: "From Prasthanam - about moral development"
+      correctAnswer: 0,
+      explanation: "Dheera Dheera has intricate percussion patterns"
     },
     {
       id: 30,
-      question: "Analyze: 'Prema lo gelavadam kaadu... gelichina taruvatha preminchadam mukhyam'",
+      question: "What makes 'Samajavaragamana' from Ala Vaikunthapurramuloo technically complex?",
       options: [
-        "Love vs Victory",
-        "Timing significance",
-        "Strategic emotion",
-        "Priority analysis"
+        "Scale changes",
+        "Time signature variations",
+        "Microtonal elements",
+        "Polyphonic structure"
       ],
-      correctAnswer: 2,
-      explanation: "From Arya 2 - about love's timing"
+      correctAnswer: 1,
+      explanation: "The song has unusual time signature variations"
     },
     {
       id: 31,
-      question: "Interpret: 'Nijam cheppina tappu ledu... vini ardham chesukune varaku'",
+      question: "Which song from Arjun Reddy uses piano to represent the protagonist's emotional state?",
       options: [
-        "Truth perception",
-        "Communication gap",
-        "Understanding levels",
-        "Contextual truth"
+        "Madhurame",
+        "Telisene",
+        "The Break Up Song",
+        "Emitemitemito"
       ],
-      correctAnswer: 3,
-      explanation: "From Leader - about truth's context"
+      correctAnswer: 2,
+      explanation: "The Break Up Song uses piano to show emotional turmoil"
     },
     {
       id: 32,
-      question: "Analyze: 'Manishi edhi korukunte adhi kaadu... edhi avasaramo adhi jaruguthundi'",
+      question: "Which musical pattern is used in 'Inkem Inkem' from Geetha Govindam?",
       options: [
-        "Desire vs Need",
-        "Fate philosophy",
-        "Life's irony",
-        "Karmic cycle"
+        "Ostinato",
+        "Arpeggios",
+        "Drone bass",
+        "Countermelody"
       ],
       correctAnswer: 1,
-      explanation: "From Jersey - about destiny"
+      explanation: "The song uses arpeggio patterns extensively"
     },
     {
       id: 33,
-      question: "Decode: 'Prathi okkari lopala rendu rakala manushulu untaru... okkadu manchodni... inkokadu chedda vaadni'",
+      question: "Which vocal technique makes 'Samajavaragamana' challenging to sing?",
       options: [
-        "Dual nature",
-        "Internal conflict",
-        "Moral ambiguity",
-        "Character duality"
+        "Melisma",
+        "Staccato",
+        "Falsetto shifts",
+        "Extended vocal range"
       ],
-      correctAnswer: 2,
-      explanation: "From Athadu - about human nature"
+      correctAnswer: 3,
+      explanation: "The song requires an unusually wide vocal range"
     },
     {
       id: 34,
-      question: "Interpret: 'Manishi ki kavalsindi edho teliyadu... telisinappudu adhi dorakadu'",
+      question: "Which classical Carnatic element is in 'Bujji Pilla' from Jagadam?",
       options: [
-        "Life's paradox",
-        "Desire's mystery",
-        "Knowledge timing",
-        "Want vs Need"
+        "Alapana",
+        "Swara patterns",
+        "Gamaka",
+        "Thillana style"
       ],
-      correctAnswer: 0,
-      explanation: "From Orange - about life's ironies"
+      correctAnswer: 2,
+      explanation: "The song incorporates Gamaka vocal ornamentations"
     },
     {
       id: 35,
-      question: "Analyze: 'Bathuku ante poratam... poratam ante bathuku'",
+      question: "What makes the orchestration of 'Enno Ratrulu' from Pelli Choopulu unique?",
       options: [
-        "Life's struggle",
-        "Circular philosophy",
-        "Existential meaning",
-        "Battle metaphor"
+        "Minimalist approach",
+        "Full symphony orchestra",
+        "Traditional instruments only",
+        "Electronic sampling"
       ],
-      correctAnswer: 2,
-      explanation: "From Rangasthalam - about life's essence"
+      correctAnswer: 0,
+      explanation: "It uses minimalist orchestration for emotional impact"
     },
     {
       id: 36,
-      question: "Decode: 'Manishi edhi pogottukuntado... danni vethakadam modalupettali'",
+      question: "Which complex music production technique is used in 'Ramulo Ramula' from Ala Vaikunthapurramuloo?",
       options: [
-        "Loss and search",
-        "Life's purpose",
-        "Journey metaphor",
-        "Self-discovery"
+        "Granular synthesis",
+        "Layered vocal sampling",
+        "Folk-electronic fusion",
+        "Traditional live recording"
       ],
-      correctAnswer: 3,
-      explanation: "From 1 Nenokkadine - about finding oneself"
+      correctAnswer: 2,
+      explanation: "The song blends folk elements with electronic production"
     }
   ]
 };
