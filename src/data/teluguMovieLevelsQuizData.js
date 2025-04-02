@@ -2,583 +2,583 @@ export const teluguMovieLevelsQuizData = {
   easy: [
     {
       id: 1,
-      question: "Which planet is known as the Red Planet?",
+      question: "How many bones are in the adult human body?",
       options: [
-        "Venus",
-        "Mars",
-        "Jupiter",
-        "Saturn"
+        "186",
+        "206",
+        "226",
+        "246"
       ],
       correctAnswer: 1,
-      explanation: "Mars is known as the Red Planet due to its reddish appearance"
+      explanation: "The adult human body has 206 bones"
     },
     {
       id: 2,
-      question: "What is the capital of France?",
+      question: "What is 25 × 4?",
       options: [
-        "London",
-        "Berlin",
-        "Madrid",
-        "Paris"
+        "75",
+        "100",
+        "125",
+        "150"
       ],
-      correctAnswer: 3,
-      explanation: "Paris is the capital city of France"
+      correctAnswer: 1,
+      explanation: "25 × 4 = 100"
     },
     {
       id: 3,
-      question: "Who painted the Mona Lisa?",
+      question: "Complete the sequence: 2, 4, 6, 8, __",
       options: [
-        "Vincent Van Gogh",
-        "Leonardo da Vinci",
-        "Pablo Picasso",
-        "Michelangelo"
+        "9",
+        "10",
+        "12",
+        "16"
       ],
       correctAnswer: 1,
-      explanation: "Leonardo da Vinci painted the famous Mona Lisa"
+      explanation: "The sequence increases by 2 each time, so after 8 comes 10"
     },
     {
       id: 4,
-      question: "Which element has the chemical symbol 'O'?",
+      question: "Which organ pumps blood throughout the body?",
       options: [
-        "Gold",
-        "Oxygen",
-        "Osmium",
-        "Oganesson"
+        "Lungs",
+        "Heart",
+        "Liver",
+        "Kidneys"
       ],
       correctAnswer: 1,
-      explanation: "Oxygen is represented by the symbol 'O' on the periodic table"
+      explanation: "The heart pumps blood throughout the circulatory system"
     },
     {
       id: 5,
-      question: "Which country is home to the Great Barrier Reef?",
+      question: "What is half of 36?",
       options: [
-        "Brazil",
-        "Australia",
-        "Thailand",
-        "Mexico"
+        "16",
+        "18",
+        "24",
+        "32"
       ],
       correctAnswer: 1,
-      explanation: "The Great Barrier Reef is located off the coast of Australia"
+      explanation: "Half of 36 is 18"
     },
     {
       id: 6,
-      question: "What is the largest mammal in the world?",
+      question: "If a shirt costs $20 and is on sale for 25% off, what is the sale price?",
       options: [
-        "Blue Whale",
-        "African Elephant",
-        "Giraffe",
-        "Polar Bear"
+        "$15",
+        "$16",
+        "$17",
+        "$18"
       ],
       correctAnswer: 0,
-      explanation: "The Blue Whale is the largest mammal on Earth"
+      explanation: "25% of $20 is $5, so the sale price is $15"
     },
     {
       id: 7,
-      question: "Who wrote 'Romeo and Juliet'?",
+      question: "Which of these is NOT a primary color?",
       options: [
-        "Charles Dickens",
-        "William Shakespeare",
-        "Jane Austen",
-        "Mark Twain"
+        "Red",
+        "Blue",
+        "Green",
+        "Yellow"
       ],
-      correctAnswer: 1,
-      explanation: "William Shakespeare wrote the famous tragedy Romeo and Juliet"
+      correctAnswer: 3,
+      explanation: "Yellow is a primary color in pigment (RYB) but not in light (RGB)"
     },
     {
       id: 8,
-      question: "What is the tallest mountain in the world?",
+      question: "How many centimeters are in 1 meter?",
       options: [
-        "K2",
-        "Mount Everest",
-        "Mount Kilimanjaro",
-        "Mount Fuji"
+        "10",
+        "100",
+        "1,000",
+        "10,000"
       ],
       correctAnswer: 1,
-      explanation: "Mount Everest is the tallest mountain above sea level"
+      explanation: "There are 100 centimeters in 1 meter"
     },
     {
       id: 9,
-      question: "Which is the largest ocean on Earth?",
+      question: "Which organ is responsible for filtering blood?",
       options: [
-        "Atlantic Ocean",
-        "Indian Ocean",
-        "Pacific Ocean",
-        "Arctic Ocean"
+        "Liver",
+        "Lungs",
+        "Kidneys",
+        "Stomach"
       ],
       correctAnswer: 2,
-      explanation: "The Pacific Ocean is the largest and deepest ocean on Earth"
+      explanation: "The kidneys filter waste products from the blood"
     },
     {
       id: 10,
-      question: "What year did the Titanic sink?",
+      question: "If today is Tuesday, what day will it be after 3 days?",
       options: [
-        "1912",
-        "1905",
-        "1920",
-        "1931"
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
       ],
-      correctAnswer: 0,
-      explanation: "The Titanic sank on its maiden voyage in April 1912"
+      correctAnswer: 2,
+      explanation: "3 days after Tuesday is Friday"
     },
     {
       id: 11,
-      question: "Who is known as the father of modern physics?",
+      question: "Which gas do humans breathe in to survive?",
       options: [
-        "Albert Einstein",
-        "Isaac Newton",
-        "Galileo Galilei",
-        "Stephen Hawking"
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Hydrogen"
       ],
       correctAnswer: 0,
-      explanation: "Albert Einstein is often referred to as the father of modern physics"
+      explanation: "Humans breathe in oxygen and exhale carbon dioxide"
     },
     {
       id: 12,
-      question: "What is the largest organ in the human body?",
+      question: "What is 12 + 9 - 5?",
       options: [
-        "Heart",
-        "Liver",
-        "Skin",
-        "Brain"
+        "14",
+        "16",
+        "18",
+        "20"
       ],
-      correctAnswer: 2,
-      explanation: "The skin is the largest organ in the human body"
+      correctAnswer: 1,
+      explanation: "12 + 9 - 5 = 21 - 5 = 16"
     },
     {
       id: 13,
-      question: "Which Disney princess has a pet tiger?",
+      question: "Which sense uses the nose?",
       options: [
-        "Mulan",
-        "Jasmine",
-        "Belle",
-        "Ariel"
+        "Sight",
+        "Hearing",
+        "Smell",
+        "Taste"
       ],
-      correctAnswer: 1,
-      explanation: "Princess Jasmine from Aladdin has a pet tiger named Rajah"
+      correctAnswer: 2,
+      explanation: "The nose is the organ for the sense of smell"
     },
     {
       id: 14,
-      question: "What is the national flower of Japan?",
+      question: "If A = 1, B = 2, C = 3... what does CAT equal?",
       options: [
-        "Cherry Blossom",
-        "Lotus",
-        "Rose",
-        "Tulip"
+        "24",
+        "39",
+        "57",
+        "3120"
       ],
       correctAnswer: 0,
-      explanation: "The Cherry Blossom (Sakura) is the national flower of Japan"
+      explanation: "C=3, A=1, T=20, so CAT = 3+1+20 = 24"
     },
     {
       id: 15,
-      question: "Which animal can be seen on the Porsche logo?",
+      question: "How many sides does a pentagon have?",
       options: [
-        "Lion",
-        "Bull",
-        "Horse",
-        "Eagle"
+        "4",
+        "5",
+        "6",
+        "7"
       ],
-      correctAnswer: 2,
-      explanation: "A horse appears on the Porsche logo, derived from the Stuttgart coat of arms"
+      correctAnswer: 1,
+      explanation: "A pentagon has 5 sides"
     },
     {
       id: 16,
-      question: "How many hearts does an octopus have?",
+      question: "Which is the largest internal organ in the human body?",
       options: [
-        "One",
-        "Two",
-        "Three",
-        "Four"
+        "Heart",
+        "Liver",
+        "Brain",
+        "Lungs"
       ],
-      correctAnswer: 2,
-      explanation: "An octopus has three hearts - two pump blood through the gills, one pumps it through the body"
+      correctAnswer: 1,
+      explanation: "The liver is the largest internal organ in the human body"
     }
   ],
   intermediate: [
     {
       id: 17,
-      question: "Which country was the first to reach the South Pole?",
+      question: "Which part of the human brain is responsible for balance and coordination?",
       options: [
-        "United States",
-        "United Kingdom",
-        "Norway",
-        "Russia"
+        "Cerebrum",
+        "Cerebellum",
+        "Medulla",
+        "Hypothalamus"
       ],
-      correctAnswer: 2,
-      explanation: "Norway, led by Roald Amundsen, reached the South Pole first in 1911"
+      correctAnswer: 1,
+      explanation: "The cerebellum controls balance, coordination, and fine muscle control"
     },
     {
       id: 18,
-      question: "What is the only metal that is liquid at room temperature?",
+      question: "Solve: 3x + 12 = 24",
       options: [
-        "Mercury",
-        "Lead",
-        "Gallium",
-        "Cesium"
+        "x = 4",
+        "x = 6",
+        "x = 8",
+        "x = 12"
       ],
       correctAnswer: 0,
-      explanation: "Mercury is liquid at standard room temperature and pressure"
+      explanation: "3x + 12 = 24, 3x = 12, x = 4"
     },
     {
       id: 19,
-      question: "Which philosopher is known for the quote 'I think, therefore I am'?",
+      question: "A man is 4 times as old as his son. In 20 years, he will be twice as old as his son. How old is the son now?",
       options: [
-        "Aristotle",
-        "René Descartes",
-        "Friedrich Nietzsche",
-        "Socrates"
+        "10 years",
+        "12 years",
+        "15 years",
+        "20 years"
       ],
-      correctAnswer: 1,
-      explanation: "René Descartes coined this famous philosophical statement"
+      correctAnswer: 2,
+      explanation: "If son is x, father is 4x. In 20 years: 4x+20 = 2(x+20), 4x+20 = 2x+40, 2x = 20, x = 10"
     },
     {
       id: 20,
-      question: "What is the hardest natural substance on Earth?",
+      question: "Which blood vessels carry blood away from the heart?",
       options: [
-        "Diamond",
-        "Titanium",
-        "Platinum",
-        "Quartz"
+        "Arteries",
+        "Veins",
+        "Capillaries",
+        "Ventricles"
       ],
       correctAnswer: 0,
-      explanation: "Diamond is the hardest naturally occurring substance known"
+      explanation: "Arteries carry blood away from the heart to the body"
     },
     {
       id: 21,
-      question: "Which war is often called 'The Great War'?",
+      question: "What is the area of a square with sides of 7 cm?",
       options: [
-        "The Vietnam War",
-        "World War II",
-        "World War I",
-        "The Cold War"
+        "14 cm²",
+        "28 cm²",
+        "49 cm²",
+        "56 cm²"
       ],
       correctAnswer: 2,
-      explanation: "World War I (1914-1918) was commonly known as 'The Great War'"
+      explanation: "Area of a square = side², so 7² = 49 cm²"
     },
     {
       id: 22,
-      question: "What is the study of fungi called?",
+      question: "If a car travels at 60 mph, how far will it travel in 2.5 hours?",
       options: [
-        "Botany",
-        "Entomology",
-        "Zoology",
-        "Mycology"
+        "120 miles",
+        "150 miles",
+        "180 miles",
+        "200 miles"
       ],
-      correctAnswer: 3,
-      explanation: "Mycology is the scientific study of fungi"
+      correctAnswer: 1,
+      explanation: "Distance = Speed × Time, so 60 mph × 2.5 h = 150 miles"
     },
     {
       id: 23,
-      question: "What particle in an atom has a positive charge?",
+      question: "Which gland produces insulin in the human body?",
       options: [
-        "Proton",
-        "Neutron",
-        "Electron",
-        "Photon"
+        "Thyroid",
+        "Pituitary",
+        "Pancreas",
+        "Adrenal"
       ],
-      correctAnswer: 0,
-      explanation: "Protons carry a positive electrical charge"
+      correctAnswer: 2,
+      explanation: "The pancreas produces insulin to regulate blood sugar"
     },
     {
       id: 24,
-      question: "What ancient wonder was located in Alexandria, Egypt?",
+      question: "If A=1, B=2, C=3, etc., what number would LOGIC represent?",
       options: [
-        "The Lighthouse",
-        "The Hanging Gardens",
-        "The Colossus",
-        "The Temple of Artemis"
+        "49",
+        "50",
+        "51",
+        "52"
       ],
-      correctAnswer: 0,
-      explanation: "The Lighthouse (Pharos) of Alexandria was one of the Seven Wonders"
+      correctAnswer: 1,
+      explanation: "L=12, O=15, G=7, I=9, C=3, so 12+15+7+9+3 = 46"
     },
     {
       id: 25,
-      question: "Which country has the most UNESCO World Heritage Sites?",
+      question: "A student scores 75, 82, 93, and 80 on tests. What score is needed on the fifth test for an average of 85?",
       options: [
-        "United States",
-        "Italy",
-        "China",
-        "France"
+        "90",
+        "92",
+        "95",
+        "97"
       ],
-      correctAnswer: 1,
-      explanation: "Italy has the most UNESCO World Heritage Sites with 58"
+      correctAnswer: 2,
+      explanation: "Total = 85×5 = 425, Current sum = 75+82+93+80 = 330, Needed = 425-330 = 95"
     },
     {
       id: 26,
-      question: "Who developed the theory of evolution by natural selection?",
+      question: "Which of these is NOT a function of the liver?",
       options: [
-        "Charles Darwin",
-        "Gregor Mendel",
-        "Louis Pasteur",
-        "Alexander Fleming"
+        "Detoxification",
+        "Protein synthesis",
+        "Bile production",
+        "Oxygen exchange"
       ],
-      correctAnswer: 0,
-      explanation: "Charles Darwin proposed the theory of evolution through natural selection"
+      correctAnswer: 3,
+      explanation: "Oxygen exchange happens in the lungs, not the liver"
     },
     {
       id: 27,
-      question: "What is the name of the deepest point in Earth's oceans?",
+      question: "If 8 workers can build a wall in 10 days, how long would it take 4 workers to build the same wall?",
       options: [
-        "Mariana Trench",
-        "Tonga Trench",
-        "Java Trench",
-        "Puerto Rico Trench"
+        "5 days",
+        "15 days",
+        "20 days",
+        "40 days"
       ],
-      correctAnswer: 0,
-      explanation: "The Mariana Trench in the Pacific Ocean is the deepest known point"
+      correctAnswer: 2,
+      explanation: "Half the workers means double the time, so 20 days"
     },
     {
       id: 28,
-      question: "What layer of Earth's atmosphere contains the ozone layer?",
+      question: "What is the next number in the sequence: 2, 6, 12, 20, 30, ...?",
       options: [
-        "Troposphere",
-        "Stratosphere",
-        "Mesosphere",
-        "Thermosphere"
+        "36",
+        "40",
+        "42",
+        "45"
       ],
-      correctAnswer: 1,
-      explanation: "The ozone layer is located within the stratosphere"
+      correctAnswer: 2,
+      explanation: "The differences form a sequence: 4, 6, 8, 10... so next: 30 + 12 = 42"
     },
     {
       id: 29,
-      question: "Which musical instrument is known as the 'King of Instruments'?",
+      question: "Which type of blood cell helps fight infection?",
       options: [
-        "Piano",
-        "Violin",
-        "Pipe Organ",
-        "Cello"
+        "Red blood cells",
+        "White blood cells",
+        "Platelets",
+        "Plasma"
       ],
-      correctAnswer: 2,
-      explanation: "The pipe organ is traditionally known as the 'King of Instruments'"
+      correctAnswer: 1,
+      explanation: "White blood cells are responsible for immune response and fighting infections"
     },
     {
       id: 30,
-      question: "What is the largest internal organ in the human body?",
+      question: "A rectangle has a perimeter of 30 cm and a width of 5 cm. What is its length?",
       options: [
-        "Brain",
-        "Liver",
-        "Lungs",
-        "Heart"
+        "10 cm",
+        "15 cm",
+        "20 cm",
+        "25 cm"
       ],
-      correctAnswer: 1,
-      explanation: "The liver is the largest internal organ in the human body"
+      correctAnswer: 0,
+      explanation: "Perimeter = 2(l+w), 30 = 2(l+5), 15 = l+5, l = 10 cm"
     },
     {
       id: 31,
-      question: "Who discovered penicillin?",
+      question: "What is the term for a word that is spelled the same backward and forward?",
       options: [
-        "Marie Curie",
-        "Louis Pasteur",
-        "Alexander Fleming",
-        "Joseph Lister"
+        "Homonym",
+        "Synonym",
+        "Palindrome",
+        "Antonym"
       ],
       correctAnswer: 2,
-      explanation: "Alexander Fleming discovered penicillin in 1928"
+      explanation: "A palindrome reads the same backward as forward, like 'radar' or 'level'"
     },
     {
       id: 32,
-      question: "Which planet has the Great Red Spot?",
+      question: "In human anatomy, what is the name of the longest bone in the body?",
       options: [
-        "Mars",
-        "Venus",
-        "Jupiter",
-        "Saturn"
+        "Humerus",
+        "Tibia",
+        "Femur",
+        "Radius"
       ],
       correctAnswer: 2,
-      explanation: "Jupiter has the Great Red Spot, a giant storm system"
+      explanation: "The femur (thigh bone) is the longest bone in the human body"
     }
   ],
   advanced: [
     {
       id: 33,
-      question: "Which of these elements is not a noble gas?",
+      question: "Which part of the neuron carries impulses away from the cell body?",
       options: [
-        "Krypton",
-        "Argon",
-        "Selenium",
-        "Xenon"
+        "Dendrite",
+        "Axon",
+        "Myelin sheath",
+        "Schwann cell"
       ],
-      correctAnswer: 2,
-      explanation: "Selenium is a nonmetal, not a noble gas"
+      correctAnswer: 1,
+      explanation: "The axon transmits electrical signals away from the cell body to other neurons"
     },
     {
       id: 34,
-      question: "In quantum mechanics, what principle states that you cannot simultaneously know the exact position and momentum of a particle?",
+      question: "Solve for x: log₂(x) + log₂(x-2) = 3",
       options: [
-        "Pauli Exclusion Principle",
-        "Heisenberg Uncertainty Principle",
-        "Newton's First Law",
-        "Einstein's Relativity"
+        "x = 3",
+        "x = 4",
+        "x = 5",
+        "x = 6"
       ],
       correctAnswer: 1,
-      explanation: "The Heisenberg Uncertainty Principle is a fundamental concept in quantum physics"
+      explanation: "log₂(x) + log₂(x-2) = 3 → log₂(x(x-2)) = 3 → x(x-2) = 2³ = 8 → x² - 2x = 8 → x² - 2x - 8 = 0 → (x-4)(x+2) = 0 → x = 4 or x = -2, but x must be > 2, so x = 4"
     },
     {
       id: 35,
-      question: "Which ancient civilization built the city of Machu Picchu?",
+      question: "A doctor has pills that are 1/3 sleeping medicine and 2/3 pain medicine. How many pills should be given to a patient who needs 20mg of sleeping medicine if each pill contains 15mg of medicine total?",
       options: [
-        "Maya",
-        "Inca",
-        "Aztec",
-        "Olmec"
+        "3 pills",
+        "4 pills",
+        "5 pills",
+        "6 pills"
       ],
-      correctAnswer: 1,
-      explanation: "Machu Picchu was built by the Inca civilization in the 15th century"
+      correctAnswer: 2,
+      explanation: "Each pill has 15 * (1/3) = 5mg of sleeping medicine. To get 20mg, need 20 ÷ 5 = 4 pills"
     },
     {
       id: 36,
-      question: "What is the most abundant element in the universe?",
+      question: "What is the name of the junction between two neurons?",
       options: [
-        "Oxygen",
-        "Hydrogen",
-        "Helium",
-        "Carbon"
+        "Soma",
+        "Dendrite",
+        "Synapse",
+        "Ganglion"
       ],
-      correctAnswer: 1,
-      explanation: "Hydrogen makes up about 75% of all baryonic mass in the universe"
+      correctAnswer: 2,
+      explanation: "A synapse is the junction between neurons where signals are transmitted"
     },
     {
       id: 37,
-      question: "Who won the Nobel Prize for proving that DNA is the carrier of genetic information?",
+      question: "A bag contains 6 red, 4 green, and 2 blue marbles. If two marbles are drawn without replacement, what is the probability that both are red?",
       options: [
-        "Watson and Crick",
-        "Rosalind Franklin",
-        "Oswald Avery",
-        "Frederick Griffith"
+        "6/33",
+        "5/22",
+        "15/132",
+        "15/144"
       ],
-      correctAnswer: 2,
-      explanation: "Oswald Avery proved DNA carries genetic information in his 1944 experiment"
+      correctAnswer: 1,
+      explanation: "P(both red) = (6/12) * (5/11) = 30/132 = 5/22"
     },
     {
       id: 38,
-      question: "What is the mathematical term for a shape that is self-similar at different scales?",
+      question: "Which logical fallacy involves attacking the person rather than their argument?",
       options: [
-        "Polygon",
-        "Fractal",
-        "Tesseract",
-        "Möbius strip"
+        "Ad hominem",
+        "Straw man",
+        "Appeal to authority",
+        "False dilemma"
       ],
-      correctAnswer: 1,
-      explanation: "A fractal displays self-similarity at various scales"
+      correctAnswer: 0,
+      explanation: "Ad hominem is attacking the person making an argument rather than addressing their points"
     },
     {
       id: 39,
-      question: "Which of the following is NOT a type of nuclear decay?",
+      question: "What hormone is responsible for regulating calcium levels in the blood?",
       options: [
-        "Alpha decay",
-        "Beta decay",
-        "Delta decay",
-        "Gamma decay"
+        "Insulin",
+        "Adrenaline",
+        "Parathyroid hormone",
+        "Thyroxine"
       ],
       correctAnswer: 2,
-      explanation: "Delta decay is not a type of radioactive decay"
+      explanation: "Parathyroid hormone (PTH) regulates calcium ion concentration in the blood"
     },
     {
       id: 40,
-      question: "What is the name of the theorem that states 'There is no general algorithm to determine whether a given program will terminate or run forever'?",
+      question: "If f(x) = x² - 3x and g(x) = 2x + 1, what is f(g(3))?",
       options: [
-        "Gödel's Incompleteness Theorem",
-        "Fermat's Last Theorem",
-        "Halting Problem",
-        "Riemann Hypothesis"
+        "28",
+        "36",
+        "42",
+        "49"
       ],
-      correctAnswer: 2,
-      explanation: "The Halting Problem is a fundamental concept in computer science"
+      correctAnswer: 3,
+      explanation: "g(3) = 2(3) + 1 = 7, then f(7) = 7² - 3(7) = 49 - 21 = 28"
     },
     {
       id: 41,
-      question: "What is the only constant in the Schrödinger equation that is specific to the quantum system being described?",
+      question: "In a town, 30% of the population has blood type A and 60% has the Rh+ factor. If 20% of the population has both blood type A and Rh+, what percentage has neither?",
       options: [
-        "Planck's constant",
-        "Hamiltonian operator",
-        "Wave function",
-        "Reduced mass"
+        "10%",
+        "20%",
+        "30%",
+        "40%"
       ],
-      correctAnswer: 1,
-      explanation: "The Hamiltonian operator describes the total energy of the system"
+      correctAnswer: 2,
+      explanation: "P(A or Rh+) = P(A) + P(Rh+) - P(A and Rh+) = 0.3 + 0.6 - 0.2 = 0.7, so P(neither) = 1 - 0.7 = 0.3 = 30%"
     },
     {
       id: 42,
-      question: "Which early civilization developed the first known written legal code?",
+      question: "Which part of the brain is primarily responsible for memory formation?",
       options: [
-        "Sumerians",
-        "Babylonians",
-        "Egyptians",
-        "Hittites"
+        "Cerebellum",
+        "Hippocampus",
+        "Amygdala",
+        "Frontal lobe"
       ],
       correctAnswer: 1,
-      explanation: "The Code of Hammurabi was developed by the Babylonians around 1754 BCE"
+      explanation: "The hippocampus plays a crucial role in the formation of new memories"
     },
     {
       id: 43,
-      question: "What statistical test would you use to compare the means of three or more unrelated groups?",
+      question: "What is the sum of the first 50 positive integers?",
       options: [
-        "T-test",
-        "Chi-square test",
-        "ANOVA",
-        "Pearson correlation"
+        "1225",
+        "1250",
+        "1275",
+        "1300"
       ],
-      correctAnswer: 2,
-      explanation: "Analysis of Variance (ANOVA) is used to compare means of multiple groups"
+      correctAnswer: 0,
+      explanation: "The sum of first n positive integers is n(n+1)/2, so 50(51)/2 = 1275"
     },
     {
       id: 44,
-      question: "In molecular biology, what is the process called where RNA is synthesized from DNA?",
+      question: "In which logical reasoning type does the conclusion certainly follow from the premises?",
       options: [
-        "Replication",
-        "Transcription",
-        "Translation",
-        "Transduction"
+        "Inductive",
+        "Deductive",
+        "Abductive",
+        "Fallacious"
       ],
       correctAnswer: 1,
-      explanation: "Transcription is the process of creating RNA from a DNA template"
+      explanation: "In deductive reasoning, if the premises are true, the conclusion must be true"
     },
     {
       id: 45,
-      question: "What is the name for the phenomenon where a particle can exist in multiple states simultaneously?",
+      question: "Which enzyme in the stomach helps break down proteins?",
       options: [
-        "Superposition",
-        "Entanglement",
-        "Wave-particle duality",
-        "Quantum tunneling"
+        "Amylase",
+        "Lipase",
+        "Pepsin",
+        "Trypsin"
       ],
-      correctAnswer: 0,
-      explanation: "Superposition is when particles exist in multiple states until observed"
+      correctAnswer: 2,
+      explanation: "Pepsin is the main digestive enzyme in the stomach that breaks down proteins"
     },
     {
       id: 46,
-      question: "Which number is considered Ramanujan's number, known for a unique mathematical property?",
+      question: "A box contains 5 red, 3 green, and 2 blue balls. In how many different ways can 3 balls be selected?",
       options: [
-        "1729",
-        "42",
-        "3.14159",
-        "1618"
+        "10",
+        "45",
+        "120",
+        "210"
       ],
-      correctAnswer: 0,
-      explanation: "1729 is known as the Hardy-Ramanujan number, the smallest number expressible as the sum of two cubes in two different ways"
+      correctAnswer: 1,
+      explanation: "Total ways to select 3 balls from 10 = 10C3 = 10!/(3!×7!) = 120"
     },
     {
       id: 47,
-      question: "What was the name of the first successful cloned mammal?",
+      question: "Which cognitive bias leads people to seek information that confirms their existing beliefs?",
       options: [
-        "Dolly",
-        "Laika",
-        "Einstein",
-        "Cleo"
+        "Hindsight bias",
+        "Anchoring bias",
+        "Confirmation bias",
+        "Availability heuristic"
       ],
-      correctAnswer: 0,
-      explanation: "Dolly the sheep was the first mammal cloned from an adult somatic cell in 1996"
+      correctAnswer: 2,
+      explanation: "Confirmation bias is the tendency to search for information that confirms one's preconceptions"
     },
     {
       id: 48,
-      question: "Which mathematical constant is also known as Archimedes' constant?",
+      question: "What is the term for the smallest blood vessels in the human body?",
       options: [
-        "e (Euler's number)",
-        "i (imaginary unit)",
-        "π (pi)",
-        "φ (golden ratio)"
+        "Arterioles",
+        "Venules",
+        "Capillaries",
+        "Microvessels"
       ],
       correctAnswer: 2,
-      explanation: "Pi (π) is often referred to as Archimedes' constant due to his work on calculating it"
+      explanation: "Capillaries are the smallest blood vessels where exchange of materials occurs"
     }
   ]
 };
