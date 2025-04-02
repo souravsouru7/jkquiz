@@ -3,18 +3,21 @@ import {
   Container, Typography, Box, Button, Card, CardContent, 
   RadioGroup, FormControlLabel, Radio, LinearProgress, 
   Dialog, DialogTitle, DialogContent, DialogContentText, 
-  DialogActions, Grid, Paper, Alert, List, ListItem, ListItemText
+  DialogActions, Grid, Paper, Alert, List, ListItem, ListItemText,
+  Tooltip, IconButton, Divider, CircularProgress
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import TimerIcon from '@mui/icons-material/Timer';
 import { teluguMovieLevelsQuizData, levelPassingScores, getLevelAnswers } from '../data/teluguMovieLevelsQuizData';
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import FiftyFiftyIcon from '@mui/icons-material/Filter2';
 
 const REQUIRED_SCORE = {
   easy: levelPassingScores.easy,
   intermediate: levelPassingScores.intermediate,
   advanced: levelPassingScores.advanced
 };
-const TIME_LIMIT = 180; // 3 minutes in seconds
+const TIME_LIMIT = 6 * 60; // 6 minutes in seconds
 const TOTAL_QUESTIONS = 12;
 
 const ProgressContainer = styled(Box)(({ theme }) => ({
@@ -41,6 +44,15 @@ const TimerText = styled(Typography)(({ theme, time }) => ({
   color: time <= 30 ? (time <= 10 ? 'red' : 'orange') : 'inherit',
 }));
 
+const LifelineButton = styled(Button)(({ theme, disabled }) => ({
+  margin: theme.spacing(1),
+  opacity: disabled ? 0.5 : 1,
+  backgroundColor: disabled ? '#ccc' : theme.palette.primary.main,
+  '&:hover': {
+    backgroundColor: disabled ? '#ccc' : theme.palette.primary.dark,
+  },
+}));
+
 // Helper function to get a random subset of questions
 const getRandomQuestions = (questions, count) => {
   const shuffled = [...questions].sort(() => 0.5 - Math.random());
@@ -61,6 +73,12 @@ const TeluguMovieLevelsQuiz = () => {
   const [selectedQuestions, setSelectedQuestions] = useState(() => 
     getRandomQuestions(teluguMovieLevelsQuizData.easy, TOTAL_QUESTIONS)
   );
+  const [showHint, setShowHint] = useState(false);
+  const [remainingLifelines, setRemainingLifelines] = useState({
+    showAnswer: true,
+    removeOptions: true
+  });
+  const [removedOptions, setRemovedOptions] = useState([]);
   
   useEffect(() => {
     // When level changes, select a new set of random questions
@@ -92,6 +110,8 @@ const TeluguMovieLevelsQuiz = () => {
     }
     
     setSelectedOption('');
+    setShowHint(false);
+    setRemovedOptions([]);
     
     if (currentQuestion < TOTAL_QUESTIONS - 1) {
       setCurrentQuestion(currentQuestion + 1);
@@ -136,6 +156,12 @@ const TeluguMovieLevelsQuiz = () => {
       setLevelComplete(false);
       setTimerActive(true);
       setShowAnswers(false);
+      setShowHint(false);
+      setRemovedOptions([]);
+      setRemainingLifelines({
+        showAnswer: true,
+        removeOptions: true
+      });
     } else {
       setQuizComplete(true);
     }
@@ -151,6 +177,12 @@ const TeluguMovieLevelsQuiz = () => {
     setTimeLeft(TIME_LIMIT);
     setTimerActive(true);
     setShowAnswers(false);
+    setShowHint(false);
+    setRemovedOptions([]);
+    setRemainingLifelines({
+      showAnswer: true,
+      removeOptions: true
+    });
     setSelectedQuestions(getRandomQuestions(teluguMovieLevelsQuizData.easy, TOTAL_QUESTIONS));
   };
 
@@ -162,6 +194,30 @@ const TeluguMovieLevelsQuiz = () => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
     return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+  };
+
+  const handleShowAnswer = () => {
+    if (remainingLifelines.showAnswer) {
+      setShowHint(true);
+      setRemainingLifelines({...remainingLifelines, showAnswer: false});
+    }
+  };
+
+  const handleRemoveOptions = () => {
+    if (remainingLifelines.removeOptions) {
+      const questionItem = selectedQuestions[currentQuestion];
+      const correctAnswerIndex = questionItem.correctAnswer;
+      
+      // Generate all option indices except the correct one
+      const incorrectIndices = [0, 1, 2, 3].filter(idx => idx !== correctAnswerIndex);
+      
+      // Randomly select two incorrect options to remove
+      const shuffled = incorrectIndices.sort(() => 0.5 - Math.random());
+      const toRemove = shuffled.slice(0, 2);
+      
+      setRemovedOptions(toRemove);
+      setRemainingLifelines({...remainingLifelines, removeOptions: false});
+    }
   };
 
   if (quizComplete) {
@@ -307,18 +363,23 @@ const TeluguMovieLevelsQuiz = () => {
             <Typography variant="h6" gutterBottom>
               {currentQuestionData.question}
             </Typography>
-            
-            <RadioGroup
-              value={selectedOption}
-              onChange={handleOptionSelect}
-            >
+            <RadioGroup value={selectedOption} onChange={handleOptionSelect}>
               {currentQuestionData.options.map((option, index) => (
                 <FormControlLabel
                   key={index}
                   value={index.toString()}
                   control={<Radio />}
                   label={option}
-                  sx={{ mb: 1 }}
+                  sx={{
+                    display: removedOptions.includes(index) ? 'none' : 'flex',
+                    p: 1,
+                    mb: 1,
+                    border: '1px solid #e0e0e0',
+                    borderRadius: '8px',
+                    '&:hover': {
+                      bgcolor: 'action.hover',
+                    },
+                  }}
                 />
               ))}
             </RadioGroup>
@@ -338,6 +399,32 @@ const TeluguMovieLevelsQuiz = () => {
             {currentQuestion < TOTAL_QUESTIONS - 1 ? "Next Question" : "Finish Level"}
           </Button>
         </Box>
+        
+        <Box sx={{ display: 'flex', justifyContent: 'center', mb: 3 }}>
+          <LifelineButton
+            variant="contained"
+            startIcon={<HelpOutlineIcon />}
+            onClick={handleShowAnswer}
+            disabled={!remainingLifelines.showAnswer}
+          >
+            Show Answer
+          </LifelineButton>
+          
+          <LifelineButton
+            variant="contained"
+            startIcon={<FiftyFiftyIcon />}
+            onClick={handleRemoveOptions}
+            disabled={!remainingLifelines.removeOptions}
+          >
+            Remove Options
+          </LifelineButton>
+        </Box>
+        
+        {showHint && (
+          <Alert severity="info" sx={{ mb: 2 }}>
+            The correct answer is: {currentQuestionData.options[currentQuestionData.correctAnswer]}
+          </Alert>
+        )}
       </Box>
     </Container>
   );
