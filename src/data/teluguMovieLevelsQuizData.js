@@ -143,11 +143,59 @@ export const teluguMovieLevelsQuizData = {
       ],
       correctAnswer: 2,
       explanation: "The skin is the largest organ in the human body"
+    },
+    {
+      id: 13,
+      question: "Which Disney princess has a pet tiger?",
+      options: [
+        "Mulan",
+        "Jasmine",
+        "Belle",
+        "Ariel"
+      ],
+      correctAnswer: 1,
+      explanation: "Princess Jasmine from Aladdin has a pet tiger named Rajah"
+    },
+    {
+      id: 14,
+      question: "What is the national flower of Japan?",
+      options: [
+        "Cherry Blossom",
+        "Lotus",
+        "Rose",
+        "Tulip"
+      ],
+      correctAnswer: 0,
+      explanation: "The Cherry Blossom (Sakura) is the national flower of Japan"
+    },
+    {
+      id: 15,
+      question: "Which animal can be seen on the Porsche logo?",
+      options: [
+        "Lion",
+        "Bull",
+        "Horse",
+        "Eagle"
+      ],
+      correctAnswer: 2,
+      explanation: "A horse appears on the Porsche logo, derived from the Stuttgart coat of arms"
+    },
+    {
+      id: 16,
+      question: "How many hearts does an octopus have?",
+      options: [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      correctAnswer: 2,
+      explanation: "An octopus has three hearts - two pump blood through the gills, one pumps it through the body"
     }
   ],
   intermediate: [
     {
-      id: 13,
+      id: 17,
       question: "Which country was the first to reach the South Pole?",
       options: [
         "United States",
@@ -159,7 +207,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Norway, led by Roald Amundsen, reached the South Pole first in 1911"
     },
     {
-      id: 14,
+      id: 18,
       question: "What is the only metal that is liquid at room temperature?",
       options: [
         "Mercury",
@@ -171,7 +219,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Mercury is liquid at standard room temperature and pressure"
     },
     {
-      id: 15,
+      id: 19,
       question: "Which philosopher is known for the quote 'I think, therefore I am'?",
       options: [
         "Aristotle",
@@ -183,7 +231,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "René Descartes coined this famous philosophical statement"
     },
     {
-      id: 16,
+      id: 20,
       question: "What is the hardest natural substance on Earth?",
       options: [
         "Diamond",
@@ -195,7 +243,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Diamond is the hardest naturally occurring substance known"
     },
     {
-      id: 17,
+      id: 21,
       question: "Which war is often called 'The Great War'?",
       options: [
         "The Vietnam War",
@@ -207,7 +255,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "World War I (1914-1918) was commonly known as 'The Great War'"
     },
     {
-      id: 18,
+      id: 22,
       question: "What is the study of fungi called?",
       options: [
         "Botany",
@@ -219,7 +267,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Mycology is the scientific study of fungi"
     },
     {
-      id: 19,
+      id: 23,
       question: "What particle in an atom has a positive charge?",
       options: [
         "Proton",
@@ -231,7 +279,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Protons carry a positive electrical charge"
     },
     {
-      id: 20,
+      id: 24,
       question: "What ancient wonder was located in Alexandria, Egypt?",
       options: [
         "The Lighthouse",
@@ -243,7 +291,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "The Lighthouse (Pharos) of Alexandria was one of the Seven Wonders"
     },
     {
-      id: 21,
+      id: 25,
       question: "Which country has the most UNESCO World Heritage Sites?",
       options: [
         "United States",
@@ -255,7 +303,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Italy has the most UNESCO World Heritage Sites with 58"
     },
     {
-      id: 22,
+      id: 26,
       question: "Who developed the theory of evolution by natural selection?",
       options: [
         "Charles Darwin",
@@ -267,7 +315,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Charles Darwin proposed the theory of evolution through natural selection"
     },
     {
-      id: 23,
+      id: 27,
       question: "What is the name of the deepest point in Earth's oceans?",
       options: [
         "Mariana Trench",
@@ -279,7 +327,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "The Mariana Trench in the Pacific Ocean is the deepest known point"
     },
     {
-      id: 24,
+      id: 28,
       question: "What layer of Earth's atmosphere contains the ozone layer?",
       options: [
         "Troposphere",
@@ -289,11 +337,59 @@ export const teluguMovieLevelsQuizData = {
       ],
       correctAnswer: 1,
       explanation: "The ozone layer is located within the stratosphere"
+    },
+    {
+      id: 29,
+      question: "Which musical instrument is known as the 'King of Instruments'?",
+      options: [
+        "Piano",
+        "Violin",
+        "Pipe Organ",
+        "Cello"
+      ],
+      correctAnswer: 2,
+      explanation: "The pipe organ is traditionally known as the 'King of Instruments'"
+    },
+    {
+      id: 30,
+      question: "What is the largest internal organ in the human body?",
+      options: [
+        "Brain",
+        "Liver",
+        "Lungs",
+        "Heart"
+      ],
+      correctAnswer: 1,
+      explanation: "The liver is the largest internal organ in the human body"
+    },
+    {
+      id: 31,
+      question: "Who discovered penicillin?",
+      options: [
+        "Marie Curie",
+        "Louis Pasteur",
+        "Alexander Fleming",
+        "Joseph Lister"
+      ],
+      correctAnswer: 2,
+      explanation: "Alexander Fleming discovered penicillin in 1928"
+    },
+    {
+      id: 32,
+      question: "Which planet has the Great Red Spot?",
+      options: [
+        "Mars",
+        "Venus",
+        "Jupiter",
+        "Saturn"
+      ],
+      correctAnswer: 2,
+      explanation: "Jupiter has the Great Red Spot, a giant storm system"
     }
   ],
   advanced: [
     {
-      id: 25,
+      id: 33,
       question: "Which of these elements is not a noble gas?",
       options: [
         "Krypton",
@@ -305,7 +401,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Selenium is a nonmetal, not a noble gas"
     },
     {
-      id: 26,
+      id: 34,
       question: "In quantum mechanics, what principle states that you cannot simultaneously know the exact position and momentum of a particle?",
       options: [
         "Pauli Exclusion Principle",
@@ -317,7 +413,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "The Heisenberg Uncertainty Principle is a fundamental concept in quantum physics"
     },
     {
-      id: 27,
+      id: 35,
       question: "Which ancient civilization built the city of Machu Picchu?",
       options: [
         "Maya",
@@ -329,7 +425,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Machu Picchu was built by the Inca civilization in the 15th century"
     },
     {
-      id: 28,
+      id: 36,
       question: "What is the most abundant element in the universe?",
       options: [
         "Oxygen",
@@ -341,7 +437,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Hydrogen makes up about 75% of all baryonic mass in the universe"
     },
     {
-      id: 29,
+      id: 37,
       question: "Who won the Nobel Prize for proving that DNA is the carrier of genetic information?",
       options: [
         "Watson and Crick",
@@ -353,7 +449,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Oswald Avery proved DNA carries genetic information in his 1944 experiment"
     },
     {
-      id: 30,
+      id: 38,
       question: "What is the mathematical term for a shape that is self-similar at different scales?",
       options: [
         "Polygon",
@@ -365,7 +461,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "A fractal displays self-similarity at various scales"
     },
     {
-      id: 31,
+      id: 39,
       question: "Which of the following is NOT a type of nuclear decay?",
       options: [
         "Alpha decay",
@@ -377,7 +473,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Delta decay is not a type of radioactive decay"
     },
     {
-      id: 32,
+      id: 40,
       question: "What is the name of the theorem that states 'There is no general algorithm to determine whether a given program will terminate or run forever'?",
       options: [
         "Gödel's Incompleteness Theorem",
@@ -389,7 +485,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "The Halting Problem is a fundamental concept in computer science"
     },
     {
-      id: 33,
+      id: 41,
       question: "What is the only constant in the Schrödinger equation that is specific to the quantum system being described?",
       options: [
         "Planck's constant",
@@ -401,7 +497,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "The Hamiltonian operator describes the total energy of the system"
     },
     {
-      id: 34,
+      id: 42,
       question: "Which early civilization developed the first known written legal code?",
       options: [
         "Sumerians",
@@ -413,7 +509,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "The Code of Hammurabi was developed by the Babylonians around 1754 BCE"
     },
     {
-      id: 35,
+      id: 43,
       question: "What statistical test would you use to compare the means of three or more unrelated groups?",
       options: [
         "T-test",
@@ -425,7 +521,7 @@ export const teluguMovieLevelsQuizData = {
       explanation: "Analysis of Variance (ANOVA) is used to compare means of multiple groups"
     },
     {
-      id: 36,
+      id: 44,
       question: "In molecular biology, what is the process called where RNA is synthesized from DNA?",
       options: [
         "Replication",
@@ -435,8 +531,77 @@ export const teluguMovieLevelsQuizData = {
       ],
       correctAnswer: 1,
       explanation: "Transcription is the process of creating RNA from a DNA template"
+    },
+    {
+      id: 45,
+      question: "What is the name for the phenomenon where a particle can exist in multiple states simultaneously?",
+      options: [
+        "Superposition",
+        "Entanglement",
+        "Wave-particle duality",
+        "Quantum tunneling"
+      ],
+      correctAnswer: 0,
+      explanation: "Superposition is when particles exist in multiple states until observed"
+    },
+    {
+      id: 46,
+      question: "Which number is considered Ramanujan's number, known for a unique mathematical property?",
+      options: [
+        "1729",
+        "42",
+        "3.14159",
+        "1618"
+      ],
+      correctAnswer: 0,
+      explanation: "1729 is known as the Hardy-Ramanujan number, the smallest number expressible as the sum of two cubes in two different ways"
+    },
+    {
+      id: 47,
+      question: "What was the name of the first successful cloned mammal?",
+      options: [
+        "Dolly",
+        "Laika",
+        "Einstein",
+        "Cleo"
+      ],
+      correctAnswer: 0,
+      explanation: "Dolly the sheep was the first mammal cloned from an adult somatic cell in 1996"
+    },
+    {
+      id: 48,
+      question: "Which mathematical constant is also known as Archimedes' constant?",
+      options: [
+        "e (Euler's number)",
+        "i (imaginary unit)",
+        "π (pi)",
+        "φ (golden ratio)"
+      ],
+      correctAnswer: 2,
+      explanation: "Pi (π) is often referred to as Archimedes' constant due to his work on calculating it"
     }
   ]
+};
+
+// Passing score requirements for each level
+export const levelPassingScores = {
+  easy: 7,
+  intermediate: 6,
+  advanced: 5
+};
+
+// Function to get all answers for a level
+export const getLevelAnswers = (level) => {
+  const answers = [];
+  teluguMovieLevelsQuizData[level].forEach(question => {
+    answers.push({
+      id: question.id,
+      question: question.question,
+      correctAnswer: question.options[question.correctAnswer],
+      explanation: question.explanation
+    });
+  });
+  return answers;
 };
 
 export const calculateGrade = (score, totalQuestions) => {

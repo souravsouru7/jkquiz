@@ -1,146 +1,99 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { 
-  Container, 
-  Typography, 
-  Box, 
-  Button, 
-  AppBar, 
-  Toolbar,
-  ThemeProvider,
-  createTheme,
-  CssBaseline,
-  useMediaQuery,
-  IconButton,
-  Menu,
-  MenuItem
-} from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Container, Box, Drawer, List, ListItem, ListItemText, IconButton, useTheme, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import Quiz from './components/Quiz';
+import Home from './components/Home';
 import TeluguMovieLevelsQuiz from './components/TeluguMovieLevelsQuiz';
 import ProgressiveMoviesQuiz from './components/ProgressiveMoviesQuiz';
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#2196f3',
-      light: '#64b5f6',
-      dark: '#1976d2',
-    },
-    secondary: {
-      main: '#f50057',
-      light: '#ff4081',
-      dark: '#c51162',
-    },
-    background: {
-      default: '#f8f9fa',
-      paper: '#ffffff',
-    },
-  },
-  typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-    h4: {
-      fontWeight: 600,
-    },
-    h6: {
-      fontWeight: 500,
-    },
-  },
-  components: {
-    MuiAppBar: {
-      styleOverrides: {
-        root: {
-          background: 'linear-gradient(45deg, #2196f3 30%, #21cbf3 90%)',
-        },
-      },
-    },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          textTransform: 'none',
-          margin: '0 8px',
-        },
-      },
-    },
-  },
-});
-
 function App() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
+  const toggleDrawer = (open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+    setDrawerOpen(open);
   };
 
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  const menuItems = [
+    { text: 'Home', path: '/' },
+    { text: 'Multi-Level Quiz', path: '/multi-level-quiz' },
+    { text: 'Progressive Movies', path: '/progressive-movies' }
+  ];
+
+  const drawerList = () => (
+    <Box
+      sx={{ width: 250 }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
+    >
+      <List>
+        {menuItems.map((item) => (
+          <ListItem button key={item.text} component={Link} to={item.path}>
+            <ListItemText primary={item.text} />
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Router>
-        <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static">
-            <Toolbar>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                Telugu Movie Quiz Hub
-              </Typography>
-              {isMobile ? (
-                <>
-                  <IconButton
-                    size="large"
-                    edge="end"
-                    color="inherit"
-                    aria-label="menu"
-                    onClick={handleMenu}
-                  >
-                    <MenuIcon />
-                  </IconButton>
-                  <Menu
-                    anchorEl={anchorEl}
-                    open={Boolean(anchorEl)}
-                    onClose={handleClose}
-                  >
-                    <MenuItem onClick={handleClose} component={Link} to="/">
-                      Interior Design
-                    </MenuItem>
-                    <MenuItem onClick={handleClose} component={Link} to="/telugu-movie-levels">
-                      Telugu Movie Levels
-                    </MenuItem>
-                    <MenuItem onClick={handleClose} component={Link} to="/progressive-movies">
-                      Progressive Movies
-                    </MenuItem>
-                  </Menu>
-                </>
-              ) : (
-                <>
-                  <Button color="inherit" component={Link} to="/">
-                    Interior Design Quiz
-                  </Button>
-                  <Button color="inherit" component={Link} to="/telugu-movie-levels">
-                    Telugu Movie Levels
-                  </Button>
-                  <Button color="inherit" component={Link} to="/progressive-movies">
-                    Progressive Movies
-                  </Button>
-                </>
-              )}
-            </Toolbar>
-          </AppBar>
-          <Container>
-            <Box sx={{ mt: 4 }}>
-              <Routes>
-                <Route path="/" element={<Quiz />} />
-                <Route path="/telugu-movie-levels" element={<TeluguMovieLevelsQuiz />} />
-                <Route path="/progressive-movies" element={<ProgressiveMoviesQuiz />} />
-              </Routes>
+    <Router>
+      <AppBar position="static">
+        <Toolbar>
+          {isMobile ? (
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+              onClick={toggleDrawer(true)}
+            >
+              <MenuIcon />
+            </IconButton>
+          ) : null}
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Telugu Movie Quiz
+          </Typography>
+          {!isMobile && (
+            <Box>
+              {menuItems.map((item) => (
+                <Button 
+                  key={item.text} 
+                  color="inherit" 
+                  component={Link} 
+                  to={item.path}
+                  sx={{ ml: 1 }}
+                >
+                  {item.text}
+                </Button>
+              ))}
             </Box>
-          </Container>
-        </Box>
-      </Router>
-    </ThemeProvider>
+          )}
+        </Toolbar>
+      </AppBar>
+
+      <Drawer
+        anchor="left"
+        open={drawerOpen}
+        onClose={toggleDrawer(false)}
+      >
+        {drawerList()}
+      </Drawer>
+
+      <Container sx={{ mt: 4 }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/multi-level-quiz" element={<TeluguMovieLevelsQuiz />} />
+          <Route path="/progressive-movies" element={<ProgressiveMoviesQuiz />} />
+        </Routes>
+      </Container>
+    </Router>
   );
 }
 
