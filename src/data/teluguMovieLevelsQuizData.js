@@ -1,503 +1,140 @@
 export const teluguMovieLevelsQuizData = {
   easy: [
     {
-      question: "Which of these is a famous love story movie?",
+      question: "Complete the dialogue: 'Donga _______ ki artham telusa? Dongatanam chesi dorikipoyina vadini donga antaru'",
       options: [
-        "Arya",
-        "Pokiri",
-        "Sye",
-        "Aadi"
-      ],
-      correctAnswer: 0,
-      explanation: "Arya is a romantic love story"
-    },
-    {
-      question: "Who directed Baahubali?",
-      options: [
-        "Trivikram",
-        "Rajamouli",
-        "Sukumar",
-        "Puri Jagannadh"
-      ],
-      correctAnswer: 1,
-      explanation: "S.S. Rajamouli directed Baahubali"
-    },
-    {
-      question: "Which actor is known as Power Star?",
-      options: [
-        "Chiranjeevi",
-        "Mahesh Babu",
-        "Pawan Kalyan",
-        "Jr NTR"
+        "Babu",
+        "Raja",
+        "Bidda",
+        "Nayala"
       ],
       correctAnswer: 2,
-      explanation: "Pawan Kalyan is known as Power Star"
+      explanation: "From Vikramarkudu - 'Donga Bidda ki artham telusa?'"
     },
     {
-      question: "Which movie is about a cricket player?",
+      question: "Which movie has the dialogue: 'Commitment ichanu, daanni nilabettukovali ante praanam pothundemo... kaani parledhu'?",
       options: [
-        "Jersey",
-        "Arya",
-        "Pokiri",
-        "Okkadu"
-      ],
-      correctAnswer: 0,
-      explanation: "Jersey is about a cricket player's journey"
-    },
-    {
-      question: "What type of movie is Magadheera?",
-      options: [
-        "Comedy",
-        "Reincarnation",
-        "Sports",
-        "College"
-      ],
-      correctAnswer: 1,
-      explanation: "Magadheera is a reincarnation story"
-    },
-    {
-      question: "Which movie features college students?",
-      options: [
-        "Happy Days",
-        "Pokiri",
+        "Jalsa",
         "Gabbar Singh",
-        "Mirchi"
+        "Businessman",
+        "Dookudu"
+      ],
+      correctAnswer: 1,
+      explanation: "Famous dialogue from Gabbar Singh about keeping commitments"
+    },
+    {
+      question: "Complete: 'Meeru _______ lo unnaru, nenu reality lo unna'",
+      options: [
+        "Cinema",
+        "Drama",
+        "Imagination",
+        "Story"
       ],
       correctAnswer: 0,
-      explanation: "Happy Days is about college life"
+      explanation: "From Race Gurram - about being realistic vs dramatic"
     },
     {
-      question: "What is Athadu about?",
+      question: "Which dialogue is from Adhurs: '______ ante na mata, na mata ante _____'?",
       options: [
-        "Love story",
-        "College life",
-        "Professional killer",
-        "Police officer"
-      ],
-      correctAnswer: 2,
-      explanation: "Athadu is about a professional killer"
-    },
-    {
-      question: "Which movie is a police story?",
-      options: [
-        "Arya",
-        "Pokiri",
-        "Happy Days",
-        "Bommarillu"
-      ],
-      correctAnswer: 1,
-      explanation: "Pokiri is about an undercover police officer"
-    },
-    {
-      question: "What is the theme of Bommarillu?",
-      options: [
-        "Action",
-        "Family relations",
-        "Horror",
-        "Sports"
-      ],
-      correctAnswer: 1,
-      explanation: "Bommarillu deals with family relationships"
-    },
-    {
-      question: "Which is a village-based story?",
-      options: [
-        "Rangasthalam",
-        "Happy Days",
-        "Arya",
-        "Athadu"
+        "Nenu/Nenu",
+        "Nedu/Repu",
+        "Nijam/Nijam",
+        "Maata/Maata"
       ],
       correctAnswer: 0,
-      explanation: "Rangasthalam is set in a village"
-    },
-    {
-      question: "What is Eega about?",
-      options: [
-        "Love story",
-        "Revenge as a fly",
-        "College life",
-        "Family drama"
-      ],
-      correctAnswer: 1,
-      explanation: "Eega is about a person reborn as a fly seeking revenge"
-    },
-    {
-      question: "Which movie is about a student leader?",
-      options: [
-        "Leader",
-        "Arya",
-        "Sye",
-        "Happy Days"
-      ],
-      correctAnswer: 0,
-      explanation: "Leader is about a student who becomes a political leader"
-    },
-    {
-      question: "Which of these movies has a character who never speaks throughout the film?",
-      options: [
-        "Chatrapathi",
-        "Anand",
-        "Ashta Chamma",
-        "Mounagadu"
-      ],
-      correctAnswer: 3,
-      explanation: "In Mounagadu, the protagonist doesn't speak throughout the film"
-    },
-    {
-      question: "Which movie's title is actually a Sanskrit word?",
-      options: [
-        "Arya",
-        "Arundhati",
-        "Athadu",
-        "Antahpuram"
-      ],
-      correctAnswer: 3,
-      explanation: "Antahpuram means 'inner chamber' in Sanskrit"
-    },
-    {
-      question: "Which movie's title has a mathematical reference?",
-      options: [
-        "7/G Brindavan Colony",
-        "100% Love",
-        "24",
-        "1: Nenokkadine"
-      ],
-      correctAnswer: 1,
-      explanation: "100% Love uses a mathematical percentage in its title"
+      explanation: "Famous dialogue about self-confidence from Adhurs"
     }
   ],
   intermediate: [
     {
-      question: "Which movie's plot involves a time loop?",
+      question: "In which movie does this dialogue appear: 'Manishi ki rendu rakala badha... okatante inkoti teeruthundi... rendu kalisi osthe adi premayipothundi'?",
       options: [
-        "Awe",
-        "Manam",
-        "24",
-        "Eega"
-      ],
-      correctAnswer: 2,
-      explanation: "24 deals with time manipulation"
-    },
-    {
-      question: "Which movie has a non-linear narrative structure?",
-      options: [
-        "Vedam",
-        "Leader",
         "Arya",
-        "Pokiri"
-      ],
-      correctAnswer: 0,
-      explanation: "Vedam follows multiple parallel storylines"
-    },
-    {
-      question: "Which movie deals with mental health?",
-      options: [
-        "1 Nenokkadine",
-        "Arya 2",
-        "Khaleja",
-        "Leader"
-      ],
-      correctAnswer: 0,
-      explanation: "1 Nenokkadine deals with psychological aspects"
-    },
-    {
-      question: "Which movie has a social message about education?",
-      options: [
-        "Rangasthalam",
-        "Srimanthudu",
-        "Leader",
-        "Jersey"
+        "Orange",
+        "Darling",
+        "Mr. Perfect"
       ],
       correctAnswer: 1,
-      explanation: "Srimanthudu emphasizes rural education"
+      explanation: "From Orange - philosophical dialogue about pain and love"
     },
     {
-      question: "Which movie addresses caste discrimination?",
+      question: "Complete this emotional dialogue: 'Naa _______ ki value ledu ani telusukunnaka, naa _______ ki value penchukunnanu'",
       options: [
-        "Rangasthalam",
-        "Sye",
-        "Leader",
-        "Pokiri"
+        "Prema/Praanam",
+        "Jeevitham/Garvam",
+        "Dabbu/Paruvu",
+        "Manasu/Pogaru"
       ],
       correctAnswer: 0,
-      explanation: "Rangasthalam addresses caste issues"
+      explanation: "From Okkadu - about self-worth and pride"
     },
     {
-      question: "Which movie deals with corruption in medical field?",
+      question: "Which movie features: 'Nuvvu nacchav ante... adhi expression kaadhu... confession'?",
       options: [
-        "Leader",
-        "Tagore",
-        "Ko Antey Koti",
-        "Pokiri"
-      ],
-      correctAnswer: 1,
-      explanation: "Tagore addresses medical corruption"
-    },
-    {
-      question: "Which movie has a message about environmental conservation?",
-      options: [
-        "Khaleja",
-        "Leader",
-        "Mirchi",
-        "Athadu"
-      ],
-      correctAnswer: 0,
-      explanation: "Khaleja deals with environmental issues"
-    },
-    {
-      question: "Which movie addresses media ethics?",
-      options: [
-        "Leader",
-        "Bharath Ane Nenu",
-        "Cameraman Ganga",
-        "Jersey"
-      ],
-      correctAnswer: 2,
-      explanation: "Cameraman Ganga deals with media responsibility"
-    },
-    {
-      question: "Which movie has a message about organ donation?",
-      options: [
-        "Manam",
-        "Leader",
-        "Tagore",
-        "Srimanthudu"
-      ],
-      correctAnswer: 0,
-      explanation: "Manam promotes organ donation"
-    },
-    {
-      question: "Which movie deals with farmers' issues?",
-      options: [
-        "Rangasthalam",
-        "Maharshi",
-        "Leader",
-        "Jersey"
-      ],
-      correctAnswer: 1,
-      explanation: "Maharshi highlights farmers' problems"
-    },
-    {
-      question: "Which movie addresses women empowerment?",
-      options: [
-        "Arundhati",
-        "Anand",
+        "100% Love",
         "Happy Days",
-        "Pokiri"
+        "Nuvvu Naku Nachav",
+        "Manmadhudu"
       ],
       correctAnswer: 0,
-      explanation: "Arundhati is about women empowerment"
+      explanation: "From 100% Love - wordplay between expression and confession"
     },
     {
-      question: "Which movie deals with sports politics?",
+      question: "Complete: 'Prema ante _____ kaadhu... _____ tho chupinchaali'",
       options: [
-        "Sye",
-        "Jersey",
-        "Golconda High School",
-        "Leader"
-      ],
-      correctAnswer: 0,
-      explanation: "Sye deals with sports and politics"
-    },
-    {
-      question: "Which movie's climax scene is actually shown in the first 5 minutes?",
-      options: [
-        "Ghajini",
-        "Kshanam",
-        "Eega",
-        "Karthikeya"
+        "Maatalu/Panulu",
+        "Chupinchedi/Anipinchedi",
+        "Cheppedi/Cheyalsindi",
+        "Matalu/Manasu"
       ],
       correctAnswer: 1,
-      explanation: "Kshanam's climax is shown at the beginning but viewers don't realize until the end"
-    },
-    {
-      question: "In which movie does the hero's name have a hidden meaning revealed only at the climax?",
-      options: [
-        "Khaleja",
-        "Athadu",
-        "Jersey",
-        "Leader"
-      ],
-      correctAnswer: 0,
-      explanation: "In Khaleja, the hero's name Raju means 'cure' which is revealed at the climax"
-    },
-    {
-      question: "Which movie has dialogues in five different languages serving a plot purpose?",
-      options: [
-        "Fidaa",
-        "Okkadu",
-        "Vedam",
-        "Arundhati"
-      ],
-      correctAnswer: 2,
-      explanation: "Vedam uses multiple languages to show different social backgrounds"
+      explanation: "From Arya - about showing love through actions"
     }
   ],
   advanced: [
     {
-      question: "In which movie does the protagonist's philosophy contradict with the climax resolution?",
+      question: "Decode this dialogue's multiple meanings: 'Prathi Okkadu Devude... Kaani Andaru Devullu Kaadu'",
       options: [
-        "Prasthanam",
-        "Leader",
-        "Vedam",
-        "Jersey"
-      ],
-      correctAnswer: 0,
-      explanation: "Prasthanam's protagonist faces philosophical contradiction"
-    },
-    {
-      question: "Which movie's title has multiple interpretations throughout the story?",
-      options: [
-        "Awe",
-        "Vedam",
-        "Gamyam",
-        "Anand"
-      ],
-      correctAnswer: 1,
-      explanation: "Vedam's title has layered meanings"
-    },
-    {
-      question: "Which movie uses color symbolism for character development?",
-      options: [
-        "1 Nenokkadine",
-        "Awe",
-        "Jersey",
-        "Leader"
-      ],
-      correctAnswer: 1,
-      explanation: "Awe uses specific colors for different narratives"
-    },
-    {
-      question: "Which movie's climax recontextualizes its entire narrative?",
-      options: [
-        "Manam",
-        "Eega",
-        "Kshanam",
-        "Jersey"
+        "Religious commentary",
+        "Social hierarchy critique",
+        "Philosophical paradox",
+        "Political statement"
       ],
       correctAnswer: 2,
-      explanation: "Kshanam's ending changes the whole perspective"
+      explanation: "From Tagore - complex philosophical statement about divinity in humanity"
     },
     {
-      question: "Which movie has dialogue that changes meaning in three different contexts?",
+      question: "This dialogue uses three languages: 'Nenu vachanu, I have arrived, आ गया मैं' - What's its deeper context?",
       options: [
-        "Prasthanam",
-        "Vedam",
-        "Leader",
-        "Gamyam"
+        "Cultural unity",
+        "Character's evolution",
+        "Power assertion",
+        "Identity crisis"
       ],
-      correctAnswer: 0,
-      explanation: "Prasthanam uses same dialogue with different meanings"
+      correctAnswer: 2,
+      explanation: "From Businessman - shows dominance across cultural boundaries"
     },
     {
-      question: "Which movie's narrative structure mirrors its philosophical theme?",
+      question: "Analyze: 'Manishi bathukuthunnantha kaalam edho okati koduthune untadi... adhi gunde ayina kaavacchu... gadiyaaram ayina kaavacchu'",
       options: [
-        "Awe",
-        "Manam",
-        "Vedam",
-        "Gamyam"
+        "Time vs Heart metaphor",
+        "Life's constant motion",
+        "Existential rhythm",
+        "Mechanical vs Emotional"
+      ],
+      correctAnswer: 2,
+      explanation: "From Jersey - philosophical take on life's rhythm"
+    },
+    {
+      question: "What's the layered meaning in: 'Nuvvu chusedi kalalu kaadu... kalalaki artham'?",
+      options: [
+        "Dreams vs Reality",
+        "Metaphysical interpretation",
+        "Symbolic representation",
+        "Psychological analysis"
       ],
       correctAnswer: 1,
-      explanation: "Manam's structure reflects its theme of eternal return"
-    },
-    {
-      question: "Which movie uses a MacGuffin that becomes metaphorically significant?",
-      options: [
-        "Athadu",
-        "Khaleja",
-        "Jersey",
-        "Leader"
-      ],
-      correctAnswer: 0,
-      explanation: "Athadu's MacGuffin gains metaphorical meaning"
-    },
-    {
-      question: "Which movie's subplot becomes more significant than the main plot?",
-      options: [
-        "Vedam",
-        "Prasthanam",
-        "Rangasthalam",
-        "Gamyam"
-      ],
-      correctAnswer: 1,
-      explanation: "Prasthanam's subplot overshadows main narrative"
-    },
-    {
-      question: "Which movie uses non-linear storytelling to reveal character psychology?",
-      options: [
-        "1 Nenokkadine",
-        "Kshanam",
-        "Awe",
-        "Vedam"
-      ],
-      correctAnswer: 0,
-      explanation: "1 Nenokkadine's structure reveals mental state"
-    },
-    {
-      question: "Which movie's dialogue has Sanskrit shloka references?",
-      options: [
-        "Prasthanam",
-        "Sri Ramadasu",
-        "Annamayya",
-        "Leader"
-      ],
-      correctAnswer: 0,
-      explanation: "Prasthanam incorporates Sanskrit philosophy"
-    },
-    {
-      question: "Which movie uses weather as a character development tool?",
-      options: [
-        "Rangasthalam",
-        "Arya",
-        "Jersey",
-        "Varsham"
-      ],
-      correctAnswer: 2,
-      explanation: "Jersey uses rain for character development"
-    },
-    {
-      question: "Which movie's title sequence foreshadows the entire plot?",
-      options: [
-        "Awe",
-        "Manam",
-        "Vedam",
-        "Kshanam"
-      ],
-      correctAnswer: 0,
-      explanation: "Awe's opening sequence contains plot hints"
-    },
-    {
-      question: "Which movie's background score uses a reversed version of its main theme to represent the antagonist?",
-      options: [
-        "Eega",
-        "Magadheera",
-        "Arundhati",
-        "Baahubali"
-      ],
-      correctAnswer: 2,
-      explanation: "Arundhati's theme is played in reverse for Pasupathi's scenes"
-    },
-    {
-      question: "In which movie does the color palette gradually shift from warm to cool tones as the story progresses?",
-      options: [
-        "Jersey",
-        "1 Nenokkadine",
-        "Mahanati",
-        "Rangasthalam"
-      ],
-      correctAnswer: 2,
-      explanation: "Mahanati's color grading changes to reflect different time periods"
-    },
-    {
-      question: "Which movie has a dialogue that means three different things in three different languages?",
-      options: [
-        "C/o Kancharapalem",
-        "Fida",
-        "Godavari",
-        "Sammohanam"
-      ],
-      correctAnswer: 0,
-      explanation: "A dialogue in C/o Kancharapalem has different meanings in Telugu, Tamil, and Sanskrit"
+      explanation: "From 1 Nenokkadine - about the meaning behind dreams rather than dreams themselves"
     }
   ]
 };
