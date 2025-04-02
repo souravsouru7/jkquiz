@@ -2,439 +2,439 @@ export const teluguMovieLevelsQuizData = {
   easy: [
     {
       id: 1,
-      question: "Which movie features the song 'Aa Ante Amalapuram'?",
+      question: "Which planet is known as the Red Planet?",
       options: [
-        "Arya",
-        "Aarya 2",
-        "Race Gurram",
-        "Julayi"
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Saturn"
       ],
       correctAnswer: 1,
-      explanation: "This popular dance number is from Aarya 2 (2009)"
+      explanation: "Mars is known as the Red Planet due to its reddish appearance"
     },
     {
       id: 2,
-      question: "Which movie has the song 'Bangaru Kodipetta'?",
+      question: "What is the capital of France?",
       options: [
-        "Magadheera",
-        "Simha",
-        "Arundhati",
-        "Attarintiki Daredi"
+        "London",
+        "Berlin",
+        "Madrid",
+        "Paris"
       ],
       correctAnswer: 3,
-      explanation: "This peppy folk song is from Attarintiki Daredi (2013)"
+      explanation: "Paris is the capital city of France"
     },
     {
       id: 3,
-      question: "Who sang the hit song 'Ringa Ringa' from Arya 2?",
+      question: "Who painted the Mona Lisa?",
       options: [
-        "Udit Narayan",
-        "Karthik",
-        "Baba Sehgal",
-        "S.P. Balasubrahmanyam"
+        "Vincent Van Gogh",
+        "Leonardo da Vinci",
+        "Pablo Picasso",
+        "Michelangelo"
       ],
       correctAnswer: 1,
-      explanation: "Karthik sang this energetic dance number"
+      explanation: "Leonardo da Vinci painted the famous Mona Lisa"
     },
     {
       id: 4,
-      question: "Which song from Okkadu became an instant classic?",
+      question: "Which element has the chemical symbol 'O'?",
       options: [
-        "Satyam",
-        "Nuvvem Maya Chesavo",
-        "Nee Dookudu",
-        "Prema Desam"
+        "Gold",
+        "Oxygen",
+        "Osmium",
+        "Oganesson"
       ],
       correctAnswer: 1,
-      explanation: "Nuvvem Maya Chesavo was a chartbuster from Okkadu (2003)"
+      explanation: "Oxygen is represented by the symbol 'O' on the periodic table"
     },
     {
       id: 5,
-      question: "Which 2000s movie features the song 'Maha Maha'?",
+      question: "Which country is home to the Great Barrier Reef?",
       options: [
-        "Jalsa",
-        "Varsham",
-        "Jai Chiranjeeva",
-        "Pournami"
+        "Brazil",
+        "Australia",
+        "Thailand",
+        "Mexico"
       ],
       correctAnswer: 1,
-      explanation: "This romantic number is from Varsham (2004)"
+      explanation: "The Great Barrier Reef is located off the coast of Australia"
     },
     {
       id: 6,
-      question: "Which famous Mahesh Babu movie had the song 'Dethadi Dethadi'?",
+      question: "What is the largest mammal in the world?",
       options: [
-        "Pokiri",
-        "Athadu",
-        "Khaleja",
-        "Dookudu"
+        "Blue Whale",
+        "African Elephant",
+        "Giraffe",
+        "Polar Bear"
       ],
       correctAnswer: 0,
-      explanation: "This energetic song is from Pokiri (2006)"
+      explanation: "The Blue Whale is the largest mammal on Earth"
     },
     {
       id: 7,
-      question: "Which actor danced to 'Top Lesi Poddi' from Iddarammayilatho?",
+      question: "Who wrote 'Romeo and Juliet'?",
       options: [
-        "Ram Charan",
-        "Allu Arjun",
-        "Jr NTR",
-        "Prabhas"
+        "Charles Dickens",
+        "William Shakespeare",
+        "Jane Austen",
+        "Mark Twain"
       ],
       correctAnswer: 1,
-      explanation: "Allu Arjun performed this hit dance number (2013)"
+      explanation: "William Shakespeare wrote the famous tragedy Romeo and Juliet"
     },
     {
       id: 8,
-      question: "Which movie features 'Who Am I' song?",
+      question: "What is the tallest mountain in the world?",
       options: [
-        "Baahubali",
-        "1: Nenokkadine",
-        "Spyder",
-        "Saaho"
+        "K2",
+        "Mount Everest",
+        "Mount Kilimanjaro",
+        "Mount Fuji"
       ],
       correctAnswer: 1,
-      explanation: "This philosophical song is from 1: Nenokkadine (2014)"
+      explanation: "Mount Everest is the tallest mountain above sea level"
     },
     {
       id: 9,
-      question: "Which movie has the popular song 'My Love is Gone'?",
+      question: "Which is the largest ocean on Earth?",
       options: [
-        "Arya",
-        "Happy Days",
-        "Aarya 2",
-        "Julayi"
+        "Atlantic Ocean",
+        "Indian Ocean",
+        "Pacific Ocean",
+        "Arctic Ocean"
       ],
       correctAnswer: 2,
-      explanation: "This heartbreak song is from Aarya 2 (2009)"
+      explanation: "The Pacific Ocean is the largest and deepest ocean on Earth"
     },
     {
       id: 10,
-      question: "Which movie features the song 'Kajal Chellivaa'?",
+      question: "What year did the Titanic sink?",
       options: [
-        "Gharshana",
-        "Darling",
-        "Orange",
-        "Gangotri"
+        "1912",
+        "1905",
+        "1920",
+        "1931"
       ],
       correctAnswer: 0,
-      explanation: "This romantic song is from Gharshana (2004)"
+      explanation: "The Titanic sank on its maiden voyage in April 1912"
     },
     {
       id: 11,
-      question: "Which film has the foot-tapping number 'Ranu Ranu'?",
+      question: "Who is known as the father of modern physics?",
       options: [
-        "Orange",
-        "Mr. Perfect",
-        "Adhurs",
-        "Businessman"
+        "Albert Einstein",
+        "Isaac Newton",
+        "Galileo Galilei",
+        "Stephen Hawking"
       ],
       correctAnswer: 0,
-      explanation: "This upbeat song is from Orange (2010)"
+      explanation: "Albert Einstein is often referred to as the father of modern physics"
     },
     {
       id: 12,
-      question: "Which movie features the song 'O Madhu'?",
+      question: "What is the largest organ in the human body?",
       options: [
-        "Julayi",
-        "Race Gurram",
-        "Arya",
-        "S/O Satyamurthy"
+        "Heart",
+        "Liver",
+        "Skin",
+        "Brain"
       ],
       correctAnswer: 2,
-      explanation: "This romantic song is from Arya (2004)"
+      explanation: "The skin is the largest organ in the human body"
     }
   ],
   intermediate: [
     {
       id: 13,
-      question: "Who composed the soundtrack for Baahubali?",
+      question: "Which country was the first to reach the South Pole?",
       options: [
-        "A.R. Rahman",
-        "Devi Sri Prasad",
-        "M.M. Keeravani",
-        "S.S. Thaman"
+        "United States",
+        "United Kingdom",
+        "Norway",
+        "Russia"
       ],
       correctAnswer: 2,
-      explanation: "M.M. Keeravani composed the epic soundtrack"
+      explanation: "Norway, led by Roald Amundsen, reached the South Pole first in 1911"
     },
     {
       id: 14,
-      question: "Which song from Rangasthalam became famous for its folk elements?",
+      question: "What is the only metal that is liquid at room temperature?",
       options: [
-        "Rangamma Mangamma",
-        "Yentha Sakkagunave",
-        "Ranga Ranga Rangasthalam",
-        "Jigelu Rani"
+        "Mercury",
+        "Lead",
+        "Gallium",
+        "Cesium"
       ],
       correctAnswer: 0,
-      explanation: "Rangamma Mangamma was praised for authentic folk style"
+      explanation: "Mercury is liquid at standard room temperature and pressure"
     },
     {
       id: 15,
-      question: "Which RRR song won an Oscar?",
+      question: "Which philosopher is known for the quote 'I think, therefore I am'?",
       options: [
-        "Dosti",
-        "Naatu Naatu",
-        "Komuram Bheemudo",
-        "Etthara Jenda"
+        "Aristotle",
+        "René Descartes",
+        "Friedrich Nietzsche",
+        "Socrates"
       ],
       correctAnswer: 1,
-      explanation: "Naatu Naatu won the Academy Award for Best Original Song"
+      explanation: "René Descartes coined this famous philosophical statement"
     },
     {
       id: 16,
-      question: "Which instrument is prominently featured in the song 'Sanchari' from Jersey?",
+      question: "What is the hardest natural substance on Earth?",
       options: [
-        "Flute",
-        "Violin",
-        "Guitar",
-        "Mandolin"
+        "Diamond",
+        "Titanium",
+        "Platinum",
+        "Quartz"
       ],
       correctAnswer: 0,
-      explanation: "Flute gives this song its haunting melody"
+      explanation: "Diamond is the hardest naturally occurring substance known"
     },
     {
       id: 17,
-      question: "Which traditional dance form inspired 'Swing Zara' from Jai Lava Kusa?",
+      question: "Which war is often called 'The Great War'?",
       options: [
-        "Kuchipudi",
-        "Perini",
-        "Belly dance",
-        "Folk"
+        "The Vietnam War",
+        "World War II",
+        "World War I",
+        "The Cold War"
       ],
       correctAnswer: 2,
-      explanation: "This song incorporates belly dance elements"
+      explanation: "World War I (1914-1918) was commonly known as 'The Great War'"
     },
     {
       id: 18,
-      question: "What makes the song 'Sada Siva' from Khaleja unique?",
+      question: "What is the study of fungi called?",
       options: [
-        "Six-minute length",
-        "Classical fusion",
-        "Multiple vocalists",
-        "Spiritual lyrics"
+        "Botany",
+        "Entomology",
+        "Zoology",
+        "Mycology"
       ],
       correctAnswer: 3,
-      explanation: "The song is known for its spiritual, devotional lyrics"
+      explanation: "Mycology is the scientific study of fungi"
     },
     {
       id: 19,
-      question: "Which music director is known for songs like 'Bujji Pilla' and 'Poovai Poovai'?",
+      question: "What particle in an atom has a positive charge?",
       options: [
-        "Harris Jayaraj",
-        "Yuvan Shankar Raja",
-        "G.V. Prakash Kumar",
-        "Thaman S"
+        "Proton",
+        "Neutron",
+        "Electron",
+        "Photon"
       ],
       correctAnswer: 0,
-      explanation: "Harris Jayaraj composed these melodious hits"
+      explanation: "Protons carry a positive electrical charge"
     },
     {
       id: 20,
-      question: "Which song from Fidaa celebrates village lifestyle?",
+      question: "What ancient wonder was located in Alexandria, Egypt?",
       options: [
-        "Vachinde",
-        "Hey Pillagaada",
-        "Oosupodu",
-        "Edo Edo Aina"
+        "The Lighthouse",
+        "The Hanging Gardens",
+        "The Colossus",
+        "The Temple of Artemis"
       ],
       correctAnswer: 0,
-      explanation: "Vachinde celebrates rural Telangana culture"
+      explanation: "The Lighthouse (Pharos) of Alexandria was one of the Seven Wonders"
     },
     {
       id: 21,
-      question: "Which language's folk style influenced 'Saranga Dariya' from Love Story?",
+      question: "Which country has the most UNESCO World Heritage Sites?",
       options: [
-        "Tamil",
-        "Telangana",
-        "Malayalam",
-        "Kannada"
+        "United States",
+        "Italy",
+        "China",
+        "France"
       ],
       correctAnswer: 1,
-      explanation: "It's based on Telangana folk traditions"
+      explanation: "Italy has the most UNESCO World Heritage Sites with 58"
     },
     {
       id: 22,
-      question: "Which fusion elements are in 'Blockbuster' from Sarrainodu?",
+      question: "Who developed the theory of evolution by natural selection?",
       options: [
-        "Rock and folk",
-        "EDM and classical",
-        "Hip-hop and carnatic",
-        "Jazz and folk"
+        "Charles Darwin",
+        "Gregor Mendel",
+        "Louis Pasteur",
+        "Alexander Fleming"
       ],
       correctAnswer: 0,
-      explanation: "The song blends rock and folk elements"
+      explanation: "Charles Darwin proposed the theory of evolution through natural selection"
     },
     {
       id: 23,
-      question: "Who wrote the lyrics for most songs in Pushpa: The Rise?",
+      question: "What is the name of the deepest point in Earth's oceans?",
       options: [
-        "Chandrabose",
-        "Sirivennela",
-        "Anantha Sriram",
-        "Ramajogayya Sastry"
+        "Mariana Trench",
+        "Tonga Trench",
+        "Java Trench",
+        "Puerto Rico Trench"
       ],
       correctAnswer: 0,
-      explanation: "Chandrabose wrote the lyrics including 'Srivalli'"
+      explanation: "The Mariana Trench in the Pacific Ocean is the deepest known point"
     },
     {
       id: 24,
-      question: "What's special about 'Poovai Poovai' from Kushi?",
+      question: "What layer of Earth's atmosphere contains the ozone layer?",
       options: [
-        "Shot in single take",
-        "Recorded live",
-        "Sung by the lead actor",
-        "No instruments used"
+        "Troposphere",
+        "Stratosphere",
+        "Mesosphere",
+        "Thermosphere"
       ],
       correctAnswer: 1,
-      explanation: "The song was recorded live with orchestra"
+      explanation: "The ozone layer is located within the stratosphere"
     }
   ],
   advanced: [
     {
       id: 25,
-      question: "Which raaga forms the base of 'Sirivennela' from Sirivennela?",
+      question: "Which of these elements is not a noble gas?",
       options: [
-        "Kalyani",
-        "Shankarabharanam",
-        "Mohanam",
-        "Charukesi"
+        "Krypton",
+        "Argon",
+        "Selenium",
+        "Xenon"
       ],
-      correctAnswer: 3,
-      explanation: "It's based on Charukesi raaga"
+      correctAnswer: 2,
+      explanation: "Selenium is a nonmetal, not a noble gas"
     },
     {
       id: 26,
-      question: "Who wrote the poetic lyrics for 'Samayama' from Oopiri?",
+      question: "In quantum mechanics, what principle states that you cannot simultaneously know the exact position and momentum of a particle?",
       options: [
-        "Sirivennela Seetharama Sastry",
-        "Chandrabose",
-        "Anantha Sriram",
-        "Ramajogayya Sastry"
+        "Pauli Exclusion Principle",
+        "Heisenberg Uncertainty Principle",
+        "Newton's First Law",
+        "Einstein's Relativity"
       ],
-      correctAnswer: 0,
-      explanation: "The legendary Sirivennela wrote these philosophical lyrics"
+      correctAnswer: 1,
+      explanation: "The Heisenberg Uncertainty Principle is a fundamental concept in quantum physics"
     },
     {
       id: 27,
-      question: "Which traditional instrument creates the distinctive sound in 'Dhivara' from Baahubali?",
+      question: "Which ancient civilization built the city of Machu Picchu?",
       options: [
-        "Nadaswaram",
-        "Sitar",
-        "Veena",
-        "Sarod"
+        "Maya",
+        "Inca",
+        "Aztec",
+        "Olmec"
       ],
       correctAnswer: 1,
-      explanation: "Sitar gives the song its distinctive sound"
+      explanation: "Machu Picchu was built by the Inca civilization in the 15th century"
     },
     {
       id: 28,
-      question: "What musical technique is used in 'Life of Ram' from '96?",
+      question: "What is the most abundant element in the universe?",
       options: [
-        "Counterpoint",
-        "Leitmotif",
-        "Crescendo-decrescendo pattern",
-        "Call and response"
+        "Oxygen",
+        "Hydrogen",
+        "Helium",
+        "Carbon"
       ],
       correctAnswer: 1,
-      explanation: "The song uses leitmotif technique throughout"
+      explanation: "Hydrogen makes up about 75% of all baryonic mass in the universe"
     },
     {
       id: 29,
-      question: "Which song from KGF features complex percussion arrangements?",
+      question: "Who won the Nobel Prize for proving that DNA is the carrier of genetic information?",
       options: [
-        "Dheera Dheera",
-        "Salaam Rocky Bhai",
-        "Garbadhi",
-        "Toofan"
+        "Watson and Crick",
+        "Rosalind Franklin",
+        "Oswald Avery",
+        "Frederick Griffith"
       ],
-      correctAnswer: 0,
-      explanation: "Dheera Dheera has intricate percussion patterns"
+      correctAnswer: 2,
+      explanation: "Oswald Avery proved DNA carries genetic information in his 1944 experiment"
     },
     {
       id: 30,
-      question: "What makes 'Samajavaragamana' from Ala Vaikunthapurramuloo technically complex?",
+      question: "What is the mathematical term for a shape that is self-similar at different scales?",
       options: [
-        "Scale changes",
-        "Time signature variations",
-        "Microtonal elements",
-        "Polyphonic structure"
+        "Polygon",
+        "Fractal",
+        "Tesseract",
+        "Möbius strip"
       ],
       correctAnswer: 1,
-      explanation: "The song has unusual time signature variations"
+      explanation: "A fractal displays self-similarity at various scales"
     },
     {
       id: 31,
-      question: "Which song from Arjun Reddy uses piano to represent the protagonist's emotional state?",
+      question: "Which of the following is NOT a type of nuclear decay?",
       options: [
-        "Madhurame",
-        "Telisene",
-        "The Break Up Song",
-        "Emitemitemito"
+        "Alpha decay",
+        "Beta decay",
+        "Delta decay",
+        "Gamma decay"
       ],
       correctAnswer: 2,
-      explanation: "The Break Up Song uses piano to show emotional turmoil"
+      explanation: "Delta decay is not a type of radioactive decay"
     },
     {
       id: 32,
-      question: "Which musical pattern is used in 'Inkem Inkem' from Geetha Govindam?",
+      question: "What is the name of the theorem that states 'There is no general algorithm to determine whether a given program will terminate or run forever'?",
       options: [
-        "Ostinato",
-        "Arpeggios",
-        "Drone bass",
-        "Countermelody"
+        "Gödel's Incompleteness Theorem",
+        "Fermat's Last Theorem",
+        "Halting Problem",
+        "Riemann Hypothesis"
       ],
-      correctAnswer: 1,
-      explanation: "The song uses arpeggio patterns extensively"
+      correctAnswer: 2,
+      explanation: "The Halting Problem is a fundamental concept in computer science"
     },
     {
       id: 33,
-      question: "Which vocal technique makes 'Samajavaragamana' challenging to sing?",
+      question: "What is the only constant in the Schrödinger equation that is specific to the quantum system being described?",
       options: [
-        "Melisma",
-        "Staccato",
-        "Falsetto shifts",
-        "Extended vocal range"
+        "Planck's constant",
+        "Hamiltonian operator",
+        "Wave function",
+        "Reduced mass"
       ],
-      correctAnswer: 3,
-      explanation: "The song requires an unusually wide vocal range"
+      correctAnswer: 1,
+      explanation: "The Hamiltonian operator describes the total energy of the system"
     },
     {
       id: 34,
-      question: "Which classical Carnatic element is in 'Bujji Pilla' from Jagadam?",
+      question: "Which early civilization developed the first known written legal code?",
       options: [
-        "Alapana",
-        "Swara patterns",
-        "Gamaka",
-        "Thillana style"
+        "Sumerians",
+        "Babylonians",
+        "Egyptians",
+        "Hittites"
       ],
-      correctAnswer: 2,
-      explanation: "The song incorporates Gamaka vocal ornamentations"
+      correctAnswer: 1,
+      explanation: "The Code of Hammurabi was developed by the Babylonians around 1754 BCE"
     },
     {
       id: 35,
-      question: "What makes the orchestration of 'Enno Ratrulu' from Pelli Choopulu unique?",
+      question: "What statistical test would you use to compare the means of three or more unrelated groups?",
       options: [
-        "Minimalist approach",
-        "Full symphony orchestra",
-        "Traditional instruments only",
-        "Electronic sampling"
+        "T-test",
+        "Chi-square test",
+        "ANOVA",
+        "Pearson correlation"
       ],
-      correctAnswer: 0,
-      explanation: "It uses minimalist orchestration for emotional impact"
+      correctAnswer: 2,
+      explanation: "Analysis of Variance (ANOVA) is used to compare means of multiple groups"
     },
     {
       id: 36,
-      question: "Which complex music production technique is used in 'Ramulo Ramula' from Ala Vaikunthapurramuloo?",
+      question: "In molecular biology, what is the process called where RNA is synthesized from DNA?",
       options: [
-        "Granular synthesis",
-        "Layered vocal sampling",
-        "Folk-electronic fusion",
-        "Traditional live recording"
+        "Replication",
+        "Transcription",
+        "Translation",
+        "Transduction"
       ],
-      correctAnswer: 2,
-      explanation: "The song blends folk elements with electronic production"
+      correctAnswer: 1,
+      explanation: "Transcription is the process of creating RNA from a DNA template"
     }
   ]
 };
