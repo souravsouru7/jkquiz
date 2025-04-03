@@ -1,290 +1,189 @@
 export const quizData = {
   easy: [
     {
-      question: "Which color brings bad luck to this IPL team according to their superstition?",
-      options: ["Blue for MI", "Purple for KKR", "Black for CSK", "Red for RCB"],
-      correct: 2,
-      category: "IPL Teams"
-    },
-    {
-      question: "If a batsman hits 6 sixes in an over during IPL, how many more runs would he need to score to reach a century if he's on 64?",
-      options: ["36", "0", "6", "30"],
+      question: "Which mammal can jump the highest relative to its body size?",
+      options: ["Kangaroo", "Cat", "Rabbit", "Flea"],
       correct: 1,
-      category: "IPL Stats"
+      category: "Animals"
     },
     {
-      question: "Which IPL team's name would you get if you mix Yellow and Red?",
-      options: ["RCB", "Gujarat Titans", "Lucknow SuperGiants", "SRH"],
+      question: "If a clock shows 3:15, what is the angle between the hour and minute hand?",
+      options: ["90°", "75°", "82.5°", "67.5°"],
       correct: 3,
-      category: "IPL Teams"
+      category: "Mathematics"
     },
     {
-      question: "If Mr. X has played all IPL seasons from 2008 to 2023, how many seasons has he missed if the total seasons played are 16?",
-      options: ["1", "2", "0", "3"],
-      correct: 2,
-      category: "IPL History"
-    },
-    {
-      question: "Which IPL team's home ground is named after a spice?",
-      options: ["RCB", "CSK", "KKR", "MI"],
-      correct: 2,
-      category: "IPL Venues"
-    },
-    {
-      question: "If a team needs 2 runs to win with 1 wicket left, what's the worst possible way to lose?",
-      options: ["Run out", "Stumped", "Hit wicket", "All of these"],
-      correct: 3,
-      category: "IPL Cricket"
-    },
-    {
-      question: "What do RR and RCB have in common that no other team has?",
-      options: ["Letter R", "Color Red", "Royal in name", "All of these"],
-      correct: 2,
-      category: "IPL Teams"
-    },
-    {
-      question: "Which IPL team's jersey represents the color of fire?",
-      options: ["MI", "LSG", "SRH", "GT"],
-      correct: 2,
-      category: "IPL Teams"
-    },
-    {
-      question: "If CSK won in 2010, 2011, 2018, and 2021, how many years gap was there between their 3rd and 4th title?",
-      options: ["4 years", "3 years", "2 years", "5 years"],
-      correct: 1,
-      category: "IPL History"
-    },
-    {
-      question: "Which IPL team's name sounds like a weather forecast?",
-      options: ["Thunder Kings", "Storm Riders", "Sunrisers", "Lightning Stars"],
-      correct: 2,
-      category: "IPL Teams"
-    },
-    {
-      question: "Which player's jersey number equals the runs needed for a super over win?",
-      options: ["MS Dhoni (7)", "Virat Kohli (18)", "Rohit Sharma (45)", "KL Rahul (1)"],
+      question: "What is the capital of Bhutan?",
+      options: ["Thimphu", "Paro", "Punakha", "Bumthang"],
       correct: 0,
-      category: "IPL Players"
+      category: "Capitals"
     },
     {
-      question: "If Gayle hits 17 sixes in an innings, how many runs did he score just through sixes?",
-      options: ["102", "98", "104", "100"],
+      question: "Which bird can fly backwards?",
+      options: ["Eagle", "Hummingbird", "Sparrow", "Parrot"],
+      correct: 1,
+      category: "Birds"
+    },
+    {
+      question: "I speak without a mouth and hear without ears. What am I?",
+      options: ["Echo", "Wind", "Radio", "Phone"],
       correct: 0,
-      category: "IPL Stats"
-    },
-    {
-      question: "Which IPL player's name becomes a cricket term if you remove the last letter?",
-      options: ["Root", "Ball", "Lynn", "Finn"],
-      correct: 2,
-      category: "IPL Players"
-    },
-    {
-      question: "What comes next: 2008-CSK, 2009-DC, 2010-MI, 2011-RCB...?",
-      options: ["2012-KKR", "2012-CSK", "2012-DD", "2012-PBKS"],
-      correct: 0,
-      category: "IPL History"
-    },
-    {
-      question: "Which IPL team's initials spell another word?",
-      options: ["RR (are-are)", "DC (dee-see)", "KKR (kay-kay-are)", "CSK (see-es-kay)"],
-      correct: 1,
-      category: "IPL Teams"
-    },
-    {
-      question: "According to IPL rules, how many overseas players can be in playing XI?",
-      options: ["5", "4", "3", "6"],
-      correct: 1,
-      category: "IPL Rules"
-    },
-    {
-      question: "If a strategic timeout is not taken by 16th over, what happens?",
-      options: ["Match referee takes it", "Umpire enforces it", "No timeout taken", "Team gets penalized"],
-      correct: 1,
-      category: "IPL Rules"
-    },
-    {
-      question: "Which edition of IPL introduced 'Impact Player' rule?",
-      options: ["2022", "2023", "2021", "2020"],
-      correct: 1,
-      category: "IPL Rules"
+      category: "Riddles"
     }
+    // ...Add more easy questions following this pattern
   ],
   intermediate: [
     {
-      question: "If a bowler bowls 2 no-balls, 3 wides, and takes 2 wickets in an over, how many legal deliveries are left?",
-      options: ["4", "3", "2", "1"],
+      question: "If a shirt's price is cut by 20% and then increased by 20%, what's the final price relative to original?",
+      options: ["Same", "4% less", "4% more", "20% less"],
       correct: 1,
-      category: "IPL Cricket"
+      category: "Mathematics"
     },
     {
-      question: "Which IPL team's home ground is closest to sea level?",
-      options: ["KKR", "MI", "CSK", "RCB"],
+      question: "Which country is known as the Land of a Thousand Lakes?",
+      options: ["Sweden", "Finland", "Norway", "Canada"],
       correct: 1,
-      category: "IPL Venues"
+      category: "Geography"
     },
     {
-      question: "If you add all IPL teams' titles till 2023, what number would match this sum?",
-      options: ["15", "16", "14", "13"],
-      correct: 1,
-      category: "IPL Stats"
-    },
-    {
-      question: "Which IPL team's name becomes another team's name if you remove one letter?",
-      options: ["KKR to RR", "RCB to RR", "CSK to SK", "MI to I"],
-      correct: 1,
-      category: "IPL Teams"
-    },
-    {
-      question: "In which IPL team's home ground would you need the most oxygen to play?",
-      options: ["PBKS", "RR", "DC", "RCB"],
+      question: "What's the only number that has the same number of letters as its value?",
+      options: ["One", "Two", "Three", "Four"],
       correct: 3,
-      category: "IPL Venues"
+      category: "Logic"
     },
     {
-      question: "If AB de Villiers' strike rate is 180, how many balls did he face to score 90 runs?",
-      options: ["45", "50", "55", "60"],
-      correct: 1,
-      category: "IPL Mathematics"
-    },
-    {
-      question: "Which pair of players share their jersey numbers with legendary Don Bradman's Test average?",
-      options: ["Kohli-Rohit", "Raina-Dhoni", "Maxwell-Miller", "Warner-Smith"],
+      question: "Which animal never sleeps during its entire life?",
+      options: ["Shark", "Dolphin", "Bullfrog", "Giraffe"],
       correct: 2,
-      category: "IPL Trivia"
+      category: "Animals"
     },
     {
-      question: "In which over of IPL history were the most runs scored by legal deliveries only?",
-      options: ["37 runs", "36 runs", "35 runs", "34 runs"],
-      correct: 1,
-      category: "IPL Records"
-    },
-    {
-      question: "If you add the IPL titles of MI and CSK, then multiply by RCB's titles, what do you get?",
-      options: ["0", "10", "15", "5"],
-      correct: 0,
-      category: "IPL Mathematics"
-    },
-    {
-      question: "Which player's IPL journey matches the fibonacci sequence in terms of teams played?",
-      options: ["Ashwin", "Maxwell", "Warner", "Rahul"],
-      correct: 1,
-      category: "IPL Players"
-    },
-    {
-      question: "Under DRS rules in IPL, how many seconds does a team have to make a review?",
-      options: ["10 seconds", "15 seconds", "20 seconds", "25 seconds"],
-      correct: 1,
-      category: "IPL Rules"
-    },
-    {
-      question: "Which IPL record is shared by Chris Gayle and Brendon McCullum?",
-      options: ["Fastest fifty", "Opening match century", "Most sixes in an innings", "Highest score"],
-      correct: 1,
-      category: "IPL Records"
-    },
-    {
-      question: "In case of Super Over tie, what determines the winner?",
-      options: ["More sixes", "More boundaries", "Another Super Over", "Higher league position"],
+      question: "What has keys but no locks, space but no room, and you can enter but not go in?",
+      options: ["Mind", "Computer", "Keyboard", "Book"],
       correct: 2,
-      category: "IPL Rules"
+      category: "Riddles"
     },
     {
-      question: "Which bowler has most dot balls in IPL history?",
-      options: ["Harbhajan", "Malinga", "Bumrah", "Ashwin"],
+      question: "If a train travels 120 km in 2 hours, what's its speed in meters per second?",
+      options: ["15 m/s", "16.67 m/s", "18 m/s", "20 m/s"],
       correct: 1,
-      category: "IPL Records"
+      category: "Mathematics"
+    },
+    {
+      question: "Which animal's fingerprints are almost indistinguishable from humans?",
+      options: ["Gorilla", "Koala", "Chimpanzee", "Orangutan"],
+      correct: 1,
+      category: "Animals"
+    },
+    {
+      question: "What's unique about New Zealand's Mount Cook?",
+      options: ["Always covered in snow", "Has two peaks", "Growing taller each year", "Shrinking each year"],
+      correct: 2,
+      category: "Geography"
+    },
+    {
+      question: "Which number is considered unlucky in Italy because it sounds like 'death'?",
+      options: ["13", "17", "4", "9"],
+      correct: 1,
+      category: "Culture"
+    },
+    {
+      question: "What gets wetter and wetter the more it dries?",
+      options: ["Sponge", "Towel", "Paper", "Cloth"],
+      correct: 1,
+      category: "Riddles"
     }
   ],
   advanced: [
     {
-      question: "If CSK's win percentage is 60% and they've played 200 matches, how many matches did they not win (including ties/no results)?",
-      options: ["80", "120", "70", "90"],
-      correct: 0,
-      category: "IPL Stats"
+      question: "In a race, you pass the person in 2nd place. What position are you in?",
+      options: ["1st", "2nd", "3rd", "Cannot determine"],
+      correct: 1,
+      category: "Logic"
     },
     {
-      question: "Which IPL venue would experience the highest Magnus effect on the ball due to atmospheric conditions?",
-      options: ["Eden Gardens", "Chinnaswamy", "Wankhede", "Dharamshala"],
+      question: "Which bird's eye is bigger than its brain?",
+      options: ["Owl", "Ostrich", "Eagle", "Emu"],
+      correct: 1,
+      category: "Birds"
+    },
+    {
+      question: "If you multiply this number by any other number, the answer will always end with the same digit. What is it?",
+      options: ["5", "6", "7", "9"],
+      correct: 0,
+      category: "Mathematics"
+    },
+    {
+      question: "Which capital city was built on seven hills?",
+      options: ["Athens", "Rome", "Istanbul", "Jerusalem"],
+      correct: 1,
+      category: "Capitals"
+    },
+    {
+      question: "What breaks but never falls, and what falls but never breaks?",
+      options: ["Day and Night", "Sun and Moon", "Winter and Summer", "Dawn and Dusk"],
+      correct: 0,
+      category: "Riddles"
+    },
+    {
+      question: "If three cats catch three mice in three minutes, how many cats would be needed to catch 100 mice in 100 minutes?",
+      options: ["3 cats", "33 cats", "100 cats", "1 cat"],
+      correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "Which capital city is built on 118 small islands?",
+      options: ["Amsterdam", "Stockholm", "Venice", "Copenhagen"],
+      correct: 2,
+      category: "Geography"
+    },
+    {
+      question: "What percentage of Earth's freshwater is frozen in the Antarctic?",
+      options: ["50%", "60%", "70%", "90%"],
       correct: 3,
-      category: "IPL Science"
+      category: "Science"
     },
     {
-      question: "If a team's required run rate is 12, and they hit one six per over, what percentage of remaining balls must be scored off to win?",
-      options: ["50%", "25%", "75%", "100%"],
-      correct: 0,
-      category: "IPL Mathematics"
-    },
-    {
-      question: "Which IPL team's home ground has the most complex Duckworth-Lewis calculations due to weather patterns?",
-      options: ["RCB", "KKR", "DC", "PBKS"],
-      correct: 0,
-      category: "IPL Analytics"
-    },
-    {
-      question: "If all IPL teams' logos were arranged by color spectrum, which team would be in the middle?",
-      options: ["MI", "RCB", "GT", "LSG"],
+      question: "If you divide 30 by half and add 10, what do you get?",
+      options: ["25", "40", "70", "35"],
       correct: 2,
-      category: "IPL Design"
+      category: "Mathematics"
     },
     {
-      question: "If a player's batting average increased after scoring a duck, what was his previous average?",
-      options: ["Less than 0", "0", "Not possible", "Need more information"],
+      question: "Which bird is known to incorporate human trash into its courtship display?",
+      options: ["Crow", "Bower Bird", "Magpie", "Blue Jay"],
+      correct: 1,
+      category: "Birds"
+    },
+    {
+      question: "A doctor and a boy are fishing. The doctor is the boy's son, but the boy is not the doctor's son. How?",
+      options: ["Adoption", "Step-father", "The doctor is his mother", "Impossible"],
       correct: 2,
-      category: "IPL Statistics"
+      category: "Logic"
     },
     {
-      question: "Which IPL record holder's jersey number is the square root of their record figure?",
-      options: ["Kohli-973 runs", "Malinga-170 wickets", "Gayle-175*", "Russell-13 sixes"],
+      question: "What number comes next: 2, 3, 5, 9, 17...?",
+      options: ["33", "34", "35", "36"],
+      correct: 0,
+      category: "Pattern"
+    },
+    {
+      question: "Which ancient city is considered the oldest continuously inhabited city in the world?",
+      options: ["Jerusalem", "Damascus", "Athens", "Rome"],
       correct: 1,
-      category: "IPL Records"
+      category: "History"
     },
     {
-      question: "What's unique about the dismissal pattern of MS Dhoni in IPL finals he's won?",
-      options: ["Always Not Out", "Only Run Out", "Never Bowled", "Only Caught"],
-      correct: 0,
-      category: "IPL Finals"
-    },
-    {
-      question: "Which player's age, jersey number, and IPL titles form an arithmetic sequence?",
-      options: ["Rohit Sharma", "MS Dhoni", "Virat Kohli", "Suresh Raina"],
+      question: "If you have a square room with all walls painted white, and all doors and windows closed, what color is the stairs?",
+      options: ["White", "No stairs", "Cannot determine", "Trick question"],
       correct: 1,
-      category: "IPL Mathematics"
+      category: "Logic"
     },
     {
-      question: "If you arrange all IPL orange cap winners by runs scored, which position would Kohli's 973 be?",
-      options: ["First", "Middle", "Last", "Second"],
-      correct: 0,
-      category: "IPL Records"
-    },
-    {
-      question: "Under IPL's 'Substitute Impact Player' rule, when can't you use it?",
-      options: ["After 14th over", "If overseas limit exceeded", "In Super Over", "All of these"],
-      correct: 3,
-      category: "IPL Rules"
-    },
-    {
-      question: "Which IPL record involves the numbers 175, 66, and 13 together?",
-      options: ["Gayle's innings", "McCullum's knock", "Kohli's season", "Russell's hitting"],
-      correct: 0,
-      category: "IPL Records"
-    },
-    {
-      question: "According to IPL rules, what's the maximum time allowed between two deliveries?",
-      options: ["20 seconds", "25 seconds", "30 seconds", "35 seconds"],
+      question: "Which animal has rectangular pupils?",
+      options: ["Snake", "Goat", "Cat", "Frog"],
       correct: 1,
-      category: "IPL Rules"
-    },
-    {
-      question: "Which team holds the record for most consecutive wins in a single IPL season?",
-      options: ["KKR", "CSK", "MI", "RCB"],
-      correct: 0,
-      category: "IPL Records"
-    },
-    {
-      question: "Under the fair play rules, how many points are deducted for slow over rate per over?",
-      options: ["12 lakhs fine", "24 lakhs fine", "Both a and b", "None of these"],
-      correct: 2,
-      category: "IPL Rules"
+      category: "Animals"
     }
   ]
 };
