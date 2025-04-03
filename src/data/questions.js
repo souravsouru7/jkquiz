@@ -1,70 +1,70 @@
 export const quizData = {
   easy: [
     {
-      question: "If a plane crashes exactly on the border of India and Pakistan, where should the survivors be buried?",
-      options: ["India", "Pakistan", "Both countries", "Survivors are not buried"],
-      correct: 3,
-      category: "Logical"
-    },
-    {
-      question: "A doctor gives you 3 pills and tells you to take one every half hour. How long will the pills last?",
-      options: ["30 minutes", "1 hour", "1.5 hours", "2 hours"],
-      correct: 1,
-      category: "Logical"
-    },
-    {
-      question: "Which part of the human body continues to grow throughout life?",
-      options: ["Brain", "Heart", "Nose and Ears", "Liver"],
+      question: "How many gates does the Charminar in Hyderabad have?",
+      options: ["Two", "Three", "Four", "Five"],
       correct: 2,
-      category: "Human Body"
+      category: "Indian Places"
     },
     {
-      question: "What gets wetter and wetter the more it dries?",
-      options: ["Sponge", "Towel", "Paper", "Cloth"],
+      question: "Some months have 31 days, some have 30 days. How many have 28 days?",
+      options: ["One", "All of them", "Two", "None"],
       correct: 1,
       category: "Logical"
     },
     {
-      question: "If 3 cats catch 3 mice in 3 minutes, how long will it take 100 cats to catch 100 mice?",
-      options: ["100 minutes", "3 minutes", "33.33 minutes", "300 minutes"],
-      correct: 1,
-      category: "Mathematics"
-    },
-    {
-      question: "Which bird builds the largest nest relative to its size?",
-      options: ["Eagle", "Hummingbird", "Malleefowl", "Wren"],
-      correct: 2,
-      category: "Birds"
-    },
-    {
-      question: "What mathematical symbol was not used until the 16th century?",
-      options: ["+", "-", "×", "0"],
-      correct: 3,
-      category: "Mathematics"
-    },
-    {
-      question: "Which Indian state shares borders with the most other states?",
-      options: ["Madhya Pradesh", "Uttar Pradesh", "Maharashtra", "Bihar"],
+      question: "Which is India's smallest state by area?",
+      options: ["Sikkim", "Goa", "Tripura", "Delhi"],
       correct: 1,
       category: "Indian Places"
     },
     {
-      question: "A one-story house is made entirely of redwood. What color would the stairs be?",
-      options: ["Red", "Brown", "White", "No stairs in a one-story house"],
+      question: "What can you catch but not throw?",
+      options: ["Ball", "Cold", "Fish", "Water"],
+      correct: 1,
+      category: "Logical"
+    },
+    {
+      question: "Which famous temple in India is known as the 'Black Pagoda'?",
+      options: ["Konark Sun Temple", "Meenakshi Temple", "Virupaksha Temple", "Brihadeeswara Temple"],
+      correct: 0,
+      category: "Indian Places"
+    },
+    {
+      question: "If you drop a yellow hat in the Red Sea, what will it become?",
+      options: ["Red", "Yellow", "Orange", "Wet"],
       correct: 3,
       category: "Logical"
     },
     {
-      question: "Which animal's milk is naturally pink?",
-      options: ["Pink Dolphin", "Flamingo", "Hippopotamus", "None of these"],
-      correct: 2,
-      category: "Animals"
+      question: "Which city is known as the 'City of Lakes' in India?",
+      options: ["Jaipur", "Udaipur", "Bhopal", "Srinagar"],
+      correct: 1,
+      category: "Indian Places"
     },
     {
-      question: "In a standard deck of cards, which king doesn't have a mustache?",
-      options: ["Hearts", "Diamonds", "Spades", "Clubs"],
-      correct: 0,
+      question: "What has keys but no locks, space but no room, and you can enter but not go in?",
+      options: ["House", "Car", "Keyboard", "Phone"],
+      correct: 2,
       category: "Logical"
+    },
+    {
+      question: "Which Indian state has the most UNESCO World Heritage sites?",
+      options: ["Rajasthan", "Maharashtra", "Karnataka", "Uttar Pradesh"],
+      correct: 1,
+      category: "Indian Places"
+    },
+    {
+      question: "What has branches and leaves but no bark?",
+      options: ["Bush", "Library", "Garden", "Forest"],
+      correct: 1,
+      category: "Logical"
+    },
+    {
+      question: "Which famous Indian monument was built first?",
+      options: ["Taj Mahal", "Qutub Minar", "Red Fort", "Hawa Mahal"],
+      correct: 1,
+      category: "Indian Places"
     },
     {
       question: "Who is the father of Tam Tam Jashwanth?",
@@ -74,6 +74,18 @@ export const quizData = {
     }
   ],
   intermediate: [
+    {
+      question: "Which Indian state touches the borders of most foreign countries?",
+      options: ["Sikkim", "Arunachal Pradesh", "Uttarakhand", "West Bengal"],
+      correct: 1,
+      category: "Indian Places"
+    },
+    {
+      question: "I am taken from a mine and shut up in a wooden case, from which I am never released, and yet I am used by everyone. What am I?",
+      options: ["Gold", "Diamond", "Coal", "Pencil lead"],
+      correct: 3,
+      category: "Logical"
+    },
     {
       question: "If you divide 30 by half and add 10, what's the answer?",
       options: ["25", "50", "70", "35"],
@@ -148,6 +160,18 @@ export const quizData = {
     }
   ],
   advanced: [
+    {
+      question: "Which Indian city was the first to implement an underground metro system?",
+      options: ["Delhi", "Mumbai", "Kolkata", "Chennai"],
+      correct: 2,
+      category: "Indian Places"
+    },
+    {
+      question: "A father's child, a mother's child, but no one's son. Who am I?",
+      options: ["Brother", "Sister", "Daughter", "Cousin"],
+      correct: 2,
+      category: "Logical"
+    },
     {
       question: "If you have a cube of cheese and make 2 straight cuts, what's the maximum number of pieces you can get?",
       options: ["4", "6", "8", "9"],
