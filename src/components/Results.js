@@ -43,6 +43,7 @@ const Results = () => {
   };
 
   const handleRetry = () => {
+    setCurrentLevel('easy'); // Always reset to easy level
     setScore(0);
     setTimeRemaining(240);
     setLifelines({ showAnswer: true, removeTwoWrong: true });
@@ -80,11 +81,23 @@ const Results = () => {
                 Proceed to {currentLevel === 'easy' ? 'Intermediate' : 'Advanced'} Level
               </Button>
             ) : (
-              <Button variant="contained" color="secondary" onClick={handleRetry}>
-                Try Again
+              <Button 
+                variant="contained" 
+                color="secondary" 
+                onClick={handleRetry}
+                sx={{
+                  background: !passed ? 'linear-gradient(45deg, #FF5252 30%, #FF1744 90%)' : undefined
+                }}
+              >
+                {!passed ? 'Start from Easy Level' : 'Play Again'}
               </Button>
             )}
           </Box>
+          {!passed && currentLevel !== 'easy' && (
+            <Typography variant="body2" color="error" sx={{ mt: 2 }}>
+              You need to pass each level to proceed. Starting over from Easy level.
+            </Typography>
+          )}
         </CardContent>
       </Card>
 
