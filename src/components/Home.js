@@ -1,131 +1,115 @@
 import React from 'react';
-import { Typography, Box, Card, CardContent, Grid, Button, Paper } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { Card, CardContent, Typography, Button, Box, Container, Paper } from '@mui/material';
+import SchoolIcon from '@mui/icons-material/School';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import QuizIcon from '@mui/icons-material/Quiz';
 import TimerIcon from '@mui/icons-material/Timer';
-import MenuBookIcon from '@mui/icons-material/MenuBook';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
-    <Box sx={{ mt: 4 }}>
-      <Paper elevation={3} sx={{ p: 4, mb: 4, borderRadius: 3 }}>
-        <Typography variant="h4" gutterBottom align="center" color="primary">
-          Welcome to the Multi-Level Quiz Challenge!
-        </Typography>
-        <Typography variant="subtitle1" paragraph align="center">
-          Test your knowledge with our multi-level quiz system featuring progressively challenging questions.
-        </Typography>
-        
-        <Grid container spacing={4} sx={{ mt: 2 }}>
-          <Grid item xs={12} md={6}>
-            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 2 }}>
-              <CardContent>
-                <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                  <QuizIcon color="primary" sx={{ mr: 1, fontSize: 30 }} />
-                  <Typography variant="h6">Multi-Level Quiz</Typography>
-                </Box>
-                <Typography variant="body2" color="text.secondary" paragraph>
-                  Challenge yourself with our general knowledge quiz featuring three difficulty levels:
-                </Typography>
-                <Box sx={{ pl: 2 }}>
-                  <Typography variant="body2" paragraph>
-                    • <strong>Easy Level:</strong> Score at least 7/12 to advance
-                  </Typography>
-                  <Typography variant="body2" paragraph>
-                    • <strong>Intermediate Level:</strong> Score at least 6/12 to advance
-                  </Typography>
-                  <Typography variant="body2" paragraph>
-                    • <strong>Advanced Level:</strong> Score at least 5/12 to complete the quiz
-                  </Typography>
-                </Box>
-                <Typography variant="body2" color="text.secondary">
-                  Each level features a 3-minute timer. Can you complete all three levels?
-                </Typography>
-                
-                <Button 
-                  component={Link}
-                  to="/multi-level-quiz"
-                  variant="contained"
-                  color="primary"
-                  fullWidth
-                  sx={{ mt: 3 }}
-                >
-                  Start Multi-Level Quiz
-                </Button>
-              </CardContent>
-            </Card>
-          </Grid>
-          
-          <Grid item xs={12} md={6}>
-            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 2 }}>
-              <CardContent>
-                <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                  <MenuBookIcon color="primary" sx={{ mr: 1, fontSize: 30 }} />
-                  <Typography variant="h6">Progressive Movies Quiz</Typography>
-                </Box>
-                <Typography variant="body2" color="text.secondary" paragraph>
-                  Test your knowledge of progressive Telugu cinema with thought-provoking questions about movies that address social issues and innovative storytelling.
-                </Typography>
-                <Box sx={{ pl: 2 }}>
-                  <Typography variant="body2" paragraph>
-                    • Explore social themes in cinema
-                  </Typography>
-                  <Typography variant="body2" paragraph>
-                    • Learn about groundbreaking directors and their work
-                  </Typography>
-                  <Typography variant="body2" paragraph>
-                    • Discover the evolution of progressive storytelling
-                  </Typography>
-                </Box>
-                <Typography variant="body2" color="text.secondary">
-                  Perfect for film enthusiasts and those interested in socially relevant cinema.
-                </Typography>
-                
-                <Button 
-                  component={Link}
-                  to="/progressive-movies"
-                  variant="contained"
-                  color="secondary"
-                  fullWidth
-                  sx={{ mt: 3 }}
-                >
-                  Start Progressive Movies Quiz
-                </Button>
-              </CardContent>
-            </Card>
-          </Grid>
-        </Grid>
-      </Paper>
-      
-      <Paper elevation={2} sx={{ p: 3, borderRadius: 2 }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-          <EmojiEventsIcon color="primary" sx={{ mr: 1, fontSize: 24 }} />
-          <Typography variant="h6">Quiz Features</Typography>
+    <Container maxWidth="md" sx={{ px: { xs: 2, sm: 3 } }}>
+      <Box sx={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        alignItems: 'center',
+        gap: { xs: 2, sm: 4 },
+        py: { xs: 2, sm: 4 }
+      }}>
+        <Paper elevation={6} sx={{ 
+          p: { xs: 2, sm: 4 }, 
+          background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+          borderRadius: { xs: 2, sm: 4 },
+          width: '100%',
+          color: 'white'
+        }}>
+          <Typography variant="h2" align="center" gutterBottom sx={{ 
+            fontSize: { xs: '2rem', sm: '3rem', md: '3.75rem' },
+            fontWeight: 'bold',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+          }}>
+            Jk Quiz
+          </Typography>
+          <Typography variant="h5" align="center" sx={{ mb: 4 }}>
+            Challenge Your Knowledge
+          </Typography>
+        </Paper>
+
+        <Box sx={{ 
+          display: 'grid', 
+          gridTemplateColumns: { xs: '1fr', md: '1fr 1fr 1fr' },
+          gap: 3,
+          width: '100%'
+        }}>
+          {[
+            { 
+              icon: <SchoolIcon sx={{ fontSize: 40 }}/>, 
+              level: 'Easy', 
+              score: '8/12',
+              color: '#4CAF50'
+            },
+            { 
+              icon: <EmojiEventsIcon sx={{ fontSize: 40 }}/>, 
+              level: 'Intermediate', 
+              score: '7/12',
+              color: '#FF9800'
+            },
+            { 
+              icon: <TimerIcon sx={{ fontSize: 40 }}/>, 
+              level: 'Advanced', 
+              score: '6/12',
+              color: '#F44336'
+            }
+          ].map((item) => (
+            <Paper
+              key={item.level}
+              elevation={4}
+              sx={{
+                p: 3,
+                textAlign: 'center',
+                transition: 'transform 0.2s',
+                '&:hover': {
+                  transform: 'translateY(-5px)',
+                  boxShadow: 6
+                }
+              }}
+            >
+              <Box sx={{ color: item.color }}>{item.icon}</Box>
+              <Typography variant="h5" gutterBottom sx={{ mt: 2 }}>
+                {item.level}
+              </Typography>
+              <Typography variant="body1">
+                Pass Score: {item.score}
+              </Typography>
+            </Paper>
+          ))}
         </Box>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={4}>
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <TimerIcon color="action" sx={{ mr: 1 }} />
-              <Typography variant="body2">3-Minute Timer Per Level</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <QuizIcon color="action" sx={{ mr: 1 }} />
-              <Typography variant="body2">View Answers After Each Level</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <EmojiEventsIcon color="action" sx={{ mr: 1 }} />
-              <Typography variant="body2">Progressive Difficulty Levels</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Paper>
-    </Box>
+
+        <Button 
+          variant="contained"
+          size="large"
+          onClick={() => navigate('/quiz')}
+          sx={{
+            mt: 4,
+            py: 2,
+            px: 6,
+            fontSize: '1.2rem',
+            borderRadius: 8,
+            background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+            boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+            '&:hover': {
+              background: 'linear-gradient(45deg, #FE8B8B 30%, #FF9E53 90%)',
+              transform: 'scale(1.05)',
+              transition: 'transform 0.2s'
+            }
+          }}
+        >
+          Start Your Journey
+        </Button>
+      </Box>
+    </Container>
   );
 };
 
-export default Home; 
+export default Home;

@@ -1,430 +1,220 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
-  Container, 
-  Paper, 
+  Card, 
+  CardContent, 
   Typography, 
   Button, 
-  RadioGroup, 
-  FormControlLabel, 
-  Radio,
-  Box,
-  LinearProgress,
-  useTheme,
-  useMediaQuery,
-  Fade,
-  Card,
-  CardContent,
   Grid,
-  Grow,
-  Zoom,
-  Slide,
-  List,
-  ListItem,
-  ListItemText,
-  Divider
+  LinearProgress,
+  Box,
+  Stack,
+  Chip
 } from '@mui/material';
-import { quizData, calculateGrade } from '../data/quizData';
-
-const getQuote = (grade) => {
-  const quotes = {
-    'A': [
-      "Outstanding work! You're a true expert in interior design tools!",
-      "Perfect score! Your knowledge of design software is exceptional!",
-      "Excellent performance! You're ready to tackle any design challenge!"
-    ],
-    'B': [
-      "Great job! You have a solid understanding of design tools!",
-      "Well done! Your knowledge of interior design software is impressive!",
-      "Strong performance! You're on the right track to mastering these tools!"
-    ],
-    'C': [
-      "Good effort! Keep learning and practicing with these tools!",
-      "Not bad! With more practice, you'll improve your skills further!",
-      "You're getting there! Keep exploring different design software!"
-    ],
-    'D': [
-      "Keep practicing! Every attempt brings you closer to mastery!",
-      "Don't give up! Learning design tools takes time and dedication!",
-      "You can do better! Review the answers and try again!"
-    ],
-    'F': [
-      "Don't worry! Every expert was once a beginner!",
-      "Keep learning! Practice makes perfect with design tools!",
-      "Try again! Each attempt helps you learn and improve!"
-    ]
-  };
-  const gradeQuotes = quotes[grade];
-  return gradeQuotes[Math.floor(Math.random() * gradeQuotes.length)];
-};
+import { QuizContext } from '../context/QuizContext';
+import { quizData } from '../data/questions';
 
 const Quiz = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const [currentLevel, setCurrentLevel] = useState('beginner');
+  const navigate = useNavigate();
+  const { 
+    currentLevel, 
+    setCurrentLevel,
+    score, 
+    setScore, 
+    lifelines, 
+    setLifelines,
+    timeRemaining, 
+    setTimeRemaining 
+  } = useContext(QuizContext);
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
-  const [showScore, setShowScore] = useState(false);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [showAnswers, setShowAnswers] = useState(false);
-  const [userAnswers, setUserAnswers] = useState([]);
-  const [failed, setFailed] = useState(false);
-
-  const levels = {
-    beginner: { title: 'Beginner Level', next: 'intermediate', minScore: 9 },
-    intermediate: { title: 'Intermediate Level', next: 'advanced', minScore: 9 },
-    advanced: { title: 'Advanced Level', next: null, minScore: 9 }
-  };
-
-  const currentQuestions = quizData[currentLevel];
-  const progress = ((currentQuestion + 1) / currentQuestions.length) * 100;
+  const [activeOptions, setActiveOptions] = useState([0, 1, 2, 3]);
 
   useEffect(() => {
-    if (showScore) {
-      const passed = score >= levels[currentLevel].minScore;
-      if (!passed) {
-        setFailed(true);
-      }
-    }
-  }, [showScore, score, currentLevel, levels]);
+    const timer = setInterval(() => {
+      setTimeRemaining((prev) => {
+        if (prev <= 0) {
+          clearInterval(timer);
+          navigate('/results');
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
 
-  const handleAnswerSelect = (event) => {
-    setSelectedAnswer(parseInt(event.target.value));
-  };
+    return () => clearInterval(timer);
+  }, [navigate, setTimeRemaining]);
 
-  const handleNext = () => {
-    if (selectedAnswer === currentQuestions[currentQuestion].correctAnswer) {
-      setScore(score + 1);
-    }
-    setUserAnswers([...userAnswers, selectedAnswer]);
+  const handleAnswer = (selectedIndex) => {
+    const correct = quizData[currentLevel][currentQuestion].correct === selectedIndex;
+    if (correct) setScore(score + 1);
 
-    if (currentQuestion < currentQuestions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-      setSelectedAnswer(null);
+    if (currentQuestion === 11) {
+      navigate('/results');
     } else {
-      setShowScore(true);
+      setCurrentQuestion(prev => prev + 1);
+      setActiveOptions([0, 1, 2, 3]);
     }
   };
 
-  const handleRestart = () => {
-    setCurrentLevel('beginner');
-    setCurrentQuestion(0);
-    setScore(0);
-    setShowScore(false);
-    setSelectedAnswer(null);
-    setShowAnswers(false);
-    setUserAnswers([]);
-    setFailed(false);
+  const handleLifeline = (type) => {
+    if (!lifelines[type]) return;
+
+    if (type === 'showAnswer') {
+      const correctAnswer = quizData[currentLevel][currentQuestion].correct;
+      setActiveOptions([correctAnswer]);
+    } else if (type === 'removeTwoWrong') {
+      const correctAnswer = quizData[currentLevel][currentQuestion].correct;
+      const wrongOptions = [0, 1, 2, 3].filter(index => index !== correctAnswer);
+      const remainingWrong = wrongOptions.slice(0, 1);
+      setActiveOptions([correctAnswer, ...remainingWrong]);
+    }
+    setLifelines({ ...lifelines, [type]: false });
   };
 
-  const handleNextLevel = () => {
-    setCurrentLevel(levels[currentLevel].next);
-    setCurrentQuestion(0);
-    setScore(0);
-    setShowScore(false);
-    setSelectedAnswer(null);
-    setShowAnswers(false);
-    setUserAnswers([]);
+  const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
   };
 
-  if (showScore) {
-    const grade = calculateGrade(score, currentQuestions.length);
-    const quote = getQuote(grade);
-    const passed = score >= levels[currentLevel].minScore;
+  const currentQuizData = quizData[currentLevel]?.[currentQuestion] || {
+    question: "Loading...",
+    options: [],
+    category: "",
+    correct: 0
+  };
 
-    return (
-      <Container maxWidth="md">
-        <Zoom in timeout={800}>
-          <Paper 
-            elevation={3} 
-            sx={{ 
-              p: { xs: 2, sm: 4 }, 
-              mt: 4, 
-              textAlign: 'center',
-              background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)'
-            }}
-          >
-            <Typography variant="h4" gutterBottom color="primary" sx={{ fontWeight: 'bold' }}>
-              {levels[currentLevel].title} Completed! 🎉
-            </Typography>
-            <Grow in timeout={1000}>
-              <Typography variant="h5" gutterBottom sx={{ color: 'text.secondary' }}>
-                Your Score: {score} out of {currentQuestions.length}
-              </Typography>
-            </Grow>
-            <Grow in timeout={1200}>
-              <Typography 
-                variant="h4" 
-                color={passed ? "success.main" : "error.main"}
-                gutterBottom 
-                sx={{ 
-                  fontWeight: 'bold',
-                  textShadow: '2px 2px 4px rgba(0,0,0,0.1)'
-                }}
-              >
-                {passed ? "Level Passed! 🎉" : "Level Failed 😢"}
-              </Typography>
-            </Grow>
-            <Grow in timeout={1300}>
-              <Typography 
-                variant="h6" 
-                sx={{ 
-                  mt: 2,
-                  mb: 3,
-                  color: 'text.primary',
-                  fontStyle: 'italic',
-                  borderLeft: `4px solid ${theme.palette.primary.main}`,
-                  pl: 2,
-                  textAlign: 'left'
-                }}
-              >
-                "{quote}"
-              </Typography>
-            </Grow>
-            <Grow in timeout={1400}>
-              <Box sx={{ mt: 3, display: 'flex', gap: 2, justifyContent: 'center' }}>
-                {passed ? (
-                  levels[currentLevel].next ? (
-                    <Button 
-                      variant="contained" 
-                      color="success" 
-                      onClick={handleNextLevel}
-                      sx={{ 
-                        px: 4,
-                        py: 1.5,
-                        fontSize: '1.1rem'
-                      }}
-                    >
-                      Next Level
-                    </Button>
-                  ) : (
-                    <Button 
-                      variant="contained" 
-                      color="success" 
-                      onClick={handleRestart}
-                      sx={{ 
-                        px: 4,
-                        py: 1.5,
-                        fontSize: '1.1rem'
-                      }}
-                    >
-                      Start Over
-                    </Button>
-                  )
-                ) : (
-                  <Button 
-                    variant="contained" 
-                    color="error" 
-                    onClick={handleRestart}
-                    sx={{ 
-                      px: 4,
-                      py: 1.5,
-                      fontSize: '1.1rem'
-                    }}
-                  >
-                    Try Again
-                  </Button>
-                )}
-                <Button 
-                  variant="outlined" 
-                  color="secondary" 
-                  onClick={() => setShowAnswers(true)}
-                  sx={{ 
-                    px: 4,
-                    py: 1.5,
-                    fontSize: '1.1rem'
-                  }}
-                >
-                  View Answers
-                </Button>
-              </Box>
-            </Grow>
-
-            {showAnswers && (
-              <Grow in timeout={1600}>
-                <Box sx={{ mt: 4, textAlign: 'left' }}>
-                  <Typography variant="h5" gutterBottom color="primary">
-                    Detailed Answers
-                  </Typography>
-                  <List>
-                    {currentQuestions.map((question, index) => (
-                      <React.Fragment key={index}>
-                        <ListItem>
-                          <ListItemText
-                            primary={
-                              <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
-                                Question {index + 1}: {question.question}
-                              </Typography>
-                            }
-                            secondary={
-                              <Box sx={{ mt: 1 }}>
-                                <Typography variant="body2" color="text.secondary">
-                                  Your Answer: {question.options[userAnswers[index]]}
-                                </Typography>
-                                <Typography 
-                                  variant="body2" 
-                                  color={userAnswers[index] === question.correctAnswer ? 'success.main' : 'error.main'}
-                                  sx={{ mt: 0.5 }}
-                                >
-                                  Correct Answer: {question.options[question.correctAnswer]}
-                                </Typography>
-                                <Typography variant="body2" sx={{ mt: 1, color: 'text.secondary' }}>
-                                  {question.explanation}
-                                </Typography>
-                              </Box>
-                            }
-                          />
-                        </ListItem>
-                        {index < currentQuestions.length - 1 && <Divider />}
-                      </React.Fragment>
-                    ))}
-                  </List>
-                </Box>
-              </Grow>
-            )}
-          </Paper>
-        </Zoom>
-      </Container>
-    );
+  if (!quizData[currentLevel] || currentQuestion >= quizData[currentLevel].length) {
+    navigate('/results');
+    return null;
   }
 
   return (
-    <Container maxWidth="md">
-      <Slide direction="up" in timeout={500}>
-        <Paper 
-          elevation={3} 
-          sx={{ 
-            p: { xs: 2, sm: 4 }, 
-            mt: 4,
-            background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)'
-          }}
-        >
-          <Zoom in timeout={800}>
-            <Typography 
-              variant="h4" 
-              gutterBottom 
-              align="center" 
-              color="primary"
-              sx={{ 
-                fontWeight: 'bold',
-                mb: 3
-              }}
-            >
-              {levels[currentLevel].title}
-            </Typography>
-          </Zoom>
-          
-          <Grow in timeout={1000}>
-            <LinearProgress 
-              variant="determinate" 
-              value={progress} 
-              sx={{ 
-                height: 8, 
-                borderRadius: 4,
-                mb: 3,
-                backgroundColor: 'rgba(33, 150, 243, 0.1)',
-                '& .MuiLinearProgress-bar': {
-                  borderRadius: 4,
-                }
-              }}
-            />
-          </Grow>
-
-          <Fade in timeout={1200}>
-            <Box sx={{ mb: 3 }}>
-              <Typography variant="subtitle1" color="text.secondary">
-                Question {currentQuestion + 1} of {currentQuestions.length}
-              </Typography>
-            </Box>
-          </Fade>
-
-          <Grow in timeout={1400}>
-            <Typography 
-              variant="h6" 
-              gutterBottom 
-              sx={{ 
-                mb: 3,
-                fontWeight: 500,
-                color: 'text.primary'
-              }}
-            >
-              {currentQuestions[currentQuestion].question}
-            </Typography>
-          </Grow>
-
-          <RadioGroup
-            value={selectedAnswer}
-            onChange={handleAnswerSelect}
-            sx={{ mt: 2 }}
-          >
-            <Grid container spacing={2}>
-              {currentQuestions[currentQuestion].options.map((option, index) => (
-                <Grid item xs={12} key={index}>
-                  <Grow in timeout={1600 + index * 200}>
-                    <Card 
-                      sx={{ 
-                        cursor: 'pointer',
-                        transition: 'all 0.3s ease-in-out',
-                        border: selectedAnswer === index ? `2px solid ${theme.palette.primary.main}` : '2px solid transparent',
-                        transform: selectedAnswer === index ? 'scale(1.02)' : 'scale(1)',
-                        '&:hover': {
-                          transform: 'translateY(-2px) scale(1.01)',
-                          boxShadow: 3,
-                        }
-                      }}
-                      onClick={() => setSelectedAnswer(index)}
-                    >
-                      <CardContent>
-                        <FormControlLabel
-                          value={index}
-                          control={<Radio />}
-                          label={option}
-                          sx={{ 
-                            width: '100%',
-                            m: 0,
-                            '& .MuiFormControlLabel-label': {
-                              fontSize: '1rem',
-                              color: 'text.primary'
-                            }
-                          }}
-                        />
-                      </CardContent>
-                    </Card>
-                  </Grow>
-                </Grid>
-              ))}
-            </Grid>
-          </RadioGroup>
-
-          <Fade in timeout={1800}>
-            <Box sx={{ 
-              mt: 4, 
-              display: 'flex', 
-              justifyContent: 'flex-end',
-              gap: 2
+    <Card sx={{ 
+      maxWidth: 800, 
+      margin: '0 auto',
+      background: 'linear-gradient(to right bottom, #FFFFFF 50%, #f5f5f5 50%)',
+      borderRadius: { xs: 2, sm: 4 },
+      boxShadow: '0 8px 16px rgba(0,0,0,0.1)',
+      mx: { xs: 2, sm: 'auto' }
+    }}>
+      <CardContent sx={{ p: { xs: 2, sm: 4 } }}>
+        <Stack spacing={{ xs: 2, sm: 3 }}>
+          <Box sx={{ 
+            display: 'flex', 
+            flexDirection: { xs: 'column', sm: 'row' },
+            gap: { xs: 1, sm: 0 },
+            justifyContent: 'space-between', 
+            alignItems: { xs: 'stretch', sm: 'center' },
+            bgcolor: 'background.paper',
+            p: { xs: 1.5, sm: 2 },
+            borderRadius: 2,
+            boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
+          }}>
+            <Typography variant="h5" sx={{ 
+              background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+              backgroundClip: 'text',
+              textFillColor: 'transparent',
+              fontWeight: 'bold'
             }}>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={handleNext}
-                disabled={selectedAnswer === null}
-                sx={{ 
-                  px: 4,
-                  py: 1.5,
-                  fontSize: '1.1rem',
-                  transition: 'all 0.3s ease-in-out',
-                  '&:hover': {
-                    transform: 'scale(1.05)',
-                  }
-                }}
-              >
-                {currentQuestion === currentQuestions.length - 1 ? 'Finish' : 'Next'}
-              </Button>
-            </Box>
-          </Fade>
-        </Paper>
-      </Slide>
-    </Container>
+              Level: {currentLevel.toUpperCase()}
+            </Typography>
+            <Typography variant="h6" sx={{
+              color: timeRemaining < 60 ? 'error.main' : 'primary.main',
+              animation: timeRemaining < 60 ? 'pulse 1s infinite' : 'none',
+              '@keyframes pulse': {
+                '0%': { opacity: 1 },
+                '50%': { opacity: 0.5 },
+                '100%': { opacity: 1 },
+              }
+            }}>
+              Time: {formatTime(timeRemaining)}
+            </Typography>
+          </Box>
+
+          <LinearProgress 
+            variant="determinate" 
+            value={(currentQuestion / 12) * 100} 
+            sx={{ height: 10, borderRadius: 5 }}
+          />
+
+          <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Typography>Question {currentQuestion + 1}/12</Typography>
+            <Typography>Score: {score}</Typography>
+          </Box>
+
+          <Typography variant="h5" gutterBottom sx={{
+            bgcolor: 'background.paper',
+            p: { xs: 2, sm: 3 },
+            borderRadius: 2,
+            boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+            fontWeight: 500,
+            fontSize: { xs: '1.1rem', sm: '1.5rem' }
+          }}>
+            {currentQuizData.question}
+          </Typography>
+
+          <Grid container spacing={{ xs: 1, sm: 2 }}>
+            {currentQuizData.options.map((option, index) => (
+              activeOptions.includes(index) && (
+                <Grid item xs={12} sm={6} key={index}>
+                  <Button
+                    variant="contained"
+                    fullWidth
+                    onClick={() => handleAnswer(index)}
+                    sx={{
+                      minHeight: { xs: '50px', sm: '60px' },
+                      borderRadius: 2,
+                      textTransform: 'none',
+                      fontSize: { xs: '0.9rem', sm: '1rem' },
+                      padding: { xs: 1, sm: 2 },
+                      background: 'linear-gradient(45deg, #3f51b5 30%, #5c6bc0 90%)',
+                      transition: 'transform 0.2s',
+                      '&:hover': {
+                        transform: 'scale(1.02)'
+                      }
+                    }}
+                  >
+                    {option}
+                  </Button>
+                </Grid>
+              )
+            ))}
+          </Grid>
+
+          <Box sx={{ 
+            display: 'flex', 
+            flexDirection: { xs: 'column', sm: 'row' },
+            justifyContent: 'center', 
+            gap: { xs: 1, sm: 2 },
+            mt: 2
+          }}>
+            <Button
+              variant="outlined"
+              disabled={!lifelines.showAnswer}
+              onClick={() => handleLifeline('showAnswer')}
+            >
+              Show Answer
+            </Button>
+            <Button
+              variant="outlined"
+              disabled={!lifelines.removeTwoWrong}
+              onClick={() => handleLifeline('removeTwoWrong')}
+            >
+              50:50
+            </Button>
+          </Box>
+
+          <Chip 
+            label={`Category: ${currentQuizData.category}`}
+            color="primary"
+            sx={{ alignSelf: 'flex-start' }}
+          />
+        </Stack>
+      </CardContent>
+    </Card>
   );
 };
 
-export default Quiz; 
+export default Quiz;
