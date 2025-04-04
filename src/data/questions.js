@@ -1,230 +1,212 @@
 export const quizData = {
   easy: [
     {
-      question: "Which mammal can jump the highest relative to its body size?",
-      options: ["Kangaroo", "Cat", "Rabbit", "Flea"],
+      question: "If a train travels at 60 km/h for 1.5 hours, but takes a 20-minute break, how far has it traveled?",
+      options: ["80 km", "90 km", "100 km", "70 km"],
       correct: 1,
-      category: "Animals"
-    },
-    {
-      question: "If a clock shows 3:15, what is the angle between the hour and minute hand?",
-      options: ["90°", "75°", "82.5°", "67.5°"],
-      correct: 3,
       category: "Mathematics"
     },
     {
-      question: "What is the capital of Bhutan?",
-      options: ["Thimphu", "Paro", "Punakha", "Bumthang"],
+      question: "Which freedom fighter was known as 'Frontier Gandhi'?",
+      options: ["Khan Abdul Ghaffar Khan", "Subhas Chandra Bose", "Lala Lajpat Rai", "Bhagat Singh"],
       correct: 0,
-      category: "Capitals"
+      category: "Freedom Fighters"
     },
     {
-      question: "Which bird can fly backwards?",
-      options: ["Eagle", "Hummingbird", "Sparrow", "Parrot"],
-      correct: 1,
-      category: "Birds"
+      question: "If AI operates at 99.9% accuracy, what's more dangerous: 0.1% error in identifying cats or in autonomous vehicles?",
+      options: ["Cat identification", "Both equally dangerous", "Autonomous vehicles", "Neither is dangerous"],
+      correct: 2,
+      category: "AI Ethics"
     },
     {
-      question: "I speak without a mouth and hear without ears. What am I?",
-      options: ["Echo", "Wind", "Radio", "Phone"],
+      question: "A chameleon can look in two different directions at once. If it spots 3 insects on the left and 2 on the right every minute, how many potential prey does it observe in 5 minutes?",
+      options: ["25", "20", "15", "30"],
       correct: 0,
-      category: "Riddles"
+      category: "Nature & Math"
     },
     {
-      question: "What is the largest planet in our solar system?",
-      options: ["Earth", "Saturn", "Jupiter", "Mars"],
-      correct: 2,
-      category: "Science"
+      question: "In a group of AI chatbots, if each one learns from 3 others and there are 12 chatbots, how many learning connections exist?",
+      options: ["36", "24", "48", "12"],
+      correct: 0,
+      category: "AI & Math"
     },
     {
-      question: "Which country is known as the Land of the Rising Sun?",
-      options: ["China", "South Korea", "Japan", "Thailand"],
-      correct: 2,
-      category: "Geography"
+      question: "What is the binary representation of the decimal number 12?",
+      options: ["1100", "1010", "1110", "1001"],
+      correct: 0,
+      category: "Computer Science"
     },
     {
-      question: "What is the chemical symbol for gold?",
-      options: ["Ag", "Au", "Fe", "Cu"],
+      question: "Which Indian freedom fighter was known as 'Netaji'?",
+      options: ["Bhagat Singh", "Subhas Chandra Bose", "Lala Lajpat Rai", "Bipin Chandra Pal"],
+      correct: 1,
+      category: "Freedom Fighters"
+    },
+    {
+      question: "If a lion sleeps 20 hours a day, what percentage of the day is it awake?",
+      options: ["25%", "16.67%", "20%", "15%"],
+      correct: 1,
+      category: "Nature & Math"
+    },
+    {
+      question: "What does GPT stand for in ChatGPT?",
+      options: ["General Processing Technology", "Generative Pre-trained Transformer", "Global Pattern Training", "General Purpose Text"],
+      correct: 1,
+      category: "AI Technology"
+    },
+    {
+      question: "If water freezes at 0°C, what is this temperature in Fahrenheit?",
+      options: ["30°F", "32°F", "34°F", "36°F"],
       correct: 1,
       category: "Science"
     },
     {
-      question: "Which animal is known as the 'King of the Jungle'?",
-      options: ["Tiger", "Lion", "Elephant", "Gorilla"],
+      question: "Which animal's DNA is 98% similar to humans?",
+      options: ["Gorilla", "Chimpanzee", "Orangutan", "Bonobo"],
       correct: 1,
-      category: "Animals"
+      category: "Biology"
     },
     {
-      question: "What is the capital of France?",
-      options: ["London", "Berlin", "Paris", "Madrid"],
-      correct: 2,
-      category: "Capitals"
-    },
-    {
-      question: "Which planet is known as the Red Planet?",
-      options: ["Venus", "Mars", "Jupiter", "Saturn"],
+      question: "What was the first cryptocurrency ever created?",
+      options: ["Ethereum", "Bitcoin", "Litecoin", "Dogecoin"],
       correct: 1,
-      category: "Science"
-    },
-    {
-      question: "What is the largest ocean on Earth?",
-      options: ["Atlantic", "Indian", "Arctic", "Pacific"],
-      correct: 3,
-      category: "Geography"
+      category: "Technology"
     }
   ],
   intermediate: [
     {
-      question: "If a shirt's price is cut by 20% and then increased by 20%, what's the final price relative to original?",
-      options: ["Same", "4% less", "4% more", "20% less"],
+      question: "If Bhagat Singh spent 2 years in jail, and wrote 4 books each taking 3 months, what percentage of his jail time was spent writing?",
+      options: ["25%", "50%", "75%", "100%"],
       correct: 1,
-      category: "Mathematics"
+      category: "History & Math"
     },
     {
-      question: "Which country is known as the Land of a Thousand Lakes?",
-      options: ["Sweden", "Finland", "Norway", "Canada"],
-      correct: 1,
-      category: "Geography"
-    },
-    {
-      question: "What's the only number that has the same number of letters as its value?",
-      options: ["One", "Two", "Three", "Four"],
-      correct: 3,
-      category: "Logic"
-    },
-    {
-      question: "Which animal never sleeps during its entire life?",
-      options: ["Shark", "Dolphin", "Bullfrog", "Giraffe"],
+      question: "In neural networks, if each neuron connects to 4 others, and there are 3 layers with 5 neurons each, how many total connections exist?",
+      options: ["40", "50", "60", "75"],
       correct: 2,
-      category: "Animals"
+      category: "AI Architecture"
     },
     {
-      question: "What has keys but no locks, space but no room, and you can enter but not go in?",
-      options: ["Mind", "Computer", "Keyboard", "Book"],
-      correct: 2,
-      category: "Riddles"
-    },
-    {
-      question: "If a train travels 120 km in 2 hours, what's its speed in meters per second?",
-      options: ["15 m/s", "16.67 m/s", "18 m/s", "20 m/s"],
+      question: "A honeybee visits 50 flowers per hour, works 10 hours a day, and lives for 4 weeks. If only 30% of visits result in pollination, how many flowers does it successfully pollinate in its lifetime?",
+      options: ["42,000", "12,600", "6,000", "4,200"],
       correct: 1,
-      category: "Mathematics"
+      category: "Nature & Math"
     },
     {
-      question: "Which animal's fingerprints are almost indistinguishable from humans?",
-      options: ["Gorilla", "Koala", "Chimpanzee", "Orangutan"],
-      correct: 1,
-      category: "Animals"
-    },
-    {
-      question: "What's unique about New Zealand's Mount Cook?",
-      options: ["Always covered in snow", "Has two peaks", "Growing taller each year", "Shrinking each year"],
-      correct: 2,
-      category: "Geography"
-    },
-    {
-      question: "Which number is considered unlucky in Italy because it sounds like 'death'?",
-      options: ["13", "17", "4", "9"],
-      correct: 1,
-      category: "Culture"
-    },
-    {
-      question: "What gets wetter and wetter the more it dries?",
-      options: ["Sponge", "Towel", "Paper", "Cloth"],
-      correct: 1,
-      category: "Riddles"
-    }
-  ],
-  advanced: [
-    {
-      question: "In a race, you pass the person in 2nd place. What position are you in?",
-      options: ["1st", "2nd", "3rd", "Cannot determine"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "Which bird's eye is bigger than its brain?",
-      options: ["Owl", "Ostrich", "Eagle", "Emu"],
-      correct: 1,
-      category: "Birds"
-    },
-    {
-      question: "If you multiply this number by any other number, the answer will always end with the same digit. What is it?",
-      options: ["5", "6", "7", "9"],
+      question: "During the Quit India Movement, if information spread to 3 people each day, and each of them spread to 3 more the next day, how many people were informed after 5 days?",
+      options: ["243", "729", "81", "27"],
       correct: 0,
-      category: "Mathematics"
+      category: "History & Math"
     },
     {
-      question: "Which capital city was built on seven hills?",
-      options: ["Athens", "Rome", "Istanbul", "Jerusalem"],
-      correct: 1,
-      category: "Capitals"
-    },
-    {
-      question: "What breaks but never falls, and what falls but never breaks?",
-      options: ["Day and Night", "Sun and Moon", "Winter and Summer", "Dawn and Dusk"],
-      correct: 0,
-      category: "Riddles"
-    },
-    {
-      question: "If three cats catch three mice in three minutes, how many cats would be needed to catch 100 mice in 100 minutes?",
-      options: ["3 cats", "33 cats", "100 cats", "1 cat"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "Which capital city is built on 118 small islands?",
-      options: ["Amsterdam", "Stockholm", "Venice", "Copenhagen"],
+      question: "If a quantum computer can solve a problem in 1 second that takes a classical computer 10,000 years, how many times faster is it? (Assume 365 days/year)",
+      options: ["3.15 x 10^11", "3.15 x 10^8", "3.15 x 10^9", "3.15 x 10^10"],
       correct: 2,
-      category: "Geography"
+      category: "Technology"
     },
     {
-      question: "What percentage of Earth's freshwater is frozen in the Antarctic?",
-      options: ["50%", "60%", "70%", "90%"],
-      correct: 3,
-      category: "Science"
-    },
-    {
-      question: "If you divide 30 by half and add 10, what do you get?",
-      options: ["25", "40", "70", "35"],
+      question: "If machine learning accuracy improves by 5% each iteration, starting at 70%, how many iterations to reach 95%?",
+      options: ["4", "5", "6", "7"],
       correct: 2,
-      category: "Mathematics"
+      category: "AI & Math"
     },
     {
-      question: "Which bird is known to incorporate human trash into its courtship display?",
-      options: ["Crow", "Bower Bird", "Magpie", "Blue Jay"],
-      correct: 1,
-      category: "Birds"
-    },
-    {
-      question: "A doctor and a boy are fishing. The doctor is the boy's son, but the boy is not the doctor's son. How?",
-      options: ["Adoption", "Step-father", "The doctor is his mother", "Impossible"],
-      correct: 2,
-      category: "Logic"
-    },
-    {
-      question: "What number comes next: 2, 3, 5, 9, 17...?",
-      options: ["33", "34", "35", "36"],
-      correct: 0,
-      category: "Pattern"
-    },
-    {
-      question: "Which ancient city is considered the oldest continuously inhabited city in the world?",
-      options: ["Jerusalem", "Damascus", "Athens", "Rome"],
+      question: "Which freedom fighter wrote 'The Indian War of Independence, 1857'?",
+      options: ["Bhagat Singh", "V.D. Savarkar", "Lala Lajpat Rai", "B.G. Tilak"],
       correct: 1,
       category: "History"
     },
     {
-      question: "If you have a square room with all walls painted white, and all doors and windows closed, what color is the stairs?",
-      options: ["White", "No stairs", "Cannot determine", "Trick question"],
+      question: "In a Rubik's cube, if you make 3 moves per second, how many years to try all possible combinations?",
+      options: ["35 trillion years", "35 billion years", "35 million years", "35 thousand years"],
+      correct: 0,
+      category: "Mathematics"
+    },
+    {
+      question: "What percentage of Earth's species are estimated to be undiscovered?",
+      options: ["66%", "77%", "86%", "91%"],
+      correct: 2,
+      category: "Science"
+    },
+    {
+      question: "How many possible arrangements are there for 10 books on a shelf?",
+      options: ["362,880", "3,628,800", "36,288", "36,288,000"],
+      correct: 1,
+      category: "Mathematics"
+    },
+    {
+      question: "If data doubles every 2 years, how many times more data will exist in 10 years?",
+      options: ["32", "64", "16", "128"],
+      correct: 0,
+      category: "Technology"
+    }
+  ],
+  advanced: [
+    {
+      question: "If AI systems generate art at 1000 pieces/second, and human artists create 1 piece/day, in what year will AI-generated art equal all human art since 1800? (Assume 10 million human artists)",
+      options: ["2025", "2030", "2035", "Never - humans have too much lead"],
+      correct: 3,
+      category: "AI & Art"
+    },
+    {
+      question: "During the Salt March, if Gandhi walked 241 miles in 24 days, and followers joined at a rate of √(distance × days), how many followers theoretically joined by the end?",
+      options: ["76", "24", "48", "96"],
+      correct: 0,
+      category: "History & Math"
+    },
+    {
+      question: "If a butterfly's wing pattern has a Fibonacci sequence ratio, and each generation's pattern varies by one sequence number, how many generations until the pattern repeats?",
+      options: ["8", "13", "21", "34"],
+      correct: 1,
+      category: "Nature & Math"
+    },
+    {
+      question: "In a room with 3 AI systems and 2 humans, if each AI can process 100 tasks/second and humans 1 task/second, what's the probability that a randomly completed task was done by a human?",
+      options: ["1/302", "2/302", "1/151", "2/151"],
+      correct: 0,
+      category: "Probability & AI"
+    },
+    {
+      question: "If Chandrasekhar Azad's guerrilla squad moved in a pattern where each member was √2 meters from adjacent members, forming a perfect circle of 8 people, what was the circle's area?",
+      options: ["32π meters²", "16π meters²", "8π meters²", "4π meters²"],
+      correct: 1,
+      category: "History & Math"
+    },
+    {
+      question: "If quantum computers double in power every 6 months (Neven's Law), how many times more powerful will they be in 3 years?",
+      options: ["64", "128", "256", "512"],
+      correct: 2,
+      category: "Technology"
+    },
+    {
+      question: "In the game of chess, after both players make 2 moves each, how many possible board positions exist?",
+      options: ["71,852", "197,281", "288,825", "197,742"],
       correct: 1,
       category: "Logic"
     },
     {
-      question: "Which animal has rectangular pupils?",
-      options: ["Snake", "Goat", "Cat", "Frog"],
-      correct: 1,
-      category: "Animals"
+      question: "If every neuron in a human brain fired once per second, how many years would it take to match the computations of modern AI in one day?",
+      options: ["100", "1,000", "10,000", "100,000"],
+      correct: 2,
+      category: "Neuroscience & AI"
+    },
+    {
+      question: "What is the probability of shuffling a deck of cards into a sequence that has never existed before?",
+      options: ["99.99%", "99.999%", "99.9999%", "Almost 100%"],
+      correct: 3,
+      category: "Probability"
+    },
+    {
+      question: "If light travels at 299,792,458 m/s, how many times could it circle Earth in one second?",
+      options: ["7.5 times", "8.5 times", "6.5 times", "5.5 times"],
+      correct: 0,
+      category: "Physics"
+    },
+    {
+      question: "In DNA sequencing, if errors occur at a rate of 1 in 100,000 bases, how many errors in a full human genome?",
+      options: ["30", "60", "90", "120"],
+      correct: 0,
+      category: "Biology"
     }
   ]
 };

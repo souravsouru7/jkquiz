@@ -86,6 +86,24 @@ const Home = () => {
           ))}
         </Box>
 
+        <Paper elevation={3} sx={{ p: 3, mt: 4, bgcolor: 'warning.light' }}>
+          <Typography variant="h6" gutterBottom>
+            Important Rules:
+          </Typography>
+          <Typography variant="body1">
+            • You must pass each level to proceed to the next level
+          </Typography>
+          <Typography variant="body1">
+            • Failing any level ends your game session
+          </Typography>
+          <Typography variant="body1">
+            • All questions must be answered within the time limit
+          </Typography>
+          <Typography variant="body1">
+            • Use lifelines wisely - they can only be used once per level
+          </Typography>
+        </Paper>
+
         <Button 
           variant="contained"
           size="large"

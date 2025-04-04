@@ -42,14 +42,6 @@ const Results = () => {
     navigate('/quiz');
   };
 
-  const handleRetry = () => {
-    setCurrentLevel('easy'); // Always reset to easy level
-    setScore(0);
-    setTimeRemaining(240);
-    setLifelines({ showAnswer: true, removeTwoWrong: true });
-    navigate('/quiz');
-  };
-
   return (
     <Box sx={{ 
       maxWidth: 800, 
@@ -70,32 +62,21 @@ const Results = () => {
             Status: {passed ? 'Passed' : 'Failed'}
           </Typography>
           
-          <Box sx={{ 
-            mt: 3, 
-            display: 'flex', 
-            flexDirection: { xs: 'column', sm: 'row' },
-            gap: { xs: 1, sm: 2 }
-          }}>
-            {passed && currentLevel !== 'advanced' ? (
-              <Button variant="contained" color="primary" onClick={handleNextLevel}>
-                Proceed to {currentLevel === 'easy' ? 'Intermediate' : 'Advanced'} Level
-              </Button>
-            ) : (
-              <Button 
-                variant="contained" 
-                color="secondary" 
-                onClick={handleRetry}
-                sx={{
-                  background: !passed ? 'linear-gradient(45deg, #FF5252 30%, #FF1744 90%)' : undefined
-                }}
-              >
-                {!passed ? 'Start from Easy Level' : 'Play Again'}
-              </Button>
-            )}
-          </Box>
-          {!passed && currentLevel !== 'easy' && (
-            <Typography variant="body2" color="error" sx={{ mt: 2 }}>
-              You need to pass each level to proceed. Starting over from Easy level.
+          {passed && currentLevel !== 'advanced' ? (
+            <Button variant="contained" color="primary" onClick={handleNextLevel}>
+              Proceed to {currentLevel === 'easy' ? 'Intermediate' : 'Advanced'} Level
+            </Button>
+          ) : (
+            <Typography variant="h6" color="error" sx={{ mt: 2 }}>
+              {!passed 
+                ? "Sorry, you failed this level. Game Over." 
+                : "Congratulations! You've completed all levels!"}
+            </Typography>
+          )}
+          
+          {!passed && (
+            <Typography variant="body1" color="text.secondary" sx={{ mt: 2 }}>
+              To try again, you'll need to start a new game session.
             </Typography>
           )}
         </CardContent>
