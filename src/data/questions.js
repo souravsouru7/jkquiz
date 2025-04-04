@@ -1,224 +1,224 @@
 export const quizData = {
   easy: [
     {
-      question: "Which planet in our solar system has the most moons as of 2024?",
-      options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
-      correct: 1,
-      category: "Solar System"
+      question: "If Amaravati was declared as AP capital in 2015, and Visakhapatnam became executive capital in 2024, how many years was Amaravati the sole capital?",
+      options: ["8 years", "9 years", "10 years", "7 years"],
+      correct: 0,
+      category: "Andhra Pradesh"
     },
     {
-      question: "Which of these is NOT a correct use of the apostrophe?",
-      options: ["It's raining", "The dog's bowl", "Their's is blue", "James's car"],
+      question: "Which Indian state had the highest percentage growth in IT exports between 2015-2024?",
+      options: ["Karnataka", "Telangana", "Tamil Nadu", "Maharashtra"],
+      correct: 1,
+      category: "Economy"
+    },
+    {
+      question: "If India's first Vande Bharat Express started in 2019, and by 2024 there were 25 routes, on average how many new routes were added per year?",
+      options: ["4", "5", "6", "7"],
+      correct: 1,
+      category: "Infrastructure"
+    },
+    {
+      question: "Which ministry was created first: Ministry of Cooperation (2021) or Ministry of Jal Shakti (2019)?",
+      options: ["Ministry of Cooperation", "Ministry of Jal Shakti", "Both same year", "Neither"],
+      correct: 1,
+      category: "Government"
+    },
+    {
+      question: "What unique record did Polavaram Project set in Limca Book of Records in 2018?",
+      options: ["Largest spillway", "Most concrete poured", "Longest bridge", "Highest dam"],
+      correct: 0,
+      category: "Andhra Pradesh"
+    },
+    {
+      question: "If UPI transactions in 2016 were ₹7,000 Cr and in 2024 are ₹7,00,000 Cr, how many times did it grow?",
+      options: ["10 times", "100 times", "1000 times", "10000 times"],
+      correct: 1,
+      category: "Digital India"
+    },
+    {
+      question: "Which Indian state introduced the 'Three Capitals' concept first?",
+      options: ["Maharashtra", "Andhra Pradesh", "Uttar Pradesh", "Rajasthan"],
+      correct: 1,
+      category: "Politics"
+    },
+    {
+      question: "When was the Article 370 revoked from J&K?",
+      options: ["August 2019", "September 2019", "October 2019", "July 2019"],
+      correct: 0,
+      category: "Constitutional"
+    },
+    {
+      question: "Which district in AP recorded the highest literacy rate improvement from 2015 to 2024?",
+      options: ["Prakasam", "Vizianagaram", "Guntur", "Krishna"],
+      correct: 1,
+      category: "Education"
+    },
+    {
+      question: "Which scheme was launched first: PM-KISAN or Rythu Bharosa?",
+      options: ["PM-KISAN", "Rythu Bharosa", "Same day", "Different years"],
+      correct: 0,
+      category: "Agriculture"
+    },
+    {
+      question: "How many new districts were created in Andhra Pradesh in 2022?",
+      options: ["11", "12", "13", "14"],
       correct: 2,
-      category: "Grammar"
+      category: "Administration"
     },
     {
-      question: "What percentage of oxygen does Earth's atmosphere contain?",
-      options: ["21%", "50%", "78%", "15%"],
+      question: "What was India's rank in Startup Ecosystem in 2015 vs 2024?",
+      options: ["20th to 3rd", "15th to 2nd", "25th to 4th", "30th to 5th"],
       correct: 0,
-      category: "Science"
-    },
-    {
-      question: "As of 2024, which country has the highest population?",
-      options: ["China", "India", "USA", "Indonesia"],
-      correct: 1,
-      category: "Current Affairs"
-    },
-    {
-      question: "What grows bigger the more you take away from it?",
-      options: ["A hole", "A shadow", "A debt", "A problem"],
-      correct: 0,
-      category: "Riddles"
-    },
-    {
-      question: "Which cell in human reproduction contains 23 chromosomes?",
-      options: ["Skin cell", "Gamete", "Blood cell", "Muscle cell"],
-      correct: 1,
-      category: "Biology"
-    },
-    {
-      question: "Select the correctly spelled sentence:",
-      options: ["I recieved your message", "I received your message", "I receved your message", "I recieved you're message"],
-      correct: 1,
-      category: "Grammar"
-    },
-    {
-      question: "How many Earth days does it take for Mercury to orbit the Sun?",
-      options: ["88 days", "225 days", "365 days", "687 days"],
-      correct: 0,
-      category: "Solar System"
-    },
-    {
-      question: "Which major climate agreement was updated in 2023?",
-      options: ["Paris Agreement", "Kyoto Protocol", "Dubai Consensus", "Montreal Protocol"],
-      correct: 2,
-      category: "Current Affairs"
-    },
-    {
-      question: "What has keys but no locks, space but no room, and you can enter but not go in?",
-      options: ["A keyboard", "A map", "A phone", "A book"],
-      correct: 0,
-      category: "Riddles"
-    },
-    {
-      question: "Choose the correct sentence:",
-      options: ["Between you and I", "Between you and me", "Between we", "Between us all"],
-      correct: 1,
-      category: "Grammar"
-    },
-    {
-      question: "Which planet's moon might harbor life beneath its icy surface?",
-      options: ["Mars' Phobos", "Jupiter's Europa", "Saturn's Titan", "Neptune's Triton"],
-      correct: 1,
-      category: "Solar System"
+      category: "Startup India"
     }
   ],
   intermediate: [
     {
-      question: "If Venus rotates clockwise and all other planets rotate counterclockwise, what time would it be on Venus when it's noon on Earth?",
-      options: ["Midnight", "6 PM", "6 AM", "There's no correlation"],
-      correct: 3,
-      category: "Solar System"
-    },
-    {
-      question: "Which grammatical sentence is incorrect?",
-      options: ["Whom did you meet?", "Who did you meet?", "To whom did you speak?", "Whom spoke to you?"],
-      correct: 3,
-      category: "Grammar"
-    },
-    {
-      question: "What percentage of human DNA is shared with bananas?",
-      options: ["25%", "50%", "60%", "90%"],
-      correct: 1,
-      category: "Biology"
-    },
-    {
-      question: "As of 2024, how many countries have landed successfully on the Moon?",
-      options: ["3", "4", "5", "6"],
+      question: "If AP's coastline is 974 km, and Sagarmala project covers 70% of it, how many ports were proposed vs actually developed by 2024?",
+      options: ["6 vs 3", "8 vs 4", "10 vs 5", "12 vs 6"],
       correct: 2,
-      category: "Current Affairs"
+      category: "Infrastructure"
     },
     {
-      question: "What has no beginning, end, or middle, and touches every continent?",
-      options: ["Time", "Space", "The letter 'E'", "The ocean"],
-      correct: 2,
-      category: "Riddles"
-    },
-    {
-      question: "Which sentence uses the subjunctive mood correctly?",
-      options: ["I wish I was there", "I wish I were there", "I wish I am there", "I wish I had been there"],
+      question: "Which was India's first state to deliver medicines via drones in 2021?",
+      options: ["Karnataka", "Telangana", "Tamil Nadu", "Andhra Pradesh"],
       correct: 1,
-      category: "Grammar"
+      category: "Healthcare"
     },
     {
-      question: "How many times can all planets in our solar system align perfectly?",
-      options: ["Never", "Once every 100 years", "Once every 1000 years", "Once every million years"],
+      question: "During COVID-19, which Indian state performed most tests per million population?",
+      options: ["Kerala", "Delhi", "Andhra Pradesh", "Maharashtra"],
+      correct: 2,
+      category: "Healthcare"
+    },
+    {
+      question: "In which year did India surpass China as the most populous country?",
+      options: ["2021", "2022", "2023", "2024"],
+      correct: 2,
+      category: "Demographics"
+    },
+    {
+      question: "What percentage of India's semiconductor manufacturing target by 2025 is allocated to AP?",
+      options: ["15%", "20%", "25%", "30%"],
+      correct: 2,
+      category: "Industry"
+    },
+    {
+      question: "Which mission was launched first: Chandrayaan-3 or Aditya L-1?",
+      options: ["Chandrayaan-3", "Aditya L-1", "Same month", "Same year"],
       correct: 0,
-      category: "Solar System"
+      category: "Space"
     },
     {
-      question: "Which hormone triggers ovulation?",
-      options: ["Estrogen", "Progesterone", "Luteinizing hormone", "Follicle-stimulating hormone"],
+      question: "How many women Chief Ministers has India had between 2015-2024?",
+      options: ["5", "6", "7", "8"],
+      correct: 1,
+      category: "Politics"
+    },
+    {
+      question: "Which year did AP achieve 100% electrification of households?",
+      options: ["2018", "2019", "2020", "2021"],
+      correct: 1,
+      category: "Development"
+    },
+    {
+      question: "What was unique about Amaravati's foundation stone laying ceremony?",
+      options: ["Soil from all districts", "Water from all rivers", "Both A and B", "None"],
       correct: 2,
-      category: "Biology"
+      category: "History"
     },
     {
-      question: "As of 2024, which country leads in renewable energy production?",
-      options: ["USA", "China", "Germany", "India"],
+      question: "Which Indian state first achieved 100% LED street lighting?",
+      options: ["Gujarat", "Kerala", "Andhra Pradesh", "Tamil Nadu"],
+      correct: 2,
+      category: "Energy"
+    },
+    {
+      question: "When did the Ram Mandir construction begin vs completion?",
+      options: ["2019-2024", "2020-2024", "2020-2025", "2019-2025"],
       correct: 1,
-      category: "Current Affairs"
+      category: "Culture"
     },
     {
-      question: "What comes once in a minute, twice in a moment, but never in a thousand years?",
-      options: ["Time", "The letter 'M'", "Sunlight", "Sound"],
-      correct: 1,
-      category: "Riddles"
-    },
-    {
-      question: "Which is a dangling modifier?",
-      options: ["Running late, she missed the bus", "Walking quickly, the bus was missed", "She missed the bus while running", "The bus left while she was running"],
-      correct: 1,
-      category: "Grammar"
-    },
-    {
-      question: "What is the approximate time it takes for sunlight to reach Earth?",
-      options: ["8 minutes", "8 seconds", "8 hours", "8 days"],
-      correct: 0,
-      category: "Solar System"
+      question: "How many years did it take to complete Statue of Unity from start to finish?",
+      options: ["3 years", "4 years", "5 years", "6 years"],
+      correct: 2,
+      category: "Infrastructure"
     }
   ],
   advanced: [
     {
-      question: "If Pluto's orbit intersects Neptune's, why don't they collide?",
-      options: ["Magnetic repulsion", "Gravitational resonance", "Solar wind protection", "Asteroid belt barrier"],
-      correct: 1,
-      category: "Solar System"
-    },
-    {
-      question: "Which sentence demonstrates synecdoche?",
-      options: ["The stars danced in the sky", "All hands on deck", "Life is like a box of chocolates", "The wind whispered"],
-      correct: 1,
-      category: "Grammar"
-    },
-    {
-      question: "What percentage of human embryos naturally fail to implant?",
-      options: ["30-40%", "40-50%", "50-75%", "75-90%"],
-      correct: 2,
-      category: "Biology"
-    },
-    {
-      question: "As of 2024, what percentage of global energy comes from renewable sources?",
-      options: ["15%", "23%", "30%", "38%"],
-      correct: 2,
-      category: "Current Affairs"
-    },
-    {
-      question: "I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?",
-      options: ["Fire", "Plant", "Shadow", "Echo"],
+      question: "If AP's GSDP grew at 11.43% in 2021-22, what was the effective growth considering 8% inflation?",
+      options: ["3.43%", "4.43%", "2.43%", "5.43%"],
       correct: 0,
-      category: "Riddles"
+      category: "Economics"
     },
     {
-      question: "Which rhetorical device is used in 'The sky wept'?",
-      options: ["Metonymy", "Personification", "Synecdoche", "Hyperbole"],
+      question: "Which program came first: Digital India or Startup India?",
+      options: ["Digital India", "Startup India", "Same year", "6 months apart"],
+      correct: 0,
+      category: "Government Initiatives"
+    },
+    {
+      question: "How many IITs were there in 2015 vs 2024?",
+      options: ["16 vs 23", "18 vs 23", "15 vs 24", "17 vs 23"],
+      correct: 0,
+      category: "Education"
+    },
+    {
+      question: "What's the time difference between East and West India when Ladakh becomes a UT?",
+      options: ["2 hrs", "2.5 hrs", "3 hrs", "3.5 hrs"],
       correct: 1,
-      category: "Grammar"
+      category: "Geography"
     },
     {
-      question: "Why does Venus appear brightest when it's not full?",
-      options: ["Atmospheric reflection", "Distance from Earth", "Angle of sunlight", "Cloud cover variation"],
+      question: "Which district in AP has shown the highest renewable energy growth from 2015-2024?",
+      options: ["Anantapur", "Kurnool", "Kadapa", "Nellore"],
+      correct: 0,
+      category: "Energy"
+    },
+    {
+      question: "How many times has India's UPI transaction value doubled between 2019-2024?",
+      options: ["4 times", "5 times", "6 times", "7 times"],
+      correct: 3,
+      category: "Digital Economy"
+    },
+    {
+      question: "What percentage of AP's population lived in the proposed three capitals' regions combined?",
+      options: ["30%", "35%", "40%", "45%"],
       correct: 2,
-      category: "Solar System"
+      category: "Demographics"
     },
     {
-      question: "What evolutionary advantage does the Y chromosome's shrinking size suggest?",
-      options: ["Increased mutation rate", "Genetic efficiency", "Species adaptation", "Reproductive disadvantage"],
+      question: "When was India's first quantum computer built vs first quantum network established?",
+      options: ["2021 vs 2023", "2022 vs 2024", "2023 vs 2025", "2020 vs 2023"],
       correct: 1,
-      category: "Biology"
+      category: "Technology"
     },
     {
-      question: "Which emerging technology had the highest investment growth in 2023-2024?",
-      options: ["Quantum computing", "Generative AI", "Nuclear fusion", "Biotechnology"],
-      correct: 1,
-      category: "Current Affairs"
+      question: "How many years did it take from conception to completion of Polavaram's first phase?",
+      options: ["7 years", "8 years", "9 years", "10 years"],
+      correct: 2,
+      category: "Infrastructure"
     },
     {
-      question: "The more you take, the more you leave behind. What am I?",
-      options: ["Time", "Footsteps", "Memories", "Knowledge"],
-      correct: 1,
-      category: "Riddles"
+      question: "Which came first: National Education Policy 2020 or New Parliament Building?",
+      options: ["NEP 2020", "Parliament Building", "Same year", "One month apart"],
+      correct: 0,
+      category: "Governance"
     },
     {
-      question: "Identify the zeugma: 'She broke his car and his heart.'",
-      options: ["Car and heart are objects", "'Broke' has dual meanings", "It's not zeugma", "It's a metaphor"],
+      question: "What's the population ratio of AP's three proposed capitals?",
+      options: ["3:2:1", "4:2:1", "5:3:1", "6:3:1"],
       correct: 1,
-      category: "Grammar"
+      category: "Urban Planning"
     },
     {
-      question: "What causes Saturn's hexagonal storm pattern at its north pole?",
-      options: ["Magnetic fields", "Jet stream behavior", "Ring system influence", "Solar radiation"],
-      correct: 1,
-      category: "Solar System"
+      question: "How many new unicorns did India add between 2020-2024?",
+      options: ["75", "85", "95", "105"],
+      correct: 2,
+      category: "Startup Ecosystem"
     }
   ]
 };
