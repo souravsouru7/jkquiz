@@ -49,7 +49,7 @@ const Quiz = () => {
     const correct = quizData[currentLevel][currentQuestion].correct === selectedIndex;
     if (correct) setScore(score + 1);
 
-    if (currentQuestion === 11) {
+    if (currentQuestion === quizData[currentLevel].length - 1) {
       navigate('/results');
     } else {
       setCurrentQuestion(prev => prev + 1);
@@ -135,12 +135,12 @@ const Quiz = () => {
 
           <LinearProgress 
             variant="determinate" 
-            value={(currentQuestion / 12) * 100} 
+            value={(currentQuestion / quizData[currentLevel].length) * 100} 
             sx={{ height: 10, borderRadius: 5 }}
           />
 
-          <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Typography>Question {currentQuestion + 1}/12</Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
+            <Typography>Question {currentQuestion + 1}/{quizData[currentLevel].length}</Typography>
             <Typography>Score: {score}</Typography>
           </Box>
 

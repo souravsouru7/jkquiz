@@ -29,8 +29,49 @@ export const quizData = {
       options: ["Echo", "Wind", "Radio", "Phone"],
       correct: 0,
       category: "Riddles"
+    },
+    {
+      question: "What is the largest planet in our solar system?",
+      options: ["Earth", "Saturn", "Jupiter", "Mars"],
+      correct: 2,
+      category: "Science"
+    },
+    {
+      question: "Which country is known as the Land of the Rising Sun?",
+      options: ["China", "South Korea", "Japan", "Thailand"],
+      correct: 2,
+      category: "Geography"
+    },
+    {
+      question: "What is the chemical symbol for gold?",
+      options: ["Ag", "Au", "Fe", "Cu"],
+      correct: 1,
+      category: "Science"
+    },
+    {
+      question: "Which animal is known as the 'King of the Jungle'?",
+      options: ["Tiger", "Lion", "Elephant", "Gorilla"],
+      correct: 1,
+      category: "Animals"
+    },
+    {
+      question: "What is the capital of France?",
+      options: ["London", "Berlin", "Paris", "Madrid"],
+      correct: 2,
+      category: "Capitals"
+    },
+    {
+      question: "Which planet is known as the Red Planet?",
+      options: ["Venus", "Mars", "Jupiter", "Saturn"],
+      correct: 1,
+      category: "Science"
+    },
+    {
+      question: "What is the largest ocean on Earth?",
+      options: ["Atlantic", "Indian", "Arctic", "Pacific"],
+      correct: 3,
+      category: "Geography"
     }
-    // ...Add more easy questions following this pattern
   ],
   intermediate: [
     {
