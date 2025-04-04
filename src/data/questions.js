@@ -1,212 +1,224 @@
 export const quizData = {
   easy: [
     {
-      question: "If a train travels at 60 km/h for 1.5 hours, but takes a 20-minute break, how far has it traveled?",
-      options: ["80 km", "90 km", "100 km", "70 km"],
+      question: "Which planet in our solar system has the most moons as of 2024?",
+      options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
       correct: 1,
-      category: "Mathematics"
+      category: "Solar System"
     },
     {
-      question: "Which freedom fighter was known as 'Frontier Gandhi'?",
-      options: ["Khan Abdul Ghaffar Khan", "Subhas Chandra Bose", "Lala Lajpat Rai", "Bhagat Singh"],
-      correct: 0,
-      category: "Freedom Fighters"
-    },
-    {
-      question: "If AI operates at 99.9% accuracy, what's more dangerous: 0.1% error in identifying cats or in autonomous vehicles?",
-      options: ["Cat identification", "Both equally dangerous", "Autonomous vehicles", "Neither is dangerous"],
+      question: "Which of these is NOT a correct use of the apostrophe?",
+      options: ["It's raining", "The dog's bowl", "Their's is blue", "James's car"],
       correct: 2,
-      category: "AI Ethics"
+      category: "Grammar"
     },
     {
-      question: "A chameleon can look in two different directions at once. If it spots 3 insects on the left and 2 on the right every minute, how many potential prey does it observe in 5 minutes?",
-      options: ["25", "20", "15", "30"],
+      question: "What percentage of oxygen does Earth's atmosphere contain?",
+      options: ["21%", "50%", "78%", "15%"],
       correct: 0,
-      category: "Nature & Math"
-    },
-    {
-      question: "In a group of AI chatbots, if each one learns from 3 others and there are 12 chatbots, how many learning connections exist?",
-      options: ["36", "24", "48", "12"],
-      correct: 0,
-      category: "AI & Math"
-    },
-    {
-      question: "What is the binary representation of the decimal number 12?",
-      options: ["1100", "1010", "1110", "1001"],
-      correct: 0,
-      category: "Computer Science"
-    },
-    {
-      question: "Which Indian freedom fighter was known as 'Netaji'?",
-      options: ["Bhagat Singh", "Subhas Chandra Bose", "Lala Lajpat Rai", "Bipin Chandra Pal"],
-      correct: 1,
-      category: "Freedom Fighters"
-    },
-    {
-      question: "If a lion sleeps 20 hours a day, what percentage of the day is it awake?",
-      options: ["25%", "16.67%", "20%", "15%"],
-      correct: 1,
-      category: "Nature & Math"
-    },
-    {
-      question: "What does GPT stand for in ChatGPT?",
-      options: ["General Processing Technology", "Generative Pre-trained Transformer", "Global Pattern Training", "General Purpose Text"],
-      correct: 1,
-      category: "AI Technology"
-    },
-    {
-      question: "If water freezes at 0°C, what is this temperature in Fahrenheit?",
-      options: ["30°F", "32°F", "34°F", "36°F"],
-      correct: 1,
       category: "Science"
     },
     {
-      question: "Which animal's DNA is 98% similar to humans?",
-      options: ["Gorilla", "Chimpanzee", "Orangutan", "Bonobo"],
+      question: "As of 2024, which country has the highest population?",
+      options: ["China", "India", "USA", "Indonesia"],
+      correct: 1,
+      category: "Current Affairs"
+    },
+    {
+      question: "What grows bigger the more you take away from it?",
+      options: ["A hole", "A shadow", "A debt", "A problem"],
+      correct: 0,
+      category: "Riddles"
+    },
+    {
+      question: "Which cell in human reproduction contains 23 chromosomes?",
+      options: ["Skin cell", "Gamete", "Blood cell", "Muscle cell"],
       correct: 1,
       category: "Biology"
     },
     {
-      question: "What was the first cryptocurrency ever created?",
-      options: ["Ethereum", "Bitcoin", "Litecoin", "Dogecoin"],
+      question: "Select the correctly spelled sentence:",
+      options: ["I recieved your message", "I received your message", "I receved your message", "I recieved you're message"],
       correct: 1,
-      category: "Technology"
+      category: "Grammar"
+    },
+    {
+      question: "How many Earth days does it take for Mercury to orbit the Sun?",
+      options: ["88 days", "225 days", "365 days", "687 days"],
+      correct: 0,
+      category: "Solar System"
+    },
+    {
+      question: "Which major climate agreement was updated in 2023?",
+      options: ["Paris Agreement", "Kyoto Protocol", "Dubai Consensus", "Montreal Protocol"],
+      correct: 2,
+      category: "Current Affairs"
+    },
+    {
+      question: "What has keys but no locks, space but no room, and you can enter but not go in?",
+      options: ["A keyboard", "A map", "A phone", "A book"],
+      correct: 0,
+      category: "Riddles"
+    },
+    {
+      question: "Choose the correct sentence:",
+      options: ["Between you and I", "Between you and me", "Between we", "Between us all"],
+      correct: 1,
+      category: "Grammar"
+    },
+    {
+      question: "Which planet's moon might harbor life beneath its icy surface?",
+      options: ["Mars' Phobos", "Jupiter's Europa", "Saturn's Titan", "Neptune's Triton"],
+      correct: 1,
+      category: "Solar System"
     }
   ],
   intermediate: [
     {
-      question: "If Bhagat Singh spent 2 years in jail, and wrote 4 books each taking 3 months, what percentage of his jail time was spent writing?",
-      options: ["25%", "50%", "75%", "100%"],
-      correct: 1,
-      category: "History & Math"
+      question: "If Venus rotates clockwise and all other planets rotate counterclockwise, what time would it be on Venus when it's noon on Earth?",
+      options: ["Midnight", "6 PM", "6 AM", "There's no correlation"],
+      correct: 3,
+      category: "Solar System"
     },
     {
-      question: "In neural networks, if each neuron connects to 4 others, and there are 3 layers with 5 neurons each, how many total connections exist?",
-      options: ["40", "50", "60", "75"],
+      question: "Which grammatical sentence is incorrect?",
+      options: ["Whom did you meet?", "Who did you meet?", "To whom did you speak?", "Whom spoke to you?"],
+      correct: 3,
+      category: "Grammar"
+    },
+    {
+      question: "What percentage of human DNA is shared with bananas?",
+      options: ["25%", "50%", "60%", "90%"],
+      correct: 1,
+      category: "Biology"
+    },
+    {
+      question: "As of 2024, how many countries have landed successfully on the Moon?",
+      options: ["3", "4", "5", "6"],
       correct: 2,
-      category: "AI Architecture"
+      category: "Current Affairs"
     },
     {
-      question: "A honeybee visits 50 flowers per hour, works 10 hours a day, and lives for 4 weeks. If only 30% of visits result in pollination, how many flowers does it successfully pollinate in its lifetime?",
-      options: ["42,000", "12,600", "6,000", "4,200"],
+      question: "What has no beginning, end, or middle, and touches every continent?",
+      options: ["Time", "Space", "The letter 'E'", "The ocean"],
+      correct: 2,
+      category: "Riddles"
+    },
+    {
+      question: "Which sentence uses the subjunctive mood correctly?",
+      options: ["I wish I was there", "I wish I were there", "I wish I am there", "I wish I had been there"],
       correct: 1,
-      category: "Nature & Math"
+      category: "Grammar"
     },
     {
-      question: "During the Quit India Movement, if information spread to 3 people each day, and each of them spread to 3 more the next day, how many people were informed after 5 days?",
-      options: ["243", "729", "81", "27"],
+      question: "How many times can all planets in our solar system align perfectly?",
+      options: ["Never", "Once every 100 years", "Once every 1000 years", "Once every million years"],
       correct: 0,
-      category: "History & Math"
+      category: "Solar System"
     },
     {
-      question: "If a quantum computer can solve a problem in 1 second that takes a classical computer 10,000 years, how many times faster is it? (Assume 365 days/year)",
-      options: ["3.15 x 10^11", "3.15 x 10^8", "3.15 x 10^9", "3.15 x 10^10"],
+      question: "Which hormone triggers ovulation?",
+      options: ["Estrogen", "Progesterone", "Luteinizing hormone", "Follicle-stimulating hormone"],
       correct: 2,
-      category: "Technology"
+      category: "Biology"
     },
     {
-      question: "If machine learning accuracy improves by 5% each iteration, starting at 70%, how many iterations to reach 95%?",
-      options: ["4", "5", "6", "7"],
-      correct: 2,
-      category: "AI & Math"
-    },
-    {
-      question: "Which freedom fighter wrote 'The Indian War of Independence, 1857'?",
-      options: ["Bhagat Singh", "V.D. Savarkar", "Lala Lajpat Rai", "B.G. Tilak"],
+      question: "As of 2024, which country leads in renewable energy production?",
+      options: ["USA", "China", "Germany", "India"],
       correct: 1,
-      category: "History"
+      category: "Current Affairs"
     },
     {
-      question: "In a Rubik's cube, if you make 3 moves per second, how many years to try all possible combinations?",
-      options: ["35 trillion years", "35 billion years", "35 million years", "35 thousand years"],
-      correct: 0,
-      category: "Mathematics"
-    },
-    {
-      question: "What percentage of Earth's species are estimated to be undiscovered?",
-      options: ["66%", "77%", "86%", "91%"],
-      correct: 2,
-      category: "Science"
-    },
-    {
-      question: "How many possible arrangements are there for 10 books on a shelf?",
-      options: ["362,880", "3,628,800", "36,288", "36,288,000"],
+      question: "What comes once in a minute, twice in a moment, but never in a thousand years?",
+      options: ["Time", "The letter 'M'", "Sunlight", "Sound"],
       correct: 1,
-      category: "Mathematics"
+      category: "Riddles"
     },
     {
-      question: "If data doubles every 2 years, how many times more data will exist in 10 years?",
-      options: ["32", "64", "16", "128"],
+      question: "Which is a dangling modifier?",
+      options: ["Running late, she missed the bus", "Walking quickly, the bus was missed", "She missed the bus while running", "The bus left while she was running"],
+      correct: 1,
+      category: "Grammar"
+    },
+    {
+      question: "What is the approximate time it takes for sunlight to reach Earth?",
+      options: ["8 minutes", "8 seconds", "8 hours", "8 days"],
       correct: 0,
-      category: "Technology"
+      category: "Solar System"
     }
   ],
   advanced: [
     {
-      question: "If AI systems generate art at 1000 pieces/second, and human artists create 1 piece/day, in what year will AI-generated art equal all human art since 1800? (Assume 10 million human artists)",
-      options: ["2025", "2030", "2035", "Never - humans have too much lead"],
-      correct: 3,
-      category: "AI & Art"
-    },
-    {
-      question: "During the Salt March, if Gandhi walked 241 miles in 24 days, and followers joined at a rate of √(distance × days), how many followers theoretically joined by the end?",
-      options: ["76", "24", "48", "96"],
-      correct: 0,
-      category: "History & Math"
-    },
-    {
-      question: "If a butterfly's wing pattern has a Fibonacci sequence ratio, and each generation's pattern varies by one sequence number, how many generations until the pattern repeats?",
-      options: ["8", "13", "21", "34"],
+      question: "If Pluto's orbit intersects Neptune's, why don't they collide?",
+      options: ["Magnetic repulsion", "Gravitational resonance", "Solar wind protection", "Asteroid belt barrier"],
       correct: 1,
-      category: "Nature & Math"
+      category: "Solar System"
     },
     {
-      question: "In a room with 3 AI systems and 2 humans, if each AI can process 100 tasks/second and humans 1 task/second, what's the probability that a randomly completed task was done by a human?",
-      options: ["1/302", "2/302", "1/151", "2/151"],
-      correct: 0,
-      category: "Probability & AI"
-    },
-    {
-      question: "If Chandrasekhar Azad's guerrilla squad moved in a pattern where each member was √2 meters from adjacent members, forming a perfect circle of 8 people, what was the circle's area?",
-      options: ["32π meters²", "16π meters²", "8π meters²", "4π meters²"],
+      question: "Which sentence demonstrates synecdoche?",
+      options: ["The stars danced in the sky", "All hands on deck", "Life is like a box of chocolates", "The wind whispered"],
       correct: 1,
-      category: "History & Math"
+      category: "Grammar"
     },
     {
-      question: "If quantum computers double in power every 6 months (Neven's Law), how many times more powerful will they be in 3 years?",
-      options: ["64", "128", "256", "512"],
+      question: "What percentage of human embryos naturally fail to implant?",
+      options: ["30-40%", "40-50%", "50-75%", "75-90%"],
       correct: 2,
-      category: "Technology"
-    },
-    {
-      question: "In the game of chess, after both players make 2 moves each, how many possible board positions exist?",
-      options: ["71,852", "197,281", "288,825", "197,742"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "If every neuron in a human brain fired once per second, how many years would it take to match the computations of modern AI in one day?",
-      options: ["100", "1,000", "10,000", "100,000"],
-      correct: 2,
-      category: "Neuroscience & AI"
-    },
-    {
-      question: "What is the probability of shuffling a deck of cards into a sequence that has never existed before?",
-      options: ["99.99%", "99.999%", "99.9999%", "Almost 100%"],
-      correct: 3,
-      category: "Probability"
-    },
-    {
-      question: "If light travels at 299,792,458 m/s, how many times could it circle Earth in one second?",
-      options: ["7.5 times", "8.5 times", "6.5 times", "5.5 times"],
-      correct: 0,
-      category: "Physics"
-    },
-    {
-      question: "In DNA sequencing, if errors occur at a rate of 1 in 100,000 bases, how many errors in a full human genome?",
-      options: ["30", "60", "90", "120"],
-      correct: 0,
       category: "Biology"
+    },
+    {
+      question: "As of 2024, what percentage of global energy comes from renewable sources?",
+      options: ["15%", "23%", "30%", "38%"],
+      correct: 2,
+      category: "Current Affairs"
+    },
+    {
+      question: "I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?",
+      options: ["Fire", "Plant", "Shadow", "Echo"],
+      correct: 0,
+      category: "Riddles"
+    },
+    {
+      question: "Which rhetorical device is used in 'The sky wept'?",
+      options: ["Metonymy", "Personification", "Synecdoche", "Hyperbole"],
+      correct: 1,
+      category: "Grammar"
+    },
+    {
+      question: "Why does Venus appear brightest when it's not full?",
+      options: ["Atmospheric reflection", "Distance from Earth", "Angle of sunlight", "Cloud cover variation"],
+      correct: 2,
+      category: "Solar System"
+    },
+    {
+      question: "What evolutionary advantage does the Y chromosome's shrinking size suggest?",
+      options: ["Increased mutation rate", "Genetic efficiency", "Species adaptation", "Reproductive disadvantage"],
+      correct: 1,
+      category: "Biology"
+    },
+    {
+      question: "Which emerging technology had the highest investment growth in 2023-2024?",
+      options: ["Quantum computing", "Generative AI", "Nuclear fusion", "Biotechnology"],
+      correct: 1,
+      category: "Current Affairs"
+    },
+    {
+      question: "The more you take, the more you leave behind. What am I?",
+      options: ["Time", "Footsteps", "Memories", "Knowledge"],
+      correct: 1,
+      category: "Riddles"
+    },
+    {
+      question: "Identify the zeugma: 'She broke his car and his heart.'",
+      options: ["Car and heart are objects", "'Broke' has dual meanings", "It's not zeugma", "It's a metaphor"],
+      correct: 1,
+      category: "Grammar"
+    },
+    {
+      question: "What causes Saturn's hexagonal storm pattern at its north pole?",
+      options: ["Magnetic fields", "Jet stream behavior", "Ring system influence", "Solar radiation"],
+      correct: 1,
+      category: "Solar System"
     }
   ]
 };
