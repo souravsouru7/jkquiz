@@ -1,224 +1,224 @@
 export const quizData = {
   easy: [
     {
-      question: "If Amaravati was declared as AP capital in 2015, and Visakhapatnam became executive capital in 2024, how many years was Amaravati the sole capital?",
-      options: ["8 years", "9 years", "10 years", "7 years"],
-      correct: 0,
-      category: "Andhra Pradesh"
-    },
-    {
-      question: "Which Indian state had the highest percentage growth in IT exports between 2015-2024?",
-      options: ["Karnataka", "Telangana", "Tamil Nadu", "Maharashtra"],
+      question: "If a brick weighs 1 kg plus half a brick, what is the weight of one brick?",
+      options: ["1 kg", "2 kg", "3 kg", "4 kg"],
       correct: 1,
-      category: "Economy"
+      category: "Logic"
     },
     {
-      question: "If India's first Vande Bharat Express started in 2019, and by 2024 there were 25 routes, on average how many new routes were added per year?",
-      options: ["4", "5", "6", "7"],
+      question: "I am taken from a mine and shut up in a wooden case, from which I am never released, and yet I am used by everyone. What am I?",
+      options: ["Gold", "Diamond", "Lead", "Pencil"],
+      correct: 3,
+      category: "Riddle"
+    },
+    {
+      question: "If you have 3 apples and take away 2, how many apples do you have?",
+      options: ["1 apple", "2 apples", "3 apples", "5 apples"],
       correct: 1,
-      category: "Infrastructure"
+      category: "Logic"
     },
     {
-      question: "Which ministry was created first: Ministry of Cooperation (2021) or Ministry of Jal Shakti (2019)?",
-      options: ["Ministry of Cooperation", "Ministry of Jal Shakti", "Both same year", "Neither"],
+      question: "What has a head and a tail but no body?",
+      options: ["Snake", "Coin", "River", "Rope"],
       correct: 1,
-      category: "Government"
+      category: "Riddle"
     },
     {
-      question: "What unique record did Polavaram Project set in Limca Book of Records in 2018?",
-      options: ["Largest spillway", "Most concrete poured", "Longest bridge", "Highest dam"],
-      correct: 0,
-      category: "Andhra Pradesh"
-    },
-    {
-      question: "If UPI transactions in 2016 were ₹7,000 Cr and in 2024 are ₹7,00,000 Cr, how many times did it grow?",
-      options: ["10 times", "100 times", "1000 times", "10000 times"],
+      question: "If you're running in a race and you pass the person in 2nd place, what position are you in?",
+      options: ["1st", "2nd", "3rd", "Cannot determine"],
       correct: 1,
-      category: "Digital India"
+      category: "Logic"
     },
     {
-      question: "Which Indian state introduced the 'Three Capitals' concept first?",
-      options: ["Maharashtra", "Andhra Pradesh", "Uttar Pradesh", "Rajasthan"],
+      question: "What gets wetter and wetter the more it dries?",
+      options: ["Sponge", "Towel", "Cloth", "Paper"],
       correct: 1,
-      category: "Politics"
+      category: "Riddle"
     },
     {
-      question: "When was the Article 370 revoked from J&K?",
-      options: ["August 2019", "September 2019", "October 2019", "July 2019"],
-      correct: 0,
-      category: "Constitutional"
-    },
-    {
-      question: "Which district in AP recorded the highest literacy rate improvement from 2015 to 2024?",
-      options: ["Prakasam", "Vizianagaram", "Guntur", "Krishna"],
+      question: "If two painters can paint two rooms in two hours, how many painters are needed to paint six rooms in six hours?",
+      options: ["6 painters", "2 painters", "3 painters", "4 painters"],
       correct: 1,
-      category: "Education"
+      category: "Logic"
     },
     {
-      question: "Which scheme was launched first: PM-KISAN or Rythu Bharosa?",
-      options: ["PM-KISAN", "Rythu Bharosa", "Same day", "Different years"],
-      correct: 0,
-      category: "Agriculture"
-    },
-    {
-      question: "How many new districts were created in Andhra Pradesh in 2022?",
-      options: ["11", "12", "13", "14"],
+      question: "The more you take, the more you leave behind. What am I?",
+      options: ["Money", "Time", "Footsteps", "Knowledge"],
       correct: 2,
-      category: "Administration"
+      category: "Riddle"
     },
     {
-      question: "What was India's rank in Startup Ecosystem in 2015 vs 2024?",
-      options: ["20th to 3rd", "15th to 2nd", "25th to 4th", "30th to 5th"],
+      question: "A father's child, a mother's child, but no one's son. What am I?",
+      options: ["Nephew", "Daughter", "Cousin", "Niece"],
+      correct: 1,
+      category: "Logic"
+    },
+    {
+      question: "What has keys but no locks, space but no room, and you can enter but not go in?",
+      options: ["House", "Car", "Keyboard", "Phone"],
+      correct: 2,
+      category: "Riddle"
+    },
+    {
+      question: "If a doctor gives you 3 pills and tells you to take one pill every half hour, how long would the pills last?",
+      options: ["1 hour", "1.5 hours", "2 hours", "1 hour and 15 minutes"],
       correct: 0,
-      category: "Startup India"
+      category: "Logic"
+    },
+    {
+      question: "What has legs but cannot walk?",
+      options: ["Table", "Car", "Book", "Phone"],
+      correct: 0,
+      category: "Riddle"
     }
   ],
   intermediate: [
     {
-      question: "If AP's coastline is 974 km, and Sagarmala project covers 70% of it, how many ports were proposed vs actually developed by 2024?",
-      options: ["6 vs 3", "8 vs 4", "10 vs 5", "12 vs 6"],
-      correct: 2,
-      category: "Infrastructure"
-    },
-    {
-      question: "Which was India's first state to deliver medicines via drones in 2021?",
-      options: ["Karnataka", "Telangana", "Tamil Nadu", "Andhra Pradesh"],
-      correct: 1,
-      category: "Healthcare"
-    },
-    {
-      question: "During COVID-19, which Indian state performed most tests per million population?",
-      options: ["Kerala", "Delhi", "Andhra Pradesh", "Maharashtra"],
-      correct: 2,
-      category: "Healthcare"
-    },
-    {
-      question: "In which year did India surpass China as the most populous country?",
-      options: ["2021", "2022", "2023", "2024"],
-      correct: 2,
-      category: "Demographics"
-    },
-    {
-      question: "What percentage of India's semiconductor manufacturing target by 2025 is allocated to AP?",
-      options: ["15%", "20%", "25%", "30%"],
-      correct: 2,
-      category: "Industry"
-    },
-    {
-      question: "Which mission was launched first: Chandrayaan-3 or Aditya L-1?",
-      options: ["Chandrayaan-3", "Aditya L-1", "Same month", "Same year"],
+      question: "A girl has as many brothers as sisters, but each brother has only half as many brothers as sisters. How many brothers and sisters are there?",
+      options: ["3 brothers, 4 sisters", "4 brothers, 3 sisters", "3 brothers, 3 sisters", "4 brothers, 4 sisters"],
       correct: 0,
-      category: "Space"
+      category: "Logic"
     },
     {
-      question: "How many women Chief Ministers has India had between 2015-2024?",
-      options: ["5", "6", "7", "8"],
-      correct: 1,
-      category: "Politics"
+      question: "I turn polar bears white and I will make you cry. I make guys have to pee and ladies have to wipe. What am I?",
+      options: ["Water", "Snow", "Ice", "Nothing"],
+      correct: 0,
+      category: "Riddle"
     },
     {
-      question: "Which year did AP achieve 100% electrification of households?",
-      options: ["2018", "2019", "2020", "2021"],
-      correct: 1,
-      category: "Development"
+      question: "Five people were eating apples, A finished before B, but behind C. D finished before E, but behind B. What was the finishing order?",
+      options: ["CABDE", "CABED", "CBAED", "CAEBD"],
+      correct: 0,
+      category: "Logic"
     },
     {
-      question: "What was unique about Amaravati's foundation stone laying ceremony?",
-      options: ["Soil from all districts", "Water from all rivers", "Both A and B", "None"],
+      question: "What can travel around the world while staying in a corner?",
+      options: ["Globe", "Map", "Stamp", "Picture"],
       correct: 2,
-      category: "History"
+      category: "Riddle"
     },
     {
-      question: "Which Indian state first achieved 100% LED street lighting?",
-      options: ["Gujarat", "Kerala", "Andhra Pradesh", "Tamil Nadu"],
-      correct: 2,
-      category: "Energy"
-    },
-    {
-      question: "When did the Ram Mandir construction begin vs completion?",
-      options: ["2019-2024", "2020-2024", "2020-2025", "2019-2025"],
+      question: "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
+      options: ["100 minutes", "5 minutes", "20 minutes", "25 minutes"],
       correct: 1,
-      category: "Culture"
+      category: "Logic"
     },
     {
-      question: "How many years did it take to complete Statue of Unity from start to finish?",
-      options: ["3 years", "4 years", "5 years", "6 years"],
+      question: "What has 13 hearts but no other organs?",
+      options: ["Valentine's card", "Deck of cards", "Medical diagram", "Clock"],
+      correct: 1,
+      category: "Riddle"
+    },
+    {
+      question: "A man walks up to you and tells you that all of his sons are boys. How many sons does he have?",
+      options: ["Cannot determine", "All of them", "None", "One"],
+      correct: 1,
+      category: "Logic"
+    },
+    {
+      question: "What belongs to you but others use it more than you do?",
+      options: ["Money", "Car", "House", "Name"],
+      correct: 3,
+      category: "Riddle"
+    },
+    {
+      question: "In a year, there are 12 months. Seven months have 31 days. How many months have 28 days?",
+      options: ["1", "12", "7", "5"],
+      correct: 1,
+      category: "Logic"
+    },
+    {
+      question: "Forward I am heavy, backward I am not. What am I?",
+      options: ["Walk", "Ton", "Load", "Weight"],
+      correct: 1,
+      category: "Riddle"
+    },
+    {
+      question: "A cart driver has 2 sand bags. One contains 40kg of sand, the other 60kg. What should the driver do to balance both bags?",
+      options: ["Add 10kg to lighter bag", "Remove 10kg from heavier bag", "Take sand from one bag", "Cannot be balanced"],
       correct: 2,
-      category: "Infrastructure"
+      category: "Logic"
+    },
+    {
+      question: "What starts with an 'e' and ends with an 'e' but only contains one letter?",
+      options: ["Estate", "Envelope", "Eye", "Edge"],
+      correct: 1,
+      category: "Riddle"
     }
   ],
   advanced: [
     {
-      question: "If AP's GSDP grew at 11.43% in 2021-22, what was the effective growth considering 8% inflation?",
-      options: ["3.43%", "4.43%", "2.43%", "5.43%"],
+      question: "Three friends split a bill of $30. Each paid $10. The waiter made a mistake and returned $5. Each friend took $1 and gave $2 to charity. Now each friend paid $9, totaling $27, plus $2 to charity equals $29. Where is the missing dollar?",
+      options: ["There is no missing dollar", "In the waiter's pocket", "In the charity", "The math is wrong"],
       correct: 0,
-      category: "Economics"
+      category: "Logic"
     },
     {
-      question: "Which program came first: Digital India or Startup India?",
-      options: ["Digital India", "Startup India", "Same year", "6 months apart"],
-      correct: 0,
-      category: "Government Initiatives"
-    },
-    {
-      question: "How many IITs were there in 2015 vs 2024?",
-      options: ["16 vs 23", "18 vs 23", "15 vs 24", "17 vs 23"],
-      correct: 0,
-      category: "Education"
-    },
-    {
-      question: "What's the time difference between East and West India when Ladakh becomes a UT?",
-      options: ["2 hrs", "2.5 hrs", "3 hrs", "3.5 hrs"],
-      correct: 1,
-      category: "Geography"
-    },
-    {
-      question: "Which district in AP has shown the highest renewable energy growth from 2015-2024?",
-      options: ["Anantapur", "Kurnool", "Kadapa", "Nellore"],
-      correct: 0,
-      category: "Energy"
-    },
-    {
-      question: "How many times has India's UPI transaction value doubled between 2019-2024?",
-      options: ["4 times", "5 times", "6 times", "7 times"],
-      correct: 3,
-      category: "Digital Economy"
-    },
-    {
-      question: "What percentage of AP's population lived in the proposed three capitals' regions combined?",
-      options: ["30%", "35%", "40%", "45%"],
+      question: "If you divide 30 by half and add 10, what's the answer?",
+      options: ["25", "35", "70", "80"],
       correct: 2,
-      category: "Demographics"
+      category: "Math Logic"
     },
     {
-      question: "When was India's first quantum computer built vs first quantum network established?",
-      options: ["2021 vs 2023", "2022 vs 2024", "2023 vs 2025", "2020 vs 2023"],
-      correct: 1,
-      category: "Technology"
-    },
-    {
-      question: "How many years did it take from conception to completion of Polavaram's first phase?",
-      options: ["7 years", "8 years", "9 years", "10 years"],
+      question: "A doctor and a boy are fishing. The doctor is the boy's son, but the boy is not the doctor's son. How is this possible?",
+      options: ["They're not related", "It's a riddle", "The doctor is his mother", "The boy is adopted"],
       correct: 2,
-      category: "Infrastructure"
+      category: "Logic"
     },
     {
-      question: "Which came first: National Education Policy 2020 or New Parliament Building?",
-      options: ["NEP 2020", "Parliament Building", "Same year", "One month apart"],
+      question: "How many times can you take 2 from 20?",
+      options: ["10 times", "Once", "5 times", "20 times"],
+      correct: 1,
+      category: "Math Logic"
+    },
+    {
+      question: "What number comes next: 2, 3, 5, 9, 17, __?",
+      options: ["33", "34", "35", "36"],
       correct: 0,
-      category: "Governance"
+      category: "Pattern"
     },
     {
-      question: "What's the population ratio of AP's three proposed capitals?",
-      options: ["3:2:1", "4:2:1", "5:3:1", "6:3:1"],
-      correct: 1,
-      category: "Urban Planning"
-    },
-    {
-      question: "How many new unicorns did India add between 2020-2024?",
-      options: ["75", "85", "95", "105"],
+      question: "If you have a cube, how many squares are there in total (including faces and cross-sections)?",
+      options: ["6", "12", "15", "21"],
       correct: 2,
-      category: "Startup Ecosystem"
+      category: "Spatial"
+    },
+    {
+      question: "Two fathers and two sons went hunting. They shot three rabbits and each person got one. How is this possible?",
+      options: ["One rabbit disappeared", "They shared", "There were only 3 people", "It's impossible"],
+      correct: 2,
+      category: "Logic"
+    },
+    {
+      question: "What can fill a room but takes up no space?",
+      options: ["Air", "Light", "Sound", "Heat"],
+      correct: 1,
+      category: "Riddle"
+    },
+    {
+      question: "If five cats catch five mice in five minutes, how many cats would it take to catch 100 mice in 100 minutes?",
+      options: ["5 cats", "100 cats", "20 cats", "1 cat"],
+      correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "I am an odd number. Take away a letter and I become even. What number am I?",
+      options: ["Seven", "Nine", "Five", "Three"],
+      correct: 0,
+      category: "Word Logic"
+    },
+    {
+      question: "If a red house is made of red bricks, and a blue house is made of blue bricks, what is a greenhouse made of?",
+      options: ["Green bricks", "Glass", "Wood", "Concrete"],
+      correct: 1,
+      category: "Logic"
+    },
+    {
+      question: "Using only addition, how can you use eight 8's to get the number 1000?",
+      options: ["888+88+8+8+8", "888+88+8+8+8+8", "888+88+24", "888+111+1"],
+      correct: 1,
+      category: "Math Logic"
     }
   ]
 };
