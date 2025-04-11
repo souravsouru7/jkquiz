@@ -141,7 +141,6 @@ const Quiz = () => {
 
           <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 2 }}>
             <Typography>Question {currentQuestion + 1}/{quizData[currentLevel].length}</Typography>
-            <Typography>Score: {score}</Typography>
           </Box>
 
           <Typography variant="h5" gutterBottom sx={{

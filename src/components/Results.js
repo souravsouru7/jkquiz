@@ -21,7 +21,7 @@ const Results = () => {
   
   const getPassingScore = () => {
     switch(currentLevel) {
-      case 'easy': return 8;
+      case 'easy': return 6;
       case 'intermediate': return 7;
       case 'advanced': return 6;
       default: return 0;

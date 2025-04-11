@@ -46,7 +46,7 @@ const Home = () => {
             { 
               icon: <SchoolIcon sx={{ fontSize: 40 }}/>, 
               level: 'Easy', 
-              score: '8/12',
+              score: '6/12',
               color: '#4CAF50'
             },
             { 

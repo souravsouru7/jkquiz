@@ -1,112 +1,106 @@
 export const quizData = {
   easy: [
     {
-      question: "If you have 3 apples and take away 2, how many apples do you have?",
-      options: ["1 apple", "2 apples", "3 apples", "5 apples"],
+      question: "What can you hold in your right hand but never in your left hand?",
+      options: ["A pencil", "Your left hand", "A book", "A cup"],
       correct: 1,
       category: "Logic"
     },
     {
-      question: "What has a head and a tail but no body?",
+      question: "I am always in front of you but can never be seen. What am I?",
+      options: ["Future", "Past", "Present", "Time"],
+      correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "What has a neck but no head?",
+      options: ["Bottle", "Giraffe", "Snake", "River"],
+      correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "What can you break without touching it?",
+      options: ["Glass", "Promise", "Heart", "Record"],
+      correct: 1,
+      category: "Logic"
+    },
+    {
+      question: "What has a bottom at the top?",
+      options: ["Mountain", "Bottle", "Leg", "Staircase"],
+      correct: 2,
+      category: "Logic"
+    },
+    {
+      question: "What has a face but no eyes, hands but no arms?",
+      options: ["Clock", "Mirror", "Doll", "Statue"],
+      correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "What gets bigger when more is taken away?",
+      options: ["Hole", "Debt", "Age", "Distance"],
+      correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "What has a head, a tail, but no body?",
       options: ["Snake", "Coin", "River", "Rope"],
       correct: 1,
       category: "Logic"
     },
     {
-      question: "If you're running in a race and you pass the person in 2nd place, what position are you in?",
-      options: ["1st", "2nd", "3rd", "Cannot determine"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "What gets wetter and wetter the more it dries?",
-      options: ["Sponge", "Towel", "Cloth", "Paper"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "If two painters can paint two rooms in two hours, how many painters are needed to paint six rooms in six hours?",
-      options: ["6 painters", "2 painters", "3 painters", "4 painters"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "The more you take, the more you leave behind. What am I?",
-      options: ["Money", "Time", "Footsteps", "Knowledge"],
-      correct: 2,
-      category: "Logic"
-    },
-    {
-      question: "A father's child, a mother's child, but no one's son. What am I?",
-      options: ["Nephew", "Daughter", "Cousin", "Niece"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "What has keys but no locks, space but no room, and you can enter but not go in?",
-      options: ["House", "Car", "Keyboard", "Phone"],
-      correct: 2,
-      category: "Logic"
-    },
-    {
-      question: "If a doctor gives you 3 pills and tells you to take one pill every half hour, how long would the pills last?",
-      options: ["1 hour", "1.5 hours", "2 hours", "1 hour and 15 minutes"],
+      question: "What has to be broken before you can use it?",
+      options: ["Egg", "Glass", "Bottle", "Plate"],
       correct: 0,
       category: "Logic"
     },
     {
-      question: "What has legs but cannot walk?",
-      options: ["Table", "Car", "Book", "Phone"],
+      question: "What has many keys but can't open a single lock?",
+      options: ["House", "Car", "Piano", "Computer"],
+      correct: 2,
+      category: "Logic"
+    },
+    {
+      question: "What has a bed but never sleeps, has a mouth but never eats?",
+      options: ["River", "Mountain", "Valley", "Ocean"],
+      correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "What has cities but no houses, forests but no trees, and rivers but no water?",
+      options: ["Map", "Globe", "Atlas", "Book"],
       correct: 0,
       category: "Logic"
     }
   ],
   intermediate: [
     {
-      question: "A girl has as many brothers as sisters, but each brother has only half as many brothers as sisters. How many brothers and sisters are there?",
-      options: ["3 brothers, 4 sisters", "4 brothers, 3 sisters", "3 brothers, 3 sisters", "4 brothers, 4 sisters"],
+      question: "If you have 3 apples and you take away 2, how many do you have?",
+      options: ["1 apple", "2 apples", "3 apples", "5 apples"],
+      correct: 1,
+      category: "Logic"
+    },
+    {
+      question: "A man is looking at a photograph of someone. His friend asks who it is. The man replies, 'Brothers and sisters, I have none. But that man's father is my father's son.' Who is in the photograph?",
+      options: ["His son", "His father", "His uncle", "His brother"],
       correct: 0,
       category: "Logic"
     },
     {
-      question: "Five people were eating apples, A finished before B, but behind C. D finished before E, but behind B. What was the finishing order?",
-      options: ["CABDE", "CABED", "CBAED", "CAEBD"],
+      question: "If a rooster lays an egg on the roof of a barn, which way will it roll?",
+      options: ["North", "South", "East", "West"],
+      correct: 3,
+      category: "Logic"
+    },
+    {
+      question: "What comes once in a minute, twice in a moment, but never in a thousand years?",
+      options: ["The letter 'M'", "The letter 'E'", "The letter 'N'", "The letter 'T'"],
       correct: 0,
       category: "Logic"
     },
     {
-      question: "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?",
-      options: ["100 minutes", "5 minutes", "20 minutes", "25 minutes"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "A man walks up to you and tells you that all of his sons are boys. How many sons does he have?",
-      options: ["Cannot determine", "All of them", "None", "One"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "In a year, there are 12 months. Seven months have 31 days. How many months have 28 days?",
-      options: ["1", "12", "7", "5"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "A cart driver has 2 sand bags. One contains 40kg of sand, the other 60kg. What should the driver do to balance both bags?",
-      options: ["Add 10kg to lighter bag", "Remove 10kg from heavier bag", "Take sand from one bag", "Cannot be balanced"],
-      correct: 2,
-      category: "Logic"
-    },
-    {
-      question: "What starts with an 'e' and ends with an 'e' but only contains one letter?",
-      options: ["Estate", "Envelope", "Eye", "Edge"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "If you have a bowl with six apples and you take away four, how many do you have?",
-      options: ["2 apples", "4 apples", "6 apples", "None"],
+      question: "If you're running in a race and you pass the person in second place, what place are you in?",
+      options: ["First", "Second", "Third", "Fourth"],
       correct: 1,
       category: "Logic"
     },
@@ -117,16 +111,58 @@ export const quizData = {
       category: "Logic"
     },
     {
-      question: "What goes up but never comes down?",
-      options: ["Age", "Balloon", "Rocket", "Temperature"],
+      question: "What has a thumb and four fingers but is not alive?",
+      options: ["Hand", "Glove", "Doll", "Statue"],
+      correct: 1,
+      category: "Logic"
+    },
+    {
+      question: "What has a ring but no finger?",
+      options: ["Phone", "Tree", "Box", "Bell"],
       correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "What has a neck but no head, two arms but no hands?",
+      options: ["Bottle", "Shirt", "Giraffe", "Tree"],
+      correct: 1,
+      category: "Logic"
+    },
+    {
+      question: "What has a face that doesn't frown, hands that don't wave, and runs but doesn't walk?",
+      options: ["Clock", "River", "Wind", "Time"],
+      correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "What has a heart that doesn't beat?",
+      options: ["Artichoke", "Apple", "Pear", "Peach"],
+      correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "What has a foot but no legs?",
+      options: ["Snail", "Mountain", "Chair", "Table"],
+      correct: 1,
       category: "Logic"
     }
   ],
   advanced: [
     {
-      question: "Three friends split a bill of $30. Each paid $10. The waiter made a mistake and returned $5. Each friend took $1 and gave $2 to charity. Now each friend paid $9, totaling $27, plus $2 to charity equals $29. Where is the missing dollar?",
-      options: ["There is no missing dollar", "In the waiter's pocket", "In the charity", "The math is wrong"],
+      question: "If you have a cube, how many squares are there in total (including faces and cross-sections)?",
+      options: ["6", "12", "15", "21"],
+      correct: 2,
+      category: "Logic"
+    },
+    {
+      question: "A man is found dead in a locked room with no windows. The only things in the room are a puddle of water and a piece of rope. How did he die?",
+      options: ["He was poisoned", "He was strangled", "He was electrocuted", "He was frozen"],
+      correct: 2,
+      category: "Logic"
+    },
+    {
+      question: "What number comes next: 2, 3, 5, 9, 17, __?",
+      options: ["33", "34", "35", "36"],
       correct: 0,
       category: "Logic"
     },
@@ -137,51 +173,51 @@ export const quizData = {
       category: "Logic"
     },
     {
-      question: "A doctor and a boy are fishing. The doctor is the boy's son, but the boy is not the doctor's son. How is this possible?",
-      options: ["They're not related", "It's a riddle", "The doctor is his mother", "The boy is adopted"],
-      correct: 2,
+      question: "A man walks into a bar and asks for a glass of water. The bartender pulls out a gun and points it at him. The man says 'thank you' and leaves. Why?",
+      options: ["The man had hiccups", "The bartender was angry", "The man was thirsty", "The bartender was joking"],
+      correct: 0,
       category: "Logic"
     },
     {
-      question: "How many times can you take 2 from 20?",
-      options: ["10 times", "Once", "5 times", "20 times"],
+      question: "What is the next number in this sequence: 1, 11, 21, 1211, 111221, __?",
+      options: ["312211", "13112221", "1112221", "221111"],
+      correct: 0,
+      category: "Logic"
+    },
+    {
+      question: "A man lives on the 10th floor of a building. Every day he takes the elevator to go down to the ground floor to go to work. When he returns, he takes the elevator to the 7th floor and walks up the stairs to reach his apartment on the 10th floor. Why?",
+      options: ["He likes exercise", "The elevator is broken", "He's afraid of heights", "He's too short to reach the 10th floor button"],
+      correct: 3,
+      category: "Logic"
+    },
+    {
+      question: "What is the next letter in this sequence: O, T, T, F, F, S, S, __?",
+      options: ["E", "N", "T", "O"],
       correct: 1,
       category: "Logic"
     },
     {
-      question: "What number comes next: 2, 3, 5, 9, 17, __?",
-      options: ["33", "34", "35", "36"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "If you have a cube, how many squares are there in total (including faces and cross-sections)?",
-      options: ["6", "12", "15", "21"],
+      question: "A man is found dead in a field. He is wearing a backpack and is surrounded by 53 bicycles. How did he die?",
+      options: ["He was hit by a bicycle", "He was poisoned", "He was struck by lightning", "He was playing cards"],
       correct: 2,
       category: "Logic"
     },
     {
-      question: "Two fathers and two sons went hunting. They shot three rabbits and each person got one. How is this possible?",
-      options: ["One rabbit disappeared", "They shared", "There were only 3 people", "It's impossible"],
-      correct: 2,
-      category: "Logic"
-    },
-    {
-      question: "If five cats catch five mice in five minutes, how many cats would it take to catch 100 mice in 100 minutes?",
-      options: ["5 cats", "100 cats", "20 cats", "1 cat"],
+      question: "What is the next number in this sequence: 1, 4, 9, 16, 25, __?",
+      options: ["36", "35", "34", "33"],
       correct: 0,
       category: "Logic"
     },
     {
-      question: "I am an odd number. Take away a letter and I become even. What number am I?",
-      options: ["Seven", "Nine", "Five", "Three"],
+      question: "A man is found dead in a room with 53 bicycles. The room has no windows and only one door, which was locked from the inside. How did he die?",
+      options: ["He was playing cards", "He was struck by lightning", "He was poisoned", "He was hit by a bicycle"],
       correct: 0,
       category: "Logic"
     },
     {
-      question: "If a red house is made of red bricks, and a blue house is made of blue bricks, what is a greenhouse made of?",
-      options: ["Green bricks", "Glass", "Wood", "Concrete"],
-      correct: 1,
+      question: "What is the next number in this sequence: 1, 2, 4, 8, 16, __?",
+      options: ["32", "31", "30", "29"],
+      correct: 0,
       category: "Logic"
     }
   ]
