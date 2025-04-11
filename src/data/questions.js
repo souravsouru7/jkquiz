@@ -1,224 +1,224 @@
 export const quizData = {
   easy: [
     {
-      question: "What can you hold in your right hand but never in your left hand?",
-      options: ["A pencil", "Your left hand", "A book", "A cup"],
+      question: "What is the capital of France?",
+      options: ["London", "Paris", "Berlin", "Madrid"],
       correct: 1,
-      category: "Logic"
+      category: "Geography"
     },
     {
-      question: "I am always in front of you but can never be seen. What am I?",
-      options: ["Future", "Past", "Present", "Time"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "What has a neck but no head?",
-      options: ["Bottle", "Giraffe", "Snake", "River"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "What can you break without touching it?",
-      options: ["Glass", "Promise", "Heart", "Record"],
+      question: "Which planet is known as the Red Planet?",
+      options: ["Venus", "Mars", "Jupiter", "Saturn"],
       correct: 1,
-      category: "Logic"
+      category: "Solar System"
     },
     {
-      question: "What has a bottom at the top?",
-      options: ["Mountain", "Bottle", "Leg", "Staircase"],
+      question: "What is the largest mammal in the world?",
+      options: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+      correct: 1,
+      category: "Animals"
+    },
+    {
+      question: "Which bird is known for its ability to mimic human speech?",
+      options: ["Eagle", "Parrot", "Owl", "Penguin"],
+      correct: 1,
+      category: "Birds"
+    },
+    {
+      question: "What is the capital of Japan?",
+      options: ["Beijing", "Seoul", "Tokyo", "Bangkok"],
       correct: 2,
-      category: "Logic"
+      category: "Geography"
     },
     {
-      question: "What has a face but no eyes, hands but no arms?",
-      options: ["Clock", "Mirror", "Doll", "Statue"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "What gets bigger when more is taken away?",
-      options: ["Hole", "Debt", "Age", "Distance"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "What has a head, a tail, but no body?",
-      options: ["Snake", "Coin", "River", "Rope"],
+      question: "Which planet is closest to the Sun?",
+      options: ["Venus", "Mercury", "Earth", "Mars"],
       correct: 1,
-      category: "Logic"
+      category: "Solar System"
     },
     {
-      question: "What has to be broken before you can use it?",
-      options: ["Egg", "Glass", "Bottle", "Plate"],
+      question: "What is the fastest land animal?",
+      options: ["Lion", "Cheetah", "Leopard", "Tiger"],
+      correct: 1,
+      category: "Animals"
+    },
+    {
+      question: "Which bird is the national symbol of the United States?",
+      options: ["Eagle", "Hawk", "Falcon", "Owl"],
       correct: 0,
-      category: "Logic"
+      category: "Birds"
     },
     {
-      question: "What has many keys but can't open a single lock?",
-      options: ["House", "Car", "Piano", "Computer"],
+      question: "What is the capital of Australia?",
+      options: ["Sydney", "Melbourne", "Canberra", "Perth"],
       correct: 2,
-      category: "Logic"
+      category: "Geography"
     },
     {
-      question: "What has a bed but never sleeps, has a mouth but never eats?",
-      options: ["River", "Mountain", "Valley", "Ocean"],
-      correct: 0,
-      category: "Logic"
+      question: "Which planet has the most moons?",
+      options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+      correct: 1,
+      category: "Solar System"
     },
     {
-      question: "What has cities but no houses, forests but no trees, and rivers but no water?",
-      options: ["Map", "Globe", "Atlas", "Book"],
+      question: "What is the largest land animal?",
+      options: ["Elephant", "Giraffe", "Hippopotamus", "Rhinoceros"],
       correct: 0,
-      category: "Logic"
+      category: "Animals"
+    },
+    {
+      question: "Which bird is known for its long migration journey?",
+      options: ["Penguin", "Arctic Tern", "Eagle", "Owl"],
+      correct: 1,
+      category: "Birds"
     }
   ],
   intermediate: [
     {
-      question: "If you have 3 apples and you take away 2, how many do you have?",
-      options: ["1 apple", "2 apples", "3 apples", "5 apples"],
+      question: "What is the capital of Brazil?",
+      options: ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+      correct: 2,
+      category: "Geography"
+    },
+    {
+      question: "Which planet has the Great Red Spot?",
+      options: ["Saturn", "Jupiter", "Mars", "Venus"],
       correct: 1,
-      category: "Logic"
+      category: "Solar System"
     },
     {
-      question: "A man is looking at a photograph of someone. His friend asks who it is. The man replies, 'Brothers and sisters, I have none. But that man's father is my father's son.' Who is in the photograph?",
-      options: ["His son", "His father", "His uncle", "His brother"],
-      correct: 0,
-      category: "Logic"
+      question: "What is the only mammal capable of true flight?",
+      options: ["Flying Squirrel", "Bat", "Flying Fox", "Colugo"],
+      correct: 1,
+      category: "Animals"
     },
     {
-      question: "If a rooster lays an egg on the roof of a barn, which way will it roll?",
-      options: ["North", "South", "East", "West"],
+      question: "Which bird has the largest wingspan?",
+      options: ["Eagle", "Albatross", "Condor", "Pelican"],
+      correct: 1,
+      category: "Birds"
+    },
+    {
+      question: "What is the capital of Egypt?",
+      options: ["Alexandria", "Cairo", "Luxor", "Giza"],
+      correct: 1,
+      category: "Geography"
+    },
+    {
+      question: "Which planet is known for its beautiful rings?",
+      options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+      correct: 1,
+      category: "Solar System"
+    },
+    {
+      question: "What is the largest species of bear?",
+      options: ["Grizzly Bear", "Polar Bear", "Black Bear", "Panda Bear"],
+      correct: 1,
+      category: "Animals"
+    },
+    {
+      question: "Which bird is known for its ability to fly backwards?",
+      options: ["Eagle", "Hummingbird", "Parrot", "Owl"],
+      correct: 1,
+      category: "Birds"
+    },
+    {
+      question: "What is the capital of Canada?",
+      options: ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+      correct: 2,
+      category: "Geography"
+    },
+    {
+      question: "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+      options: ["Mercury", "Venus", "Mars", "Jupiter"],
+      correct: 1,
+      category: "Solar System"
+    },
+    {
+      question: "What is the fastest marine animal?",
+      options: ["Dolphin", "Shark", "Sailfish", "Tuna"],
+      correct: 2,
+      category: "Animals"
+    },
+    {
+      question: "Which bird is known for its ability to see ultraviolet light?",
+      options: ["Eagle", "Hawk", "Owl", "Hummingbird"],
       correct: 3,
-      category: "Logic"
-    },
-    {
-      question: "What comes once in a minute, twice in a moment, but never in a thousand years?",
-      options: ["The letter 'M'", "The letter 'E'", "The letter 'N'", "The letter 'T'"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "If you're running in a race and you pass the person in second place, what place are you in?",
-      options: ["First", "Second", "Third", "Fourth"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "What can you catch but not throw?",
-      options: ["Ball", "Cold", "Fish", "Light"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "What has a thumb and four fingers but is not alive?",
-      options: ["Hand", "Glove", "Doll", "Statue"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "What has a ring but no finger?",
-      options: ["Phone", "Tree", "Box", "Bell"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "What has a neck but no head, two arms but no hands?",
-      options: ["Bottle", "Shirt", "Giraffe", "Tree"],
-      correct: 1,
-      category: "Logic"
-    },
-    {
-      question: "What has a face that doesn't frown, hands that don't wave, and runs but doesn't walk?",
-      options: ["Clock", "River", "Wind", "Time"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "What has a heart that doesn't beat?",
-      options: ["Artichoke", "Apple", "Pear", "Peach"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "What has a foot but no legs?",
-      options: ["Snail", "Mountain", "Chair", "Table"],
-      correct: 1,
-      category: "Logic"
+      category: "Birds"
     }
   ],
   advanced: [
     {
-      question: "If you have a cube, how many squares are there in total (including faces and cross-sections)?",
-      options: ["6", "12", "15", "21"],
+      question: "What is the capital of South Africa?",
+      options: ["Johannesburg", "Cape Town", "Pretoria", "Durban"],
       correct: 2,
-      category: "Logic"
+      category: "Geography"
     },
     {
-      question: "A man is found dead in a locked room with no windows. The only things in the room are a puddle of water and a piece of rope. How did he die?",
-      options: ["He was poisoned", "He was strangled", "He was electrocuted", "He was frozen"],
-      correct: 2,
-      category: "Logic"
-    },
-    {
-      question: "What number comes next: 2, 3, 5, 9, 17, __?",
-      options: ["33", "34", "35", "36"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "If you divide 30 by half and add 10, what's the answer?",
-      options: ["25", "35", "70", "80"],
-      correct: 2,
-      category: "Logic"
-    },
-    {
-      question: "A man walks into a bar and asks for a glass of water. The bartender pulls out a gun and points it at him. The man says 'thank you' and leaves. Why?",
-      options: ["The man had hiccups", "The bartender was angry", "The man was thirsty", "The bartender was joking"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "What is the next number in this sequence: 1, 11, 21, 1211, 111221, __?",
-      options: ["312211", "13112221", "1112221", "221111"],
-      correct: 0,
-      category: "Logic"
-    },
-    {
-      question: "A man lives on the 10th floor of a building. Every day he takes the elevator to go down to the ground floor to go to work. When he returns, he takes the elevator to the 7th floor and walks up the stairs to reach his apartment on the 10th floor. Why?",
-      options: ["He likes exercise", "The elevator is broken", "He's afraid of heights", "He's too short to reach the 10th floor button"],
-      correct: 3,
-      category: "Logic"
-    },
-    {
-      question: "What is the next letter in this sequence: O, T, T, F, F, S, S, __?",
-      options: ["E", "N", "T", "O"],
+      question: "Which planet has the highest surface temperature?",
+      options: ["Mercury", "Venus", "Mars", "Jupiter"],
       correct: 1,
-      category: "Logic"
+      category: "Solar System"
     },
     {
-      question: "A man is found dead in a field. He is wearing a backpack and is surrounded by 53 bicycles. How did he die?",
-      options: ["He was hit by a bicycle", "He was poisoned", "He was struck by lightning", "He was playing cards"],
+      question: "What is the only mammal that lays eggs?",
+      options: ["Platypus", "Echidna", "Both A and B", "None of the above"],
       correct: 2,
-      category: "Logic"
+      category: "Animals"
     },
     {
-      question: "What is the next number in this sequence: 1, 4, 9, 16, 25, __?",
-      options: ["36", "35", "34", "33"],
+      question: "Which bird has the longest migration route?",
+      options: ["Arctic Tern", "Albatross", "Swallow", "Eagle"],
       correct: 0,
-      category: "Logic"
+      category: "Birds"
     },
     {
-      question: "A man is found dead in a room with 53 bicycles. The room has no windows and only one door, which was locked from the inside. How did he die?",
-      options: ["He was playing cards", "He was struck by lightning", "He was poisoned", "He was hit by a bicycle"],
-      correct: 0,
-      category: "Logic"
+      question: "What is the capital of New Zealand?",
+      options: ["Auckland", "Wellington", "Christchurch", "Dunedin"],
+      correct: 1,
+      category: "Geography"
     },
     {
-      question: "What is the next number in this sequence: 1, 2, 4, 8, 16, __?",
-      options: ["32", "31", "30", "29"],
+      question: "Which planet has the most extreme seasons?",
+      options: ["Earth", "Mars", "Uranus", "Neptune"],
+      correct: 2,
+      category: "Solar System"
+    },
+    {
+      question: "What is the only mammal that can fly?",
+      options: ["Flying Squirrel", "Bat", "Flying Fox", "Colugo"],
+      correct: 1,
+      category: "Animals"
+    },
+    {
+      question: "Which bird has the largest eyes relative to its body size?",
+      options: ["Eagle", "Owl", "Albatross", "Penguin"],
+      correct: 1,
+      category: "Birds"
+    },
+    {
+      question: "What is the capital of Switzerland?",
+      options: ["Zurich", "Geneva", "Bern", "Basel"],
+      correct: 2,
+      category: "Geography"
+    },
+    {
+      question: "Which planet has the most extreme winds in the solar system?",
+      options: ["Jupiter", "Saturn", "Neptune", "Uranus"],
+      correct: 2,
+      category: "Solar System"
+    },
+    {
+      question: "What is the only mammal that can't jump?",
+      options: ["Elephant", "Hippopotamus", "Rhinoceros", "All of the above"],
       correct: 0,
-      category: "Logic"
+      category: "Animals"
+    },
+    {
+      question: "Which bird has the longest lifespan?",
+      options: ["Eagle", "Albatross", "Parrot", "Owl"],
+      correct: 1,
+      category: "Birds"
     }
   ]
 };
