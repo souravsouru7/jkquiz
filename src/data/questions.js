@@ -1,224 +1,191 @@
-export const quizData = {
+
+
+
+const quizData = {
   easy: [
     {
-      question: "What is the capital of France?",
-      options: ["London", "Paris", "Berlin", "Madrid"],
-      correct: 1,
-      category: "Geography"
-    },
-    {
-      question: "Which planet is known as the Red Planet?",
-      options: ["Venus", "Mars", "Jupiter", "Saturn"],
-      correct: 1,
-      category: "Solar System"
-    },
-    {
-      question: "What is the largest mammal in the world?",
-      options: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-      correct: 1,
-      category: "Animals"
-    },
-    {
-      question: "Which bird is known for its ability to mimic human speech?",
-      options: ["Eagle", "Parrot", "Owl", "Penguin"],
-      correct: 1,
-      category: "Birds"
-    },
-    {
-      question: "What is the capital of Japan?",
-      options: ["Beijing", "Seoul", "Tokyo", "Bangkok"],
-      correct: 2,
-      category: "Geography"
-    },
-    {
-      question: "Which planet is closest to the Sun?",
-      options: ["Venus", "Mercury", "Earth", "Mars"],
-      correct: 1,
-      category: "Solar System"
-    },
-    {
-      question: "What is the fastest land animal?",
-      options: ["Lion", "Cheetah", "Leopard", "Tiger"],
-      correct: 1,
-      category: "Animals"
-    },
-    {
-      question: "Which bird is the national symbol of the United States?",
-      options: ["Eagle", "Hawk", "Falcon", "Owl"],
+      question: "What does KPI stand for in business analytics?",
+      options: ["Key Performance Indicator", "Knowledge Process Integration", "Key Process Initiative", "Knowledge Performance Index"],
       correct: 0,
-      category: "Birds"
+      category: "Business Analytics Fundamentals"
     },
     {
-      question: "What is the capital of Australia?",
-      options: ["Sydney", "Melbourne", "Canberra", "Perth"],
-      correct: 2,
-      category: "Geography"
+      question: "Which of the following is a common data visualization tool?",
+      options: ["Excel", "Tableau", "Power BI", "All of the above"],
+      correct: 3,
+      category: "Data Visualization"
     },
     {
-      question: "Which planet has the most moons?",
-      options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
+      question: "What is the primary purpose of a dashboard in business analytics?",
+      options: ["Store data", "Visualize key metrics", "Clean data", "Generate reports"],
       correct: 1,
-      category: "Solar System"
+      category: "Business Intelligence"
     },
     {
-      question: "What is the largest land animal?",
-      options: ["Elephant", "Giraffe", "Hippopotamus", "Rhinoceros"],
+      question: "Which metric measures customer loyalty and satisfaction?",
+      options: ["ROI", "NPS", "CAC", "LTV"],
+      correct: 1,
+      category: "Customer Analytics"
+    },
+    {
+      question: "What does ROI stand for?",
+      options: ["Return on Investment", "Rate of Interest", "Revenue over Income", "Risk of Investment"],
       correct: 0,
-      category: "Animals"
+      category: "Financial Analytics"
     },
     {
-      question: "Which bird is known for its long migration journey?",
-      options: ["Penguin", "Arctic Tern", "Eagle", "Owl"],
+      question: "Which chart type is best for showing trends over time?",
+      options: ["Pie chart", "Bar chart", "Line chart", "Scatter plot"],
+      correct: 2,
+      category: "Data Visualization"
+    },
+    {
+      question: "What is the first step in the data analytics process?",
+      options: ["Data cleaning", "Data collection", "Data analysis", "Data visualization"],
       correct: 1,
-      category: "Birds"
+      category: "Analytics Process"
+    },
+    {
+      question: "Which of the following is a measure of central tendency?",
+      options: ["Mean", "Median", "Mode", "All of the above"],
+      correct: 3,
+      category: "Statistics"
+    },
+    {
+      question: "What does CAC stand for in marketing analytics?",
+      options: ["Customer Acquisition Cost", "Customer Annual Contribution", "Cost Analysis Center", "Customer Activity Channel"],
+      correct: 0,
+      category: "Marketing Analytics"
+    },
+    {
+      question: "Which SQL command is used to retrieve data?",
+      options: ["INSERT", "UPDATE", "SELECT", "DELETE"],
+      correct: 2,
+      category: "Data Management"
     }
   ],
   intermediate: [
     {
-      question: "What is the capital of Brazil?",
-      options: ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+      question: "What is the difference between descriptive and predictive analytics?",
+      options: ["No difference", "Descriptive explains what happened, predictive forecasts what might happen", "Predictive is simpler", "Descriptive uses more data"],
+      correct: 1,
+      category: "Analytics Types"
+    },
+    {
+      question: "Which statistical measure indicates the spread of data points?",
+      options: ["Mean", "Standard deviation", "Mode", "Median"],
+      correct: 1,
+      category: "Statistics"
+    },
+    {
+      question: "What is A/B testing used for?",
+      options: ["Data cleaning", "Comparing two versions to determine which performs better", "Database management", "Report generation"],
+      correct: 1,
+      category: "Experimentation"
+    },
+    {
+      question: "In customer segmentation, what does RFM analysis measure?",
+      options: ["Revenue, Frequency, Margin", "Recency, Frequency, Monetary", "Risk, Frequency, Market", "Return, Flow, Money"],
+      correct: 1,
+      category: "Customer Analytics"
+    },
+    {
+      question: "What is cohort analysis primarily used for?",
+      options: ["Financial forecasting", "Understanding user behavior over time", "Inventory management", "Risk assessment"],
+      correct: 1,
+      category: "Customer Analytics"
+    },
+    {
+      question: "Which metric measures the percentage of visitors who leave after viewing one page?",
+      options: ["Conversion rate", "Click-through rate", "Bounce rate", "Exit rate"],
       correct: 2,
-      category: "Geography"
+      category: "Web Analytics"
     },
     {
-      question: "Which planet has the Great Red Spot?",
-      options: ["Saturn", "Jupiter", "Mars", "Venus"],
+      question: "What is the purpose of data normalization?",
+      options: ["Increase data volume", "Standardize data formats and reduce redundancy", "Create backups", "Generate reports"],
       correct: 1,
-      category: "Solar System"
+      category: "Data Management"
     },
     {
-      question: "What is the only mammal capable of true flight?",
-      options: ["Flying Squirrel", "Bat", "Flying Fox", "Colugo"],
-      correct: 1,
-      category: "Animals"
-    },
-    {
-      question: "Which bird has the largest wingspan?",
-      options: ["Eagle", "Albatross", "Condor", "Pelican"],
-      correct: 1,
-      category: "Birds"
-    },
-    {
-      question: "What is the capital of Egypt?",
-      options: ["Alexandria", "Cairo", "Luxor", "Giza"],
-      correct: 1,
-      category: "Geography"
-    },
-    {
-      question: "Which planet is known for its beautiful rings?",
-      options: ["Jupiter", "Saturn", "Uranus", "Neptune"],
-      correct: 1,
-      category: "Solar System"
-    },
-    {
-      question: "What is the largest species of bear?",
-      options: ["Grizzly Bear", "Polar Bear", "Black Bear", "Panda Bear"],
-      correct: 1,
-      category: "Animals"
-    },
-    {
-      question: "Which bird is known for its ability to fly backwards?",
-      options: ["Eagle", "Hummingbird", "Parrot", "Owl"],
-      correct: 1,
-      category: "Birds"
-    },
-    {
-      question: "What is the capital of Canada?",
-      options: ["Toronto", "Vancouver", "Ottawa", "Montreal"],
-      correct: 2,
-      category: "Geography"
-    },
-    {
-      question: "Which planet is known as the 'Morning Star' or 'Evening Star'?",
-      options: ["Mercury", "Venus", "Mars", "Jupiter"],
-      correct: 1,
-      category: "Solar System"
-    },
-    {
-      question: "What is the fastest marine animal?",
-      options: ["Dolphin", "Shark", "Sailfish", "Tuna"],
-      correct: 2,
-      category: "Animals"
-    },
-    {
-      question: "Which bird is known for its ability to see ultraviolet light?",
-      options: ["Eagle", "Hawk", "Owl", "Hummingbird"],
+      question: "Which correlation coefficient indicates a perfect positive correlation?",
+      options: ["-1", "0", "0.5", "1"],
       correct: 3,
-      category: "Birds"
+      category: "Statistics"
+    },
+    {
+      question: "What does CTR stand for in digital marketing?",
+      options: ["Customer Turnover Rate", "Click-Through Rate", "Conversion Tracking Ratio", "Cost per Transaction Rate"],
+      correct: 1,
+      category: "Digital Marketing"
+    },
+    {
+      question: "Which technique is used to identify patterns in large datasets?",
+      options: ["Data mining", "Data entry", "Data backup", "Data deletion"],
+      correct: 0,
+      category: "Data Analysis"
     }
   ],
   advanced: [
     {
-      question: "What is the capital of South Africa?",
-      options: ["Johannesburg", "Cape Town", "Pretoria", "Durban"],
-      correct: 2,
-      category: "Geography"
-    },
-    {
-      question: "Which planet has the highest surface temperature?",
-      options: ["Mercury", "Venus", "Mars", "Jupiter"],
+      question: "What is the primary challenge of implementing real-time analytics?",
+      options: ["Data storage", "Processing speed and latency", "User interface", "Cost reduction"],
       correct: 1,
-      category: "Solar System"
+      category: "Advanced Analytics"
     },
     {
-      question: "What is the only mammal that lays eggs?",
-      options: ["Platypus", "Echidna", "Both A and B", "None of the above"],
-      correct: 2,
-      category: "Animals"
-    },
-    {
-      question: "Which bird has the longest migration route?",
-      options: ["Arctic Tern", "Albatross", "Swallow", "Eagle"],
-      correct: 0,
-      category: "Birds"
-    },
-    {
-      question: "What is the capital of New Zealand?",
-      options: ["Auckland", "Wellington", "Christchurch", "Dunedin"],
+      question: "In machine learning, what is overfitting?",
+      options: ["Model performs poorly on training data", "Model performs well on training but poorly on new data", "Model has too few parameters", "Model processes data too slowly"],
       correct: 1,
-      category: "Geography"
+      category: "Machine Learning"
     },
     {
-      question: "Which planet has the most extreme seasons?",
-      options: ["Earth", "Mars", "Uranus", "Neptune"],
-      correct: 2,
-      category: "Solar System"
-    },
-    {
-      question: "What is the only mammal that can fly?",
-      options: ["Flying Squirrel", "Bat", "Flying Fox", "Colugo"],
+      question: "What is the main purpose of feature engineering in predictive modeling?",
+      options: ["Reduce data size", "Transform variables to improve model performance", "Clean missing data", "Visualize results"],
       correct: 1,
-      category: "Animals"
+      category: "Predictive Analytics"
     },
     {
-      question: "Which bird has the largest eyes relative to its body size?",
-      options: ["Eagle", "Owl", "Albatross", "Penguin"],
-      correct: 1,
-      category: "Birds"
-    },
-    {
-      question: "What is the capital of Switzerland?",
-      options: ["Zurich", "Geneva", "Bern", "Basel"],
+      question: "Which statistical test would you use to compare means of three or more groups?",
+      options: ["T-test", "Chi-square test", "ANOVA", "Z-test"],
       correct: 2,
-      category: "Geography"
+      category: "Statistical Analysis"
     },
     {
-      question: "Which planet has the most extreme winds in the solar system?",
-      options: ["Jupiter", "Saturn", "Neptune", "Uranus"],
-      correct: 2,
-      category: "Solar System"
-    },
-    {
-      question: "What is the only mammal that can't jump?",
-      options: ["Elephant", "Hippopotamus", "Rhinoceros", "All of the above"],
-      correct: 0,
-      category: "Animals"
-    },
-    {
-      question: "Which bird has the longest lifespan?",
-      options: ["Eagle", "Albatross", "Parrot", "Owl"],
+      question: "What is attribution modeling in marketing analytics?",
+      options: ["Measuring brand awareness", "Determining which touchpoints contribute to conversions", "Calculating customer lifetime value", "Analyzing competitor performance"],
       correct: 1,
-      category: "Birds"
+      category: "Marketing Analytics"
+    },
+    {
+      question: "In time series analysis, what does seasonality refer to?",
+      options: ["Random fluctuations", "Long-term trends", "Regular patterns that repeat over fixed periods", "Data collection periods"],
+      correct: 2,
+      category: "Time Series Analysis"
+    },
+    {
+      question: "What is the primary benefit of using ensemble methods in machine learning?",
+      options: ["Faster processing", "Reduced complexity", "Improved prediction accuracy", "Lower memory usage"],
+      correct: 2,
+      category: "Machine Learning"
+    },
+    {
+      question: "Which technique is used to handle imbalanced datasets?",
+      options: ["Data compression", "SMOTE (Synthetic Minority Oversampling)", "Data encryption", "Data aggregation"],
+      correct: 1,
+      category: "Data Science"
+    },
+    {
+      question: "What is the purpose of cross-validation in model building?",
+      options: ["Speed up training", "Assess model performance on unseen data", "Reduce data size", "Improve visualization"],
+      correct: 1,
+      category: "Model Validation"
+    },
+    {
+      question: "In advanced customer analytics, what does CLV measure?",
+      options: ["Customer Login Velocity", "Customer Lifetime Value", "Customer Loss Volume", "Customer Location Variables"],
+      correct: 1,
+      category: "Customer Analytics"
     }
   ]
 };
